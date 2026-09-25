@@ -44,10 +44,15 @@ export interface LicenseTerms {
 
 // A dated, evidenced record of how an owner has responded to sharing/copying
 // This is the genuinely novel part of the feature — the accountability log
+// owner_name/translation_names are always set (for display) even when the owner or translation
+// isn't yet in owners.json/translations.json — owner_id/translation_ids fill in once matched, so
+// a case doesn't have to wait on a clean data match before it can be recorded
 export interface ResponseLogEntry {
     id: string
-    owner_id: string  // References an Owner's `id`
-    translation_ids: string[]  // Optionally scoped to specific Translations
+    owner_name: string  // Display name of the rights holder
+    owner_id?: string  // References an Owner's `id`, once matched
+    translation_names: string[]  // Display name(s) of the translation(s) involved
+    translation_ids: string[]  // References to Translation `id`s, for the ones that are matched
     date: string  // ISO 8601 date
     summary: string
     evidence_url: string

@@ -1,1 +1,136 @@
-[]
+[
+    {
+        "id": "2021-crossway-esv-randall-house",
+        "owner_name": "Crossway",
+        "translation_names": ["English Standard Version"],
+        "translation_ids": ["ENGESV"],
+        "date": "2021-02-01",
+        "summary": "Crossway declined to license the ESV to Randall House (publishing arm of the National Association of Free Will Baptists) for a planned study Bible, reportedly because Crossway was reluctant to have an Arminian set of study notes accompany the ESV text — while a Catholic Edition of the ESV had been approved.",
+        "evidence_url": "https://puritanboard.com/threads/crossway-denies-arminians-use-of-esv-but-permits-catholics.105168/",
+        "reporter_name": "The Puritan Board (forum thread)",
+        "reporter_url": "https://puritanboard.com/"
+    },
+    {
+        "id": "2019-crossway-esv-crosswire",
+        "owner_name": "Crossway",
+        "translation_names": ["English Standard Version"],
+        "translation_ids": ["ENGESV"],
+        "date": "2019-06-06",
+        "summary": "After years of free ESV distribution to the open-source SWORD project, Crossway demanded CrossWire stop distributing the ESV module from its own servers and billed $1,400 in back licensing fees. Open-source Bible apps built on SWORD (e.g. AndBible) had to remove the ESV, drawing negative user reviews from people unaware of the licensing change.",
+        "evidence_url": "https://www.crosswire.org/pipermail/sword-devel/2019-June/047095.html",
+        "reporter_name": "Troy A. Griffitts (CrossWire)",
+        "reporter_url": "https://www.crosswire.org/"
+    },
+    {
+        "id": "2021-zondervan-niv-god-bless-usa-bible",
+        "owner_name": "Zondervan",
+        "translation_names": ["New International Version"],
+        "translation_ids": ["ENGNIV"],
+        "date": "2021-05-01",
+        "summary": "Zondervan declined to license the NIV to Elite Source Pro for the 'God Bless the USA Bible' after Christian authors organized opposition, arguing the edition promoted Christian nationalism. The publisher went on to release a KJV edition instead, since the KJV requires no US permission — later promoted by Donald Trump and Lee Greenwood.",
+        "evidence_url": "https://jemartisby.substack.com/p/three-years-ago-we-stopped-harper",
+        "reporter_name": "Jemar Tisby",
+        "reporter_url": "https://jemartisby.substack.com/"
+    },
+    {
+        "id": "2023-lockman-lsb-gabriel-hughes-podcast",
+        "owner_name": "The Lockman Foundation",
+        "translation_names": ["Legacy Standard Bible"],
+        "translation_ids": [],
+        "date": "",
+        "summary": "Pastor Gabriel Hughes was cautioned about copyright after publishing daily podcast episodes reading the LSB aloud on 'Hear the Word of the Lord.' He took down all previous episodes and had to go through official channels before resuming public Scripture reading.",
+        "evidence_url": "https://wwutt.podbean.com/e/wwutt-2295-qa-parenting-resources-the-genealogies-of-jesus-contemporary-christian-music/",
+        "reporter_name": "Gabriel Hughes (WWUTT podcast)",
+        "reporter_url": "https://wwutt.podbean.com/"
+    },
+    {
+        "id": "american-bible-society-cev-public-reading-ban",
+        "owner_name": "American Bible Society",
+        "owner_id": "american_bible_society",
+        "translation_names": ["Contemporary English Version"],
+        "translation_ids": ["ENGCEV"],
+        "date": "",
+        "summary": "American Bible Society's licensing terms forbid reading the entire Contemporary English Version aloud in a public setting — a standing policy restriction rather than a single dated incident.",
+        "evidence_url": "https://sellingjesus.org/articles/bible-publishers",
+        "reporter_name": "Selling Jesus",
+        "reporter_url": "https://sellingjesus.org/"
+    },
+    {
+        "id": "2023-major-publishers-gracious-tech-print-app",
+        "owner_name": "Major English Bible publishers (multiple, mostly unnamed)",
+        "translation_names": [],
+        "translation_ids": [],
+        "date": "2023-01-01",
+        "summary": "Building a free app to let people print individual Bible books at home, Gracious Tech was denied permission by every major English Bible publisher it approached except one, which demanded payment. Publishers stated: 'We do not however grant licenses for end-users to print their own editions, regardless of the amount of text they're printing.' Response times from the publishers that replied ranged from 8 months to 1.5 years; some never responded.",
+        "evidence_url": "https://copy.church/explain/examples/",
+        "reporter_name": "Gracious Tech",
+        "reporter_url": "https://gracious.tech/"
+    },
+    {
+        "id": "unnamed-publishers-ken-powers-instant-bible",
+        "owner_name": "Unnamed Bible publishers (multiple)",
+        "translation_names": [],
+        "translation_ids": [],
+        "date": "",
+        "summary": "Building the instant.bible search engine, Ken Powers was told by publishers 'we do not license to individuals,' that a translation was 'available at www.biblegateway.com... therefore we will not be granting a license,' and was quoted a $1,000 one-time fee by another.",
+        "evidence_url": "https://copy.church/explain/examples/",
+        "reporter_name": "Ken Powers",
+        "reporter_url": ""
+    },
+    {
+        "id": "1970-1992-lockman-team-domei-japanese-bible",
+        "owner_name": "The Lockman Foundation",
+        "translation_names": ["New Japanese Bible"],
+        "translation_ids": ["JPNNJB"],
+        "date": "1992-10-01",
+        "summary": "Lockman Foundation and its Japanese translation partners (TEAM/Domei) disputed who owned the copyright to the New Japanese Bible (1970) they had translated together. Lockman claimed work-for-hire ownership from having funded the project (Lockman says ~$2 million across languages; TEAM/Domei says Lockman covered only 'perhaps 15 percent' of this translation); the translators registered themselves as copyright owners in Japan in 1986, Lockman lost a 1989 California suit over it, and the dispute was still before a Japanese court as of this October 1992 article.",
+        "evidence_url": "https://www.christianitytoday.com/1992/10/lawsuit-battle-for-japans-bible/",
+        "reporter_name": "Christianity Today",
+        "reporter_url": "https://www.christianitytoday.com/"
+    },
+    {
+        "id": "2016-ecpa-tyndale-churchsw",
+        "owner_name": "Tyndale House Publishers",
+        "translation_names": ["New Living Translation"],
+        "translation_ids": ["ENGNLT"],
+        "date": "2016-04-13",
+        "summary": "As part of an ECPA-led coalition (via Flagler Law Group), Tyndale House was among the publishers who forced an Australian website (churchsw.org) to remove more than 50 unauthorized Bible translations it had offered for free download since at least December 2015. The site operator signed a settlement agreeing not to infringe any ECPA member's rights again.",
+        "evidence_url": "https://www.ecpa.org/news/284382/ECPA-Stops-Infringement-of-Bible-Translations.htm",
+        "reporter_name": "Evangelical Christian Publishers Association",
+        "reporter_url": "https://www.ecpa.org/"
+    },
+    {
+        "id": "2016-ecpa-harpercollins-churchsw",
+        "owner_name": "HarperCollins Christian Publishers",
+        "translation_names": ["New International Version", "New King James Version"],
+        "translation_ids": ["ENGNIV", "ENGNKJV"],
+        "date": "2016-04-13",
+        "summary": "As part of an ECPA-led coalition (via Flagler Law Group), HarperCollins Christian Publishers (Zondervan/Thomas Nelson) was among the publishers who forced an Australian website (churchsw.org) to remove more than 50 unauthorized Bible translations it had offered for free download since at least December 2015. The site operator signed a settlement agreeing not to infringe any ECPA member's rights again.",
+        "evidence_url": "https://www.ecpa.org/news/284382/ECPA-Stops-Infringement-of-Bible-Translations.htm",
+        "reporter_name": "Evangelical Christian Publishers Association",
+        "reporter_url": "https://www.ecpa.org/"
+    },
+    {
+        "id": "2016-ecpa-abs-churchsw",
+        "owner_name": "American Bible Society",
+        "owner_id": "american_bible_society",
+        "translation_names": ["Good News Bible"],
+        "translation_ids": ["ENGGNB"],
+        "date": "2016-04-13",
+        "summary": "As part of an ECPA-led coalition (via Flagler Law Group), American Bible Society was among the publishers who forced an Australian website (churchsw.org) to remove more than 50 unauthorized Bible translations it had offered for free download since at least December 2015. The site operator signed a settlement agreeing not to infringe any ECPA member's rights again.",
+        "evidence_url": "https://www.ecpa.org/news/284382/ECPA-Stops-Infringement-of-Bible-Translations.htm",
+        "reporter_name": "Evangelical Christian Publishers Association",
+        "reporter_url": "https://www.ecpa.org/"
+    },
+    {
+        "id": "2022-broadstreet-tpt-biblegateway",
+        "owner_name": "BroadStreet Publishing Group",
+        "translation_names": ["The Passion Translation"],
+        "translation_ids": ["ENGPAS"],
+        "date": "2022-01-01",
+        "summary": "Bible Gateway discontinued its license for The Passion Translation and removed it from the platform, effective January 2022. BroadStreet Publishing (TPT's publisher) said Bible Gateway made 'the disappointing decision to discontinue their license' and acknowledged Bible Gateway's right to do so; no official reason was given, though critics had argued TPT reads more like a paraphrase than a translation despite being marketed as one. Note: this logs a distributor (Bible Gateway) dropping the translation, not the rights holder restricting a third party — included for the same accountability reasons.",
+        "evidence_url": "https://cbn.com/news/news/bible-gateway-pulls-passion-translation-amid-criticism-it-paraphrase-or-translation",
+        "reporter_name": "CBN News",
+        "reporter_url": "https://cbn.com/"
+    }
+]
