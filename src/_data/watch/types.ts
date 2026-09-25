@@ -33,9 +33,7 @@ export interface Translation {
 export interface Owner {
     id: string
     name: string
-    type: "bible_society" | "denomination" | "individual" | "publisher" | "other"
     website?: string
-    fba_member?: boolean  // Forum of Bible Agencies International membership (undefined = unknown)
 }
 
 
