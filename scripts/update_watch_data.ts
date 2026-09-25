@@ -3,14 +3,13 @@
 // Bible Society Watch dataset in src/_data/watch/*.json. Sources, in order:
 //   1. find.bible — via the public digitalbiblesociety/data dataset (base translation list)
 //   2. fetch.bible — v1.fetch.bible/manifest.json (license/owner for translations it distributes)
-//   3. open.bible — best-effort fallback for translations still missing a license (see NOTE below)
-//   4. DBL (Digital Bible Library) — only for translations still missing a license after 1-3,
+//   3. DBL (Digital Bible Library) — only for translations still missing a license after 1-2,
 //      only with --with-dbl, and only after an interactive confirmation (never run silently)
-// Deliberately does NOT consult eBible.
+// Deliberately does NOT consult eBible or open.bible (open.bible was tried and dropped — see
+// git history if it needs revisiting; this sandbox's network can't reach it at all).
 //
 // Usage:
 //   node --experimental-strip-types scripts/update_watch_data.ts [--dry-run] [--with-dbl]
-//       [--skip-open-bible]
 
 import {readFileSync, writeFileSync} from 'node:fs'
 import {createInterface} from 'node:readline/promises'
@@ -27,7 +26,6 @@ const DBL_API = 'https://api.library.bible/v1'
 const args = new Set(process.argv.slice(2))
 const DRY_RUN = args.has('--dry-run')
 const WITH_DBL = args.has('--with-dbl')
-const SKIP_OPEN_BIBLE = args.has('--skip-open-bible')
 
 
 // ---- small generic helpers ----
@@ -226,75 +224,7 @@ async function pull_fetch_bible(
 }
 
 
-// ---- 3. open.bible (best-effort fallback) ----
-//
-// NOTE open.bible is a Next.js app behind Cloudflare, and this project's sandboxed network
-// couldn't reach it at all when this script was written (Cloudflare returns a bot-check page,
-// and even a proxied request came back "blocked from performing anonymous queries due to bad IP
-// reputation"). There's no known public data file/API for it (unlike find.bible and fetch.bible).
-// This function is therefore best-effort: it tries a plain fetch and bails out cleanly if
-// blocked. Run this step from an unblocked network to actually test/use it, and expect to need
-// to adjust the parsing below once you can see real page output.
-
-async function pull_open_bible(
-        translations:Translation[], owners:Owner[], license_terms:LicenseTerms[]):Promise<void>{
-    if (SKIP_OPEN_BIBLE){
-        console.info('open.bible: skipped (--skip-open-bible)')
-        return
-    }
-    console.info('Fetching open.bible (best-effort — see NOTE in script)...')
-
-    const missing = translations.filter(t =>
-        !license_terms.some(lt => lt.translation_id === t.id && lt.type === 'text'))
-    if (!missing.length){
-        console.info('open.bible: nothing missing a license, skipping')
-        return
-    }
-
-    let html:string
-    try {
-        const res = await fetch('https://open.bible/bibles', {
-            headers: {'User-Agent': 'Mozilla/5.0 (compatible; copy.church watch data script)'},
-        })
-        if (!res.ok) throw new Error(`HTTP ${res.status}`)
-        html = await res.text()
-    } catch (err){
-        console.warn(`open.bible: couldn't fetch (${(err as Error).message}) — skipping this run`)
-        return
-    }
-
-    if (/Attention Required|Cloudflare/i.test(html)){
-        console.warn('open.bible: blocked by Cloudflare — skipping this run')
-        return
-    }
-
-    // Best-effort scrape: look for CC license URLs anywhere near a translation's English
-    // abbreviation in the page text. This is intentionally crude — verify matches before trusting.
-    let matched = 0
-    for (const translation of missing){
-        const abbrev_re = new RegExp(translation.abbrev.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
-        const idx = html.search(abbrev_re)
-        if (idx === -1) continue
-        const nearby = html.slice(Math.max(0, idx - 500), idx + 500)
-        const detected = license_from_text(nearby)
-        if (!detected) continue
-
-        const owner_id = get_or_create_owner(owners, 'Biblica (open.bible)')
-        license_terms.push({
-            translation_id: translation.id,
-            owner_id,
-            type: 'text',
-            license: detected.license,
-            url: detected.url || 'https://open.bible/',
-            last_verified: today(),
-        })
-        matched += 1
-    }
-    console.info(`open.bible: added license terms for ${matched} translations`)
-}
-
-
-// ---- 4. DBL (Digital Bible Library) — gated behind --with-dbl + interactive confirmation ----
+// ---- 3. DBL (Digital Bible Library) — gated behind --with-dbl + interactive confirmation ----
 
 function dbl_headers(url:string, method='GET'):Record<string, string>{
     const api_key = (process.env['DBL_API_KEY'] ?? '').toLowerCase()
@@ -386,7 +316,6 @@ async function main():Promise<void>{
 
     await pull_find_bible(translations)
     await pull_fetch_bible(translations, owners, license_terms)
-    await pull_open_bible(translations, owners, license_terms)
     await pull_dbl(translations, owners, license_terms)
 
     translations.sort((a, b) => a.id.localeCompare(b.id))
