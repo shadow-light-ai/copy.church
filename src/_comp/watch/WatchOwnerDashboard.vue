@@ -55,7 +55,7 @@ div.watch_dashboard_wrap
                 div.meter
                     div.meter_segment.open(:style='{width: owner.open_pct + "%"}')
                     div.meter_segment.semi_restricted(:style='{width: owner.semi_restricted_pct + "%"}')
-                    div.meter_segment.restricted(:style='{width: owner.restricted_only_pct + "%"}')
+                    div.meter_segment.restricted(:style='{width: owner.restricted_pct + "%"}')
             td.num {{ owner.restricted }}
             td.num {{ owner.restricted_pct }}%
 
@@ -74,14 +74,14 @@ import license_terms from '@/_data/watch/license_terms.json'
 // A license's tier: 'open' places no restriction on sharing ('public', 'cc-by', 'cc-by-sa');
 // 'semi_restricted' carries a noncommercial and/or no-derivatives clause (including 'cc-by-nc-nd');
 // 'restricted' is non-standard terms ('custom'), the only case where what's actually allowed isn't
-// known upfront. Ranking/percentages treat semi_restricted + restricted as both counting against an
-// owner — only the bar breaks the two apart.
+// known upfront. For ranking/filtering purposes, only 'restricted' counts against an owner —
+// 'semi_restricted' does not count as restricted, even though the bar still shows it separately.
 function license_tier(license:string):'open' | 'semi_restricted' | 'restricted'{
     if (license === 'custom') return 'restricted'
     if (license.includes('nc') || license.includes('nd')) return 'semi_restricted'
     return 'open'
 }
-const is_restricted = (license:string) => license_tier(license) !== 'open'
+const is_restricted = (license:string) => license_tier(license) === 'restricted'
 
 // Tally each owner's tracked translations and how many carry a restricted license
 const owner_names:Record<string, string> = {}
@@ -103,19 +103,18 @@ for (const term of license_terms){
 const owner_rows = Object.entries(tallies)
     .filter(([id]) => id !== 'unknown')
     .map(([id, tally]) => {
-        const restricted = tally.semi_restricted + tally.restricted_only
-        const restricted_pct = Math.round((restricted / tally.tracked) * 100)
+        // 'restricted' here (used for ranking/columns) is the strict tier only — semi_restricted
+        // doesn't count as restricted. The bar below still shows all three tiers.
         return {
             id,
             name: owner_names[id] ?? id,
             website: owner_meta[id]?.website,
             ministry_watch_url: owner_meta[id]?.ministry_watch_url,
             tracked: tally.tracked,
-            restricted,
-            restricted_pct,
-            open_pct: Math.round(((tally.tracked - restricted) / tally.tracked) * 100),
+            restricted: tally.restricted_only,
+            restricted_pct: Math.round((tally.restricted_only / tally.tracked) * 100),
+            open_pct: Math.round(((tally.tracked - tally.semi_restricted - tally.restricted_only) / tally.tracked) * 100),
             semi_restricted_pct: Math.round((tally.semi_restricted / tally.tracked) * 100),
-            restricted_only_pct: Math.round((tally.restricted_only / tally.tracked) * 100),
         }
     })
 
