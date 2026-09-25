@@ -251,6 +251,28 @@ interface DblContentEntry {
     providedByOrg?:{name:string}
 }
 
+interface DblListResponse {
+    items:DblContentEntry[]
+}
+
+// fetch.bible is the primary source for license detection — DBL is only a fallback for
+// translations it doesn't cover. Uses the paginated list endpoint (a handful of requests for the
+// whole open-access catalog), never one request per translation.
+async function fetch_dbl_open_access_entries():Promise<DblContentEntry[]>{
+    const all:DblContentEntry[] = []
+    const limit = 500
+    let offset = 0
+    while (true){
+        const url = `${DBL_API}/content-entries?is_open_access=true&medium=text`
+            + `&include_full_details=true&limit=${limit}&offset=${offset}`
+        const page = await fetch_json<DblListResponse>(url, dbl_headers(url))
+        all.push(...page.items)
+        if (page.items.length < limit) break
+        offset += limit
+    }
+    return all
+}
+
 async function pull_dbl(
         translations:Translation[], owners:Owner[], license_terms:LicenseTerms[]):Promise<void>{
     const candidates = translations.filter(t =>
@@ -261,31 +283,29 @@ async function pull_dbl(
     }
 
     if (!WITH_DBL){
-        console.info(`DBL: ${candidates.length} translations have a DBL id but no license yet — `
-            + 're-run with --with-dbl to look them up (never run automatically)')
+        console.info(`DBL: ${candidates.length} translations have a DBL id but no license from `
+            + 'fetch.bible yet — re-run with --with-dbl to check the DBL catalog (never run '
+            + 'automatically)')
         return
     }
 
     const rl = createInterface({input: process.stdin, output: process.stdout})
     const answer = await rl.question(
-        `About to make ${candidates.length} requests to the DBL API. Continue? [y/N] `)
+        'About to fetch the DBL open-access catalog (a handful of paginated list requests, '
+        + 'not one per translation). Continue? [y/N] ')
     rl.close()
     if (answer.trim().toLowerCase() !== 'y'){
         console.info('DBL: cancelled')
         return
     }
 
+    const entries = await fetch_dbl_open_access_entries()
+    const by_uid = new Map(entries.map(e => [e.uid, e]))
+
     let matched = 0
     for (const translation of candidates){
-        const uid = translation.external_ids.dbl!
-        const url = `${DBL_API}/content-entries/${uid}?include_full_details=true`
-        let entry:DblContentEntry
-        try {
-            entry = await fetch_json<DblContentEntry>(url, dbl_headers(url))
-        } catch (err){
-            console.warn(`DBL: failed to fetch ${uid} (${(err as Error).message})`)
-            continue
-        }
+        const entry = by_uid.get(translation.external_ids.dbl!)
+        if (!entry) continue
 
         const detected = license_from_text(entry.copyrightStatement ?? '')
         if (!detected) continue
@@ -298,7 +318,7 @@ async function pull_dbl(
             owner_id,
             type: 'text',
             license: detected.license,
-            url: detected.url || `https://app.library.bible/content/${uid}`,
+            url: detected.url || `https://app.library.bible/content/${entry.uid}`,
             last_verified: today(),
         })
         matched += 1
