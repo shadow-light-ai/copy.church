@@ -11,7 +11,6 @@ export interface Translation {
     language: string  // ISO 639-3 code
     latest_year: number  // Most recent known year (revision, or completion)
     scope: "full" | "nt" | "ot" | "portion" | "unknown"  // 'unknown' when the source doesn't say
-    owner_id?: string  // References an Owner's `id` — not every source links a translation to one
     external_ids: {
         dbl?: string
         find_bible?: string
@@ -27,6 +26,7 @@ export interface Owner {
     id: string
     name: string
     website?: string
+    ministry_watch_url?: string  // Link to this owner's Ministry Watch database entry, if present
 }
 
 
