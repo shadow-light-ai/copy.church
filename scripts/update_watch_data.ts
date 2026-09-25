@@ -51,8 +51,10 @@ const ORG_SUFFIX_RE =
     /,?\s*\b(pvt\.?\s*ltd\.?|ltd\.?|llc\.?|inc\.?|corp\.?|corporation|gmbh|plc\.?|s\.a\.?|e\.?\s*v\.?)\s*$/i
 
 function slugify(name:string):string{
-    // Turn an owner display name into a stable, url-safe id
-    const stripped = name.replace(ORG_SUFFIX_RE, '').trim()
+    // Turn an owner display name into a stable, url-safe id — also drops a leading "The" so
+    // e.g. "Bible Society of Papua New Guinea" and "The Bible Society of Papua New Guinea"
+    // collapse to one owner
+    const stripped = name.replace(ORG_SUFFIX_RE, '').replace(/^the\s+/i, '').trim()
     return stripped.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '')
 }
 
@@ -71,10 +73,22 @@ function get_or_create_owner(owners:Owner[], name:string):string{
     return id
 }
 
+// Many fetch.bible attributions are full copyright notices ("Copyright © 1927, 2009 Wycliffe
+// Bible Translators, Inc.") rather than a bare org name — left as-is, the year list would splinter
+// one org into a separate "owner" per copyright-year combination. Strip it down to the org name.
+function strip_copyright_notice(text:string):string{
+    let name = text.trim()
+    name = name.replace(/^copyright\s*/i, '')
+    name = name.replace(/^\(c\)\s*/i, '')
+    name = name.replace(/^©\s*/, '')
+    name = name.replace(/^\d{4}(?:\s*[-–—,]\s*\d{4})*\s*/, '')
+    return name.trim()
+}
+
 function owner_id_for(owners:Owner[], attribution:string):string{
     // "public domain" (or a blank attribution) isn't a rights holder — don't invent a fake owner
     // for it, just leave the license terms owner as 'unknown'
-    const name = attribution.trim()
+    const name = strip_copyright_notice(attribution)
     if (!name || /^public domain$/i.test(name)) return 'unknown'
     return get_or_create_owner(owners, name)
 }

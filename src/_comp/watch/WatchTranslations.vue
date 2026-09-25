@@ -9,13 +9,13 @@ div.watch_translations_wrap
             th Translation
             th Abbrev
             th Language
-            th Scope
+            th License
             th Provided by
         tr(v-for='item of shown' :key='item.id')
             td.condensed: a(:href='item.info_url' target='_blank' rel='noreferrer') {{ item.name }}
             td {{ item.abbrev }}
             td {{ item.language }}
-            td {{ item.scope }}
+            td {{ item.license }}
             td {{ item.owner_name }}
     p.more(v-if='filtered.length > shown.length')
         | Showing first {{ shown.length }} — narrow your search to see more specific results.
@@ -30,6 +30,7 @@ import {ref, computed} from 'vue'
 // Static Bible Society Watch data — checked into the repo, no backend
 import translations from '@/_data/watch/translations.json'
 import owners from '@/_data/watch/owners.json'
+import license_terms from '@/_data/watch/license_terms.json'
 
 
 // Build an id -> name lookup so each row can show its owner's name
@@ -38,11 +39,22 @@ for (const owner of owners){
     owner_names[owner.id] = owner.name
 }
 
-// Attach the owner's name to each row (names are already sorted in the data file)
-const rows = translations.map(item => ({
-    ...item,
-    owner_name: item.owner_id ? (owner_names[item.owner_id] ?? "Unknown") : "",
-}))
+// Prefer a translation's text license terms over audio when both exist
+const license_by_translation:Record<string, {license:string, owner_id:string}> = {}
+for (const term of license_terms){
+    if (!license_by_translation[term.translation_id] || term.type === 'text')
+        license_by_translation[term.translation_id] = {license: term.license, owner_id: term.owner_id}
+}
+
+// Attach license and owner name to each row (rows are already sorted in the data file)
+const rows = translations.map(item => {
+    const terms = license_by_translation[item.id]
+    return {
+        ...item,
+        license: terms?.license ?? 'unknown',
+        owner_name: terms && terms.owner_id !== 'unknown' ? (owner_names[terms.owner_id] ?? 'Unknown') : '',
+    }
+})
 
 // Filter by name/abbrev/language as the visitor types
 const query = ref("")
