@@ -314,13 +314,16 @@ interface DblListResponse {
 
 // fetch.bible is the primary source for license detection — DBL is only a fallback for
 // translations it doesn't cover. Uses the paginated list endpoint (a handful of requests for the
-// whole open-access catalog), never one request per translation.
-async function fetch_dbl_open_access_entries():Promise<DblContentEntry[]>{
+// whole catalog), never one request per translation. Not filtered to is_open_access: we want
+// owner attribution even for translations whose DBL terms aren't open — those still get a
+// LicenseTerms row (license 'unknown' if we can't parse specific terms), rather than being
+// skipped and left with no owner at all.
+async function fetch_dbl_catalog():Promise<DblContentEntry[]>{
     const all:DblContentEntry[] = []
     const limit = 500
     let offset = 0
     while (true){
-        const url = `${DBL_API}/content-entries?is_open_access=true&medium=text`
+        const url = `${DBL_API}/content-entries?medium=text`
             + `&include_full_details=true&limit=${limit}&offset=${offset}`
         const page = await fetch_json<DblListResponse>(url, dbl_headers(url))
         all.push(...page.items)
@@ -348,7 +351,8 @@ async function pull_dbl(
 
     const rl = createInterface({input: process.stdin, output: process.stdout})
     const answer = await rl.question(
-        'About to fetch the DBL open-access catalog (a handful of paginated list requests, '
+        'About to fetch the full DBL catalog — not filtered to open access, since we want owner '
+        + 'attribution even where DBL terms aren\'t open (a handful of paginated list requests, '
         + 'not one per translation). Continue? [y/N] ')
     rl.close()
     if (answer.trim().toLowerCase() !== 'y'){
@@ -356,31 +360,33 @@ async function pull_dbl(
         return
     }
 
-    const entries = await fetch_dbl_open_access_entries()
+    const entries = await fetch_dbl_catalog()
     const by_uid = new Map(entries.map(e => [e.uid, e]))
 
-    let matched = 0
+    let with_license = 0
+    let owner_only = 0
     for (const translation of candidates){
         const entry = by_uid.get(translation.external_ids.dbl!)
         if (!entry) continue
 
-        const detected = license_from_text(entry.copyrightStatement ?? '')
-        if (!detected) continue
-
         const owner_name = entry.primaryLicensorOrg?.name || entry.providedByOrg?.name || ''
         const owner_id = owner_id_for(owners, owner_name)
+        const detected = license_from_text(entry.copyrightStatement ?? '')
 
         license_terms.push({
             translation_id: translation.id,
             owner_id,
             type: 'text',
-            license: detected.license,
-            url: detected.url || `https://app.library.bible/content/${entry.uid}`,
+            license: detected?.license ?? 'unknown',
+            url: detected?.url || `https://app.library.bible/content/${entry.uid}`,
             last_verified: today(),
         })
-        matched += 1
+        if (detected) with_license += 1
+        else owner_only += 1
     }
-    console.info(`DBL: added license terms for ${matched} translations`)
+    console.info(`DBL: matched ${with_license + owner_only} translations against the catalog `
+        + `(${with_license} with a detected license, ${owner_only} owner-only — license left `
+        + `'unknown')`)
 }
 
 

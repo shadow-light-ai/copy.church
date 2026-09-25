@@ -73,11 +73,12 @@ import license_terms from '@/_data/watch/license_terms.json'
 
 // A license's tier: 'open' places no restriction on sharing ('public', 'cc-by', 'cc-by-sa');
 // 'semi_restricted' carries a noncommercial and/or no-derivatives clause (including 'cc-by-nc-nd');
-// 'restricted' is non-standard terms ('custom'), the only case where what's actually allowed isn't
-// known upfront. For ranking/filtering purposes, only 'restricted' counts against an owner —
-// 'semi_restricted' does not count as restricted, even though the bar still shows it separately.
+// 'restricted' is non-standard terms ('custom') or no license at all ('unknown') — not proven
+// open, so not assumed open. For ranking/filtering purposes, only 'restricted' counts against an
+// owner — 'semi_restricted' does not count as restricted, even though the bar still shows it
+// separately.
 function license_tier(license:string):'open' | 'semi_restricted' | 'restricted'{
-    if (license === 'custom') return 'restricted'
+    if (license === 'custom' || license === 'unknown') return 'restricted'
     if (license.includes('nc') || license.includes('nd')) return 'semi_restricted'
     return 'open'
 }

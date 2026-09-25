@@ -12,6 +12,10 @@
         "name": "Alan Bunning / Center for New Testament Restoration"
     },
     {
+        "id": "american_bible_society",
+        "name": "American Bible Society"
+    },
+    {
         "id": "anonymous",
         "name": "anonymous"
     },
@@ -86,6 +90,10 @@
     {
         "id": "bible_society_of_honduras",
         "name": "Bible Society of Honduras"
+    },
+    {
+        "id": "bible_society_of_india",
+        "name": "The Bible Society of India"
     },
     {
         "id": "bible_society_of_micronesia",
