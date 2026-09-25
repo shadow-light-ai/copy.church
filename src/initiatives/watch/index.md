@@ -32,22 +32,23 @@ restrictive or punitive responses carry a reputational cost, and generous ones a
 
 All data behind this feature is static, checked into this repository like the rest of the
 site — there's no database or backend. The schema lives in `src/_data/watch/` as four JSON
-files (translations, owners, license terms, response log) with types in `types.ts`. The open
-question still being worked through is scope: this currently includes full Bibles, New
-Testaments, and partial/portion translations, all as returned by the Digital Bible Library.
+files (translations, owners, license terms, response log) with types in `types.ts`. Coverage
+currently includes full Bibles, New Testaments, and partial/portion translations, sourced from
+find.bible's public dataset and cross-referenced against the Digital Bible Library where possible.
 
 See also &nbsp; <VPButton text="Bible ratings" href='/initiatives/bibles/' theme='alt' /> &nbsp; <VPButton text="Critical Text ratings" href='/initiatives/critical-texts/' theme='alt' />
 
 ## Data test
 
-100 translations pulled from a single Digital Bible Library API request, reshaped into the new
-schema (translation / owner / license terms). License terms aren't populated yet — every entry
-currently shows `unknown` until the license-detection step is built. The response log is empty;
-entries will be added manually, each reviewed before publishing, once real cases are sourced and
-verified.
+5,438 translations, sourced from [digitalbiblesociety/data](https://github.com/digitalbiblesociety/data)
+(the public dataset behind find.bible) and cross-referenced against a Digital Bible Library test
+pull for owner information where available. License terms aren't populated yet — every entry
+currently shows `unknown` until the license-detection step is built, and only 110 translations
+have a known owner so far. The response log is empty; entries will be added manually, each
+reviewed before publishing, once real cases are sourced and verified.
 
 <details>
-<summary>100 translations from the Bible Society Watch dataset</summary>
+<summary>5,438 translations from the Bible Society Watch dataset</summary>
 
 <WatchTranslations/>
 
