@@ -36,7 +36,8 @@ export interface LicenseTerms {
     translation_id: string  // References a Translation's `id`
     owner_id: string  // References an Owner's `id`
     type: "text" | "audio"  // Which form of the translation these terms apply to
-    license: string  // e.g. 'cc-by-sa-4.0', 'public-domain', 'proprietary', 'unknown'
+    license: string  // fetch.bible format, no version numbers: 'public', 'cc-by', 'cc-by-sa',
+        // 'cc-by-nc', 'cc-by-nc-sa', 'cc-by-nd', 'cc-by-nc-nd', 'custom', or 'unknown'
     url: string  // Where the license terms are documented
     last_verified: string  // ISO 8601 date, e.g. '2026-09-25'
 }
