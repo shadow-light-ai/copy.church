@@ -131,7 +131,7 @@ const stats = computed(() => {
 })
 
 // Ranking control — by total tracked, by raw restricted count, or by restricted share
-const sort_mode = ref<'total' | 'count' | 'pct'>('count')
+const sort_mode = ref<'total' | 'count' | 'pct'>('total')
 
 const sorters = {
     total: (a:typeof owner_rows[0], b:typeof owner_rows[0]) =>
