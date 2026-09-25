@@ -2768,11 +2768,43 @@
         "last_verified": "2026-09-25"
     },
     {
+        "translation_id": "ENGKJV",
+        "owner_id": "ebible_org",
+        "type": "text",
+        "license": "public",
+        "url": "https://app.library.bible/content/de4e12af7f28f599",
+        "last_verified": "2026-09-25"
+    },
+    {
         "translation_id": "ENGNMV",
         "owner_id": "tovrose",
         "type": "text",
         "license": "cc-by-nc-nd",
         "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "last_verified": "2026-09-25"
+    },
+    {
+        "translation_id": "ENGWEBB",
+        "owner_id": "ebible_org",
+        "type": "text",
+        "license": "public",
+        "url": "https://app.library.bible/content/7142879509583d59",
+        "last_verified": "2026-09-25"
+    },
+    {
+        "translation_id": "ENGWEBBM",
+        "owner_id": "ebible_org",
+        "type": "text",
+        "license": "public",
+        "url": "https://app.library.bible/content/04da588535d2f823",
+        "last_verified": "2026-09-25"
+    },
+    {
+        "translation_id": "ENGWEBM",
+        "owner_id": "ebible_org",
+        "type": "text",
+        "license": "public",
+        "url": "https://app.library.bible/content/f72b840c855f362c",
         "last_verified": "2026-09-25"
     },
     {
@@ -6568,6 +6600,14 @@
         "last_verified": "2026-09-25"
     },
     {
+        "translation_id": "NLDPCB",
+        "owner_id": "ebible_org",
+        "type": "text",
+        "license": "public",
+        "url": "https://app.library.bible/content/ead7b4cc5007389c",
+        "last_verified": "2026-09-25"
+    },
+    {
         "translation_id": "nlg_wbt",
         "owner_id": "wycliffe_bible_translators",
         "type": "text",
@@ -7245,6 +7285,14 @@
         "type": "text",
         "license": "cc-by-nd",
         "url": "https://creativecommons.org/licenses/by-nd/4.0/",
+        "last_verified": "2026-09-25"
+    },
+    {
+        "translation_id": "POLUBG",
+        "owner_id": "ebible_org",
+        "type": "text",
+        "license": "cc-by-nd",
+        "url": "https://creativecommons.org/licenses/by-nd/4.0/)./",
         "last_verified": "2026-09-25"
     },
     {
