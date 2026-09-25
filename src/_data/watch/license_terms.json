@@ -10,13 +10,6 @@
     {
         "translation_id": "ANHMYO",
         "owner_id": "pioneer_bible_translators",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/ANHMYO/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "ANHMYO",
-        "owner_id": "pioneer_bible_translators",
         "type": "text",
         "license": "cc-by-nc-nd",
         "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
@@ -25,23 +18,9 @@
     {
         "translation_id": "arb_eastern_zone_16c2ae",
         "owner_id": "eastern_zone",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/16c2ae6602e699ce",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "arb_eastern_zone_16c2ae",
-        "owner_id": "eastern_zone",
         "type": "text",
         "license": "cc-by-nc-nd",
         "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "asg_the_seed_company_0241e0",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0241e02f3cb97e8c",
         "last_verified": "2026-09-25"
     },
     {
@@ -71,23 +50,9 @@
     {
         "translation_id": "BELJFC",
         "owner_id": "john_the_forerunner_church_of_christians_of_evangelical_faith_of_minsk_city",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/BELJFC/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "BELJFC",
-        "owner_id": "john_the_forerunner_church_of_christians_of_evangelical_faith_of_minsk_city",
         "type": "text",
         "license": "cc-by-nc",
         "url": "https://creativecommons.org/licenses/by-nc/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "bgc_beyond_translation_2ef130",
-        "owner_id": "beyond_translation",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/2ef130d3485d3fe4",
         "last_verified": "2026-09-25"
     },
     {
@@ -103,7 +68,8 @@
         "owner_id": "beyond_translation",
         "license": "unknown",
         "url": "https://find.bible/bibles/BGCOHB/",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "BGGWFW",
@@ -119,13 +85,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "bhu_the_word_for_34d2d8",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/34d2d843a792981b",
         "last_verified": "2026-09-25"
     },
     {
@@ -155,13 +114,6 @@
     {
         "translation_id": "bsw_the_word_for_14a5a8",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/14a5a814d81264ac",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "bsw_the_word_for_14a5a8",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -170,23 +122,9 @@
     {
         "translation_id": "bsw_the_word_for_2c2067",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/2c2067480f069dad",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "bsw_the_word_for_2c2067",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "cmn_free_bible_ministry_04fb2b",
-        "owner_id": "free_bible_ministry_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/04fb2bec0d582d1f",
         "last_verified": "2026-09-25"
     },
     {
@@ -202,35 +140,32 @@
         "owner_id": "canadian_bible_society",
         "license": "unknown",
         "url": "https://app.library.bible/content/5ee655ce82d17011",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "CRJWBT",
         "owner_id": "canadian_bible_society",
         "license": "unknown",
         "url": "https://find.bible/bibles/CRJWBT/",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "crw_far_east_broadcasting_030357",
         "owner_id": "far_east_broadcasting_company",
         "license": "unknown",
         "url": "https://app.library.bible/content/0303570f15afd95e",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "cua_far_east_broadcasting_37a1dc",
         "owner_id": "far_east_broadcasting_company",
         "license": "unknown",
         "url": "https://app.library.bible/content/37a1dc7a54269bd3",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "cwe_the_word_for_33e024",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/33e024fcc7010565",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "cwe_the_word_for_33e024",
@@ -238,13 +173,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "CZTBSM",
-        "owner_id": "bible_society_of_myanmar",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/CZTBSM/",
         "last_verified": "2026-09-25"
     },
     {
@@ -282,23 +210,9 @@
     {
         "translation_id": "eka_the_seed_company_147ebe",
         "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/147ebe97085ae322",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "eka_the_seed_company_147ebe",
-        "owner_id": "the_seed_company",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "eng_covenant_press_01b29f",
-        "owner_id": "covenant_press",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/01b29f4b342acc35",
         "last_verified": "2026-09-25"
     },
     {
@@ -314,21 +228,24 @@
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/179568874c45066f",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "eng_ebible_org_2f0fd8",
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/2f0fd81d7b85b923",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "eng_ebible_org_32339c",
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/32339cf2f720ff8e",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "ENGFBV",
@@ -351,7 +268,8 @@
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://find.bible/bibles/ENGWEBBM/",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "GAIPBT",
@@ -364,13 +282,6 @@
     {
         "translation_id": "GAQWFW",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/GAQWFW/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "GAQWFW",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -379,23 +290,9 @@
     {
         "translation_id": "gaz_biblica_inc_184950",
         "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/1849509e461c9a00",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "gaz_biblica_inc_184950",
-        "owner_id": "biblica_inc",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "gdf_the_seed_company_29f2d7",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/29f2d73fdf71a11e",
         "last_verified": "2026-09-25"
     },
     {
@@ -417,13 +314,6 @@
     {
         "translation_id": "gmv_the_word_for_049346",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/049346536ed7f260",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "gmv_the_word_for_049346",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -432,23 +322,9 @@
     {
         "translation_id": "gok_the_word_for_28d256",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/28d256cb603137cd",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "gok_the_word_for_28d256",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "hau_biblica_inc_0ab0c7",
-        "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0ab0c764d56a715d",
         "last_verified": "2026-09-25"
     },
     {
@@ -464,28 +340,16 @@
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/0b262f1ed7f084a6",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "HEBWLC",
-        "owner_id": "united_bible_societies",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/HEBWLC/",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "hil_biblica_inc_091988",
         "owner_id": "biblica_inc",
         "license": "unknown",
         "url": "https://app.library.bible/content/091988fde60272d7",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "hin_biblica_inc_213300",
-        "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/2133003bb8b5e62b",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "hin_biblica_inc_213300",
@@ -493,13 +357,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "hin_bridge_connectivity_solutions_1e8ab3",
-        "owner_id": "bridge_connectivity_solutions",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/1e8ab327edbce67f",
         "last_verified": "2026-09-25"
     },
     {
@@ -508,13 +365,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "hin_global_bible_initiative_38fa4b",
-        "owner_id": "global_bible_initiative",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/38fa4be736b9bab9",
         "last_verified": "2026-09-25"
     },
     {
@@ -530,7 +380,8 @@
         "owner_id": "bridge_connectivity_solutions",
         "license": "unknown",
         "url": "https://find.bible/bibles/HINOHB/",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "HOYWFW",
@@ -545,14 +396,8 @@
         "owner_id": "croatian_bible_society",
         "license": "unknown",
         "url": "https://app.library.bible/content/237997b8dab43975",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "hwo_the_seed_company_0574f6",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0574f6c96804cf47",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "hwo_the_seed_company_0574f6",
@@ -565,31 +410,9 @@
     {
         "translation_id": "ind_the_our_language_2dd568",
         "owner_id": "the_our_language_bible_organization",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/2dd568eeff29fb3c",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "ind_the_our_language_2dd568",
-        "owner_id": "the_our_language_bible_organization",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "ITAD85",
-        "owner_id": "public_domain",
-        "type": "text",
-        "license": "public",
-        "url": "https://app.library.bible/content/41f25b97f468e10b",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "jnj_the_word_for_0b8693",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0b869355f930f554",
         "last_verified": "2026-09-25"
     },
     {
@@ -603,13 +426,6 @@
     {
         "translation_id": "JUYWFW",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/JUYWFW/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "JUYWFW",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -618,21 +434,6 @@
     {
         "translation_id": "kan_biblica_inc_08389f",
         "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/08389f036844c2de",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "kan_biblica_inc_08389f",
-        "owner_id": "biblica_inc",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "KANOKV",
-        "owner_id": "bridge_connectivity_solutions_pvt_ltd",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -649,23 +450,9 @@
     {
         "translation_id": "KFCWFW",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/KFCWFW/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "KFCWFW",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "KFFWFW",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/KFFWFW/",
         "last_verified": "2026-09-25"
     },
     {
@@ -690,13 +477,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "klg_wycliffe_bible_translators_35e45e",
-        "owner_id": "wycliffe_bible_translators_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/35e45eb48e8d8642",
         "last_verified": "2026-09-25"
     },
     {
@@ -728,7 +508,8 @@
         "owner_id": "far_east_broadcasting_company",
         "license": "unknown",
         "url": "https://app.library.bible/content/15a813fef7fefb05",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "KXVWFW",
@@ -749,31 +530,9 @@
     {
         "translation_id": "lth_wycliffe_bible_translators_2d75eb",
         "owner_id": "wycliffe_bible_translators_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/2d75eb8fe5beaceb",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "lth_wycliffe_bible_translators_2d75eb",
-        "owner_id": "wycliffe_bible_translators_inc",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "MALTBK",
-        "owner_id": "the_free_bible_foundation",
-        "type": "text",
-        "license": "cc-by",
-        "url": "https://creativecommons.org/licenses/by/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "mar_biblica_inc_1c825c",
-        "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/1c825c8591183bb0",
         "last_verified": "2026-09-25"
     },
     {
@@ -795,23 +554,9 @@
     {
         "translation_id": "mbu_the_seed_company_3109e7",
         "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/3109e777c3c9485a",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "mbu_the_seed_company_3109e7",
-        "owner_id": "the_seed_company",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "mdy_bible_society_of_385573",
-        "owner_id": "bible_society_of_ethiopia",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/385573d4ba3ff72a",
         "last_verified": "2026-09-25"
     },
     {
@@ -827,14 +572,8 @@
         "owner_id": "bible_society_of_ethiopia",
         "license": "unknown",
         "url": "https://find.bible/bibles/MDYBSE/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "mfm_the_seed_company_0de04e",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0de04e26388bb8c9",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "mfm_the_seed_company_0de04e",
@@ -842,13 +581,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "mfo_the_seed_company_2c04dc",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/2c04dc4efd036ce7",
         "last_verified": "2026-09-25"
     },
     {
@@ -862,23 +594,9 @@
     {
         "translation_id": "mfx_the_word_for_1de321",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/1de321d5a85fcaee",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "mfx_the_word_for_1de321",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "mfx_the_word_for_317070",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/317070e47ddf1f4e",
         "last_verified": "2026-09-25"
     },
     {
@@ -903,13 +621,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "mri_bible_society_new_23a2ee",
-        "owner_id": "bible_society_new_zealand_charitable_trust",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/23a2ee55dfbc892c",
         "last_verified": "2026-09-25"
     },
     {
@@ -949,21 +660,16 @@
         "owner_id": "global_bible_initiative",
         "license": "unknown",
         "url": "https://app.library.bible/content/218a7789e72a7d00",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "MYAMSB",
         "owner_id": "global_bible_initiative",
         "license": "unknown",
         "url": "https://find.bible/bibles/MYAMSB/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "nde_biblica_inc_0de391",
-        "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0de391111a4cac1e",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "nde_biblica_inc_0de391",
@@ -986,28 +692,24 @@
         "owner_id": "the_word_for_the_world_international",
         "license": "unknown",
         "url": "https://app.library.bible/content/324f457845cb5d21",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "NGPNNT",
         "owner_id": "the_word_for_the_world_international",
         "license": "unknown",
         "url": "https://find.bible/bibles/NGPNNT/",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "NHOTCT",
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://find.bible/bibles/NHOTCT/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "nit_the_word_for_067286",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0672868a4bdc7281",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "nit_the_word_for_067286",
@@ -1027,24 +729,10 @@
     },
     {
         "translation_id": "nme_bridge_connectivity_solutions_067bdf",
-        "owner_id": "bridge_connectivity_solutions",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/067bdfb7336cd686",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "nme_bridge_connectivity_solutions_067bdf",
         "owner_id": "bridge_connectivity_solutions_pvt_ltd",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "nnq_the_word_for_31c113",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/31c1130475000445",
         "last_verified": "2026-09-25"
     },
     {
@@ -1060,14 +748,8 @@
         "owner_id": "the_word_for_the_world_international",
         "license": "unknown",
         "url": "https://find.bible/bibles/NNQPBT/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "nob_biblica_inc_246ad9",
-        "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/246ad95eade0d0a1",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "nob_biblica_inc_246ad9",
@@ -1075,13 +757,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "omb_pioneer_bible_translators_1f0fb3",
-        "owner_id": "pioneer_bible_translators",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/1f0fb3b67c603710",
         "last_verified": "2026-09-25"
     },
     {
@@ -1097,14 +772,8 @@
         "owner_id": "bridge_connectivity_solutions",
         "license": "unknown",
         "url": "https://find.bible/bibles/ORIOOB/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "ory_bridge_connectivity_solutions_03e08e",
-        "owner_id": "bridge_connectivity_solutions",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/03e08e889c768aa7",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "ory_bridge_connectivity_solutions_03e08e",
@@ -1112,13 +781,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "oyd_the_word_for_1468fe",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/1468fe84d36e75bf",
         "last_verified": "2026-09-25"
     },
     {
@@ -1140,23 +802,9 @@
     {
         "translation_id": "pga_pioneer_bible_translators_30dbb5",
         "owner_id": "pioneer_bible_translators",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/30dbb59c0d561d29",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "pga_pioneer_bible_translators_30dbb5",
-        "owner_id": "pioneer_bible_translators",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/](https://creativecommons.org/licenses/by-sa/4.0/)/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "plj_the_seed_company_0ae49e",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0ae49e1d4d276551",
         "last_verified": "2026-09-25"
     },
     {
@@ -1172,28 +820,24 @@
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://find.bible/bibles/POLUBG/",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "poy_the_word_for_355792",
         "owner_id": "the_word_for_the_world_international",
         "license": "unknown",
         "url": "https://app.library.bible/content/355792a03079ccdd",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "POYPNT",
         "owner_id": "the_word_for_the_world_international",
         "license": "unknown",
         "url": "https://find.bible/bibles/POYPNT/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "pwr_the_word_for_2c42bb",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/2c42bb3d1b8a3f1c",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "pwr_the_word_for_2c42bb",
@@ -1201,13 +845,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "rmn_the_word_for_0a0927",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0a0927a2e4c58318",
         "last_verified": "2026-09-25"
     },
     {
@@ -1220,29 +857,6 @@
     },
     {
         "translation_id": "san_sanskritbible_in_0b07fc",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0b07fcef627a2db2",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "san_sanskritbible_in_0b07fc",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANASB",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANBSB",
         "owner_id": "sanskritbible_in",
         "type": "text",
         "license": "cc-by-sa",
@@ -1258,213 +872,6 @@
         "last_verified": "2026-09-25"
     },
     {
-        "translation_id": "SANCSB",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANDSB",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANGSB",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANIAST",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SANIAST/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANIAST",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANINT",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANISO",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANKNT",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANKSB",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANMSB",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SANMSB/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANMSB",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANONT",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANPSB",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SANPSB/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANPSB",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANSIN",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SANSIN/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANSIN",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANTEL",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANTHA",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SANTHA/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANTHA",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANTNT",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SANTNT/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANTNT",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANTSB",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SANTSB/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANTSB",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANUNT",
-        "owner_id": "sanskritbible_in",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SANUNT/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANUNT",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SANVNT",
-        "owner_id": "sanskritbible_in",
-        "type": "text",
-        "license": "cc-by-sa",
-        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SAVWBT",
-        "owner_id": "wycliffe_bible_translators_inc",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SAVWBT/",
-        "last_verified": "2026-09-25"
-    },
-    {
         "translation_id": "SAVWBT",
         "owner_id": "wycliffe_bible_translators_inc",
         "type": "text",
@@ -1475,23 +882,9 @@
     {
         "translation_id": "sby_the_word_for_31ce26",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/31ce26b5803b75dd",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "sby_the_word_for_31ce26",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SBY1567",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SBY1567/",
         "last_verified": "2026-09-25"
     },
     {
@@ -1505,24 +898,9 @@
     {
         "translation_id": "sle_the_word_for_239e3e",
         "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/239e3e9e3b8aac2e",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "sle_the_word_for_239e3e",
-        "owner_id": "the_word_for_the_world_international",
         "type": "text",
         "license": "cc-by",
         "url": "https://creativecommons.org/licenses/by/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SPARV09",
-        "owner_id": "public_domain",
-        "type": "text",
-        "license": "public",
-        "url": "https://app.library.bible/content/592420522e16049f",
         "last_verified": "2026-09-25"
     },
     {
@@ -1536,30 +914,9 @@
     {
         "translation_id": "SPMPBT",
         "owner_id": "pioneer_bible_translators",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SPMPBT/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SPMPBT",
-        "owner_id": "pioneer_bible_translators",
         "type": "text",
         "license": "cc-by-nc-nd",
         "url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SRPVDS",
-        "owner_id": "ebible_org",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SRPVDS/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "SUSAPB",
-        "owner_id": "pioneer_bible_translators",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/SUSAPB/",
         "last_verified": "2026-09-25"
     },
     {
@@ -1573,13 +930,6 @@
     {
         "translation_id": "swh_biblica_inc_0cd52d",
         "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0cd52ddc726e2ee6",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "swh_biblica_inc_0cd52d",
-        "owner_id": "biblica_inc",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
@@ -1588,23 +938,9 @@
     {
         "translation_id": "tam_biblica_inc_032ec2",
         "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/032ec262506b719f",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "tam_biblica_inc_032ec2",
-        "owner_id": "biblica_inc",
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "TAMOTB",
-        "owner_id": "bridge_connectivity_solutions",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/TAMOTB/",
         "last_verified": "2026-09-25"
     },
     {
@@ -1644,14 +980,8 @@
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://find.bible/bibles/THAKJV/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "tkr_institute_for_bible_00cdf9",
-        "owner_id": "institute_for_bible_translation_russia",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/00cdf9001d68edfa",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "tkr_institute_for_bible_00cdf9",
@@ -1659,13 +989,6 @@
         "type": "text",
         "license": "cc-by-nd",
         "url": "https://creativecommons.org/licenses/by-nd/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "TODPBT",
-        "owner_id": "pioneer_bible_translators",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/TODPBT/",
         "last_verified": "2026-09-25"
     },
     {
@@ -1681,21 +1004,16 @@
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/25210406001d9aae",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "tur_ebible_org_085def",
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/085defac6e17b9eb",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "TVTWFW",
-        "owner_id": "the_word_for_the_world_international",
-        "license": "unknown",
-        "url": "https://find.bible/bibles/TVTWFW/",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "TVTWFW",
@@ -1703,13 +1021,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "twi_biblica_inc_18f6cf",
-        "owner_id": "biblica_inc",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/18f6cf27f7b43297",
         "last_verified": "2026-09-25"
     },
     {
@@ -1733,14 +1044,16 @@
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/2a1480cfb6f181d7",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "urd_ebible_org_4b2019",
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/4b2019a039084853",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "URWPBT",
@@ -1748,13 +1061,6 @@
         "type": "text",
         "license": "cc-by-sa",
         "url": "https://creativecommons.org/licenses/by-sa/4.0/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "utr_the_seed_company_107c0b",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/107c0b030eea6ace",
         "last_verified": "2026-09-25"
     },
     {
@@ -1770,14 +1076,8 @@
         "owner_id": "ebible_org",
         "license": "unknown",
         "url": "https://app.library.bible/content/1b878de073afef07",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "yaf_the_seed_company_0f8cde",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/0f8cdef1ba2120a5",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "yaf_the_seed_company_0f8cde",
@@ -1800,14 +1100,8 @@
         "owner_id": "wycliffe_bible_translators_inc",
         "license": "unknown",
         "url": "https://find.bible/bibles/YMLWBT/",
-        "last_verified": "2026-09-25"
-    },
-    {
-        "translation_id": "yns_the_seed_company_23b95e",
-        "owner_id": "the_seed_company",
-        "license": "unknown",
-        "url": "https://app.library.bible/content/23b95e51ae5ff242",
-        "last_verified": "2026-09-25"
+        "last_verified": "2026-09-25",
+        "type": "text"
     },
     {
         "translation_id": "yns_the_seed_company_23b95e",

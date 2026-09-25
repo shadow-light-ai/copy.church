@@ -57,9 +57,10 @@ async function fetch_json<T>(url:string, headers:Record<string, string> = {}):Pr
 }
 
 function upsert_by_id<T extends {id:string}>(list:T[], item:T):void{
+    // Full replace, not a merge — so fields removed from the schema don't linger from old runs
     const i = list.findIndex(x => x.id === item.id)
     if (i === -1) list.push(item)
-    else list[i] = {...list[i], ...item}
+    else list[i] = item
 }
 
 function get_or_create_owner(owners:Owner[], name:string):string{
@@ -70,7 +71,33 @@ function get_or_create_owner(owners:Owner[], name:string):string{
     return id
 }
 
+function owner_id_for(owners:Owner[], attribution:string):string{
+    // "public domain" (or a blank attribution) isn't a rights holder — don't invent a fake owner
+    // for it, just leave the license terms owner as 'unknown'
+    const name = attribution.trim()
+    if (!name || /^public domain$/i.test(name)) return 'unknown'
+    return get_or_create_owner(owners, name)
+}
+
+function upsert_license_terms(list:LicenseTerms[], item:LicenseTerms):void{
+    // Key on translation_id + type — replaces a stale/unknown entry rather than duplicating it
+    const i = list.findIndex(x => x.translation_id === item.translation_id && x.type === item.type)
+    if (i === -1) list.push(item)
+    else list[i] = item
+}
+
 const today = ():string => new Date().toISOString().slice(0, 10)
+
+// Corporate/organizational copyright generally runs 95 years from publication — well past that,
+// there's no live rights holder left to hold accountable, so these aren't worth tracking here.
+// Modern intentional public-domain releases (e.g. the Berean Standard Bible) are unaffected, since
+// they're recent and this filter only looks at age.
+const PUBLIC_DOMAIN_AGE_YEARS = 95
+
+function too_old_for_copyright(translation:Translation):boolean{
+    if (!translation.latest_year) return false  // unknown year — don't assume
+    return new Date().getFullYear() - translation.latest_year > PUBLIC_DOMAIN_AGE_YEARS
+}
 
 
 // ---- license detection (ported from fetch.bible's collector/src/parts/license.ts) ----
@@ -200,17 +227,17 @@ async function pull_fetch_bible(
         const entry = by_dbl_uid.get(dbl_uid)
         if (!entry) continue
 
-        // Already have license terms for this translation? Don't overwrite.
-        if (license_terms.some(lt => lt.translation_id === translation.id && lt.type === 'text'))
-            continue
+        // Already have a real (non-'unknown') license for this translation? Don't overwrite.
+        const existing = license_terms.find(
+            lt => lt.translation_id === translation.id && lt.type === 'text')
+        if (existing && existing.license !== 'unknown') continue
 
         const license = entry.copyright.licenses[0]
         if (!license) continue
 
-        const owner_name = entry.copyright.attribution || 'Unknown'
-        const owner_id = get_or_create_owner(owners, owner_name)
+        const owner_id = owner_id_for(owners, entry.copyright.attribution)
 
-        license_terms.push({
+        upsert_license_terms(license_terms, {
             translation_id: translation.id,
             owner_id,
             type: 'text',
@@ -275,8 +302,8 @@ async function fetch_dbl_open_access_entries():Promise<DblContentEntry[]>{
 
 async function pull_dbl(
         translations:Translation[], owners:Owner[], license_terms:LicenseTerms[]):Promise<void>{
-    const candidates = translations.filter(t =>
-        t.external_ids.dbl && !license_terms.some(lt => lt.translation_id === t.id))
+    const candidates = translations.filter(t => t.external_ids.dbl && !license_terms.some(
+        lt => lt.translation_id === t.id && lt.type === 'text' && lt.license !== 'unknown'))
     if (!candidates.length){
         console.info('DBL: nothing left needing a lookup, skipping')
         return
@@ -310,10 +337,10 @@ async function pull_dbl(
         const detected = license_from_text(entry.copyrightStatement ?? '')
         if (!detected) continue
 
-        const owner_name = entry.primaryLicensorOrg?.name || entry.providedByOrg?.name || 'Unknown'
-        const owner_id = get_or_create_owner(owners, owner_name)
+        const owner_name = entry.primaryLicensorOrg?.name || entry.providedByOrg?.name || ''
+        const owner_id = owner_id_for(owners, owner_name)
 
-        license_terms.push({
+        upsert_license_terms(license_terms, {
             translation_id: translation.id,
             owner_id,
             type: 'text',
@@ -330,13 +357,58 @@ async function pull_dbl(
 // ---- main ----
 
 async function main():Promise<void>{
-    const translations = load_json<Translation[]>('translations.json')
-    const owners = load_json<Owner[]>('owners.json')
+    let translations = load_json<Translation[]>('translations.json')
+    let owners = load_json<Owner[]>('owners.json')
     const license_terms = load_json<LicenseTerms[]>('license_terms.json')
+
+    // Older manually-seeded entries predate the 'type' field — treat them as 'text' (the only
+    // kind ever pulled by hand) so the dedup logic above can recognize and replace them
+    for (const lt of license_terms){
+        if (!('type' in lt)) (lt as LicenseTerms).type = 'text'
+    }
+
+    // One-off fix: strip fields dropped from the Translation type that can otherwise linger on
+    // entries never touched by pull_find_bible (translations sourced only from DBL, not find.bible)
+    for (const t of translations){
+        delete (t as Record<string, unknown>)['scope']
+        delete (t as Record<string, unknown>)['owner_id']
+    }
+
+    // One-off fix: an earlier run of this script invented a fake "Public domain" owner instead
+    // of using owner_id_for()'s 'unknown' fallback — point those rows at 'unknown' instead
+    for (const lt of license_terms){
+        if (lt.owner_id === 'public_domain') lt.owner_id = 'unknown'
+    }
+    owners = owners.filter(o => o.id !== 'public_domain')
+
+    // One-off fix: the 'type' migration above can turn a legacy 'unknown' row and an already-added
+    // real one into two rows with the same (translation_id, type) — collapse them, preferring
+    // whichever has a real license
+    const best_by_key = new Map<string, LicenseTerms>()
+    for (const lt of license_terms){
+        const key = `${lt.translation_id}\0${lt.type}`
+        const current = best_by_key.get(key)
+        if (!current || (current.license === 'unknown' && lt.license !== 'unknown'))
+            best_by_key.set(key, lt)
+    }
+    license_terms.length = 0
+    license_terms.push(...best_by_key.values())
 
     await pull_find_bible(translations)
     await pull_fetch_bible(translations, owners, license_terms)
     await pull_dbl(translations, owners, license_terms)
+
+    // Drop translations too old to have a live rights holder (see PUBLIC_DOMAIN_AGE_YEARS above)
+    const excluded_ids = new Set(
+        translations.filter(too_old_for_copyright).map(t => t.id))
+    if (excluded_ids.size){
+        translations = translations.filter(t => !excluded_ids.has(t.id))
+        for (let i = license_terms.length - 1; i >= 0; i--){
+            if (excluded_ids.has(license_terms[i]!.translation_id)) license_terms.splice(i, 1)
+        }
+    }
+    console.info(`Excluded ${excluded_ids.size} translations too old for copyright `
+        + `(published more than ${PUBLIC_DOMAIN_AGE_YEARS} years ago)`)
 
     translations.sort((a, b) => a.id.localeCompare(b.id))
     owners.sort((a, b) => a.id.localeCompare(b.id))
