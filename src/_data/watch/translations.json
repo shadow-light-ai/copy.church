@@ -12370,6 +12370,18 @@
         "info_url": "https://find.bible/bibles/ENGKJ2/"
     },
     {
+        "id": "ENGKJV",
+        "name": "King James Version",
+        "abbrev": "ENGKJV",
+        "language": "eng",
+        "latest_year": 1611,
+        "external_ids": {
+            "find_bible": "ENGKJV",
+            "dbl": "de4e12af7f28f599"
+        },
+        "info_url": "https://find.bible/bibles/ENGKJV/"
+    },
+    {
         "id": "ENGKTV",
         "name": "Knox's Translation of the Vulgate",
         "abbrev": "ENGKTV",

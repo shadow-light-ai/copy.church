@@ -45,9 +45,15 @@ function save_json(name:string, data:unknown):void{
     writeFileSync(new URL(name, DATA_DIR), JSON.stringify(data, null, 4) + '\n')
 }
 
+// Legal-entity suffixes to ignore when turning an owner name into an id, so e.g. "Bridge
+// Connectivity Solutions" and "Bridge Connectivity Solutions Pvt. Ltd." collapse to one owner
+const ORG_SUFFIX_RE =
+    /,?\s*\b(pvt\.?\s*ltd\.?|ltd\.?|llc\.?|inc\.?|corp\.?|corporation|gmbh|plc\.?|s\.a\.?|e\.?\s*v\.?)\s*$/i
+
 function slugify(name:string):string{
     // Turn an owner display name into a stable, url-safe id
-    return name.toLowerCase().trim().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '')
+    const stripped = name.replace(ORG_SUFFIX_RE, '').trim()
+    return stripped.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '')
 }
 
 async function fetch_json<T>(url:string, headers:Record<string, string> = {}):Promise<T>{
@@ -81,7 +87,13 @@ const today = ():string => new Date().toISOString().slice(0, 10)
 // they're recent and this filter only looks at age.
 const PUBLIC_DOMAIN_AGE_YEARS = 95
 
+// Exceptions to the age filter — translations old enough to trip it but with a known, real
+// copyright holder anyway. The King James Version text is still under perpetual English Crown
+// copyright (administered via Cambridge University Press) despite being from 1611.
+const KEEP_DESPITE_AGE = new Set(['ENGKJV'])
+
 function too_old_for_copyright(translation:Translation):boolean{
+    if (KEEP_DESPITE_AGE.has(translation.id)) return false
     if (!translation.latest_year) return false  // unknown year — don't assume
     return new Date().getFullYear() - translation.latest_year > PUBLIC_DOMAIN_AGE_YEARS
 }
