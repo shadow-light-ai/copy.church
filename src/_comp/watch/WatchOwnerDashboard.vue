@@ -15,10 +15,12 @@ div.watch_dashboard_wrap
 
     div.controls
         div.sort_toggle
+            button(:class='{active: sort_mode === "total"}' @click='sort_mode = "total"')
+                | Total translations
             button(:class='{active: sort_mode === "count"}' @click='sort_mode = "count"')
-                | Most restricted
+                | Restricted translations
             button(:class='{active: sort_mode === "pct"}' @click='sort_mode = "pct"')
-                | Highest % restricted
+                | Percent restricted
 
     p.legend
         span.legend_item: span.swatch.open
@@ -128,12 +130,19 @@ const stats = computed(() => {
     }
 })
 
-// Ranking control — by raw restricted count, or by restricted share of an owner's catalogue
-const sort_mode = ref<'count' | 'pct'>('count')
+// Ranking control — by total tracked, by raw restricted count, or by restricted share
+const sort_mode = ref<'total' | 'count' | 'pct'>('count')
 
-const ranked = computed(() => [...owner_rows].sort((a, b) => sort_mode.value === 'count'
-    ? (b.restricted - a.restricted) || (b.restricted_pct - a.restricted_pct)
-    : (b.restricted_pct - a.restricted_pct) || (b.restricted - a.restricted)))
+const sorters = {
+    total: (a:typeof owner_rows[0], b:typeof owner_rows[0]) =>
+        (b.tracked - a.tracked) || (b.restricted - a.restricted),
+    count: (a:typeof owner_rows[0], b:typeof owner_rows[0]) =>
+        (b.restricted - a.restricted) || (b.restricted_pct - a.restricted_pct),
+    pct: (a:typeof owner_rows[0], b:typeof owner_rows[0]) =>
+        (b.restricted_pct - a.restricted_pct) || (b.restricted - a.restricted),
+}
+
+const ranked = computed(() => [...owner_rows].sort(sorters[sort_mode.value]))
 
 </script>
 
@@ -172,6 +181,7 @@ const ranked = computed(() => [...owner_rows].sort((a, b) => sort_mode.value ===
 
     .sort_toggle
         display: flex
+        flex-wrap: wrap
         gap: 6px
 
         button
