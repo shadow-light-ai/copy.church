@@ -196,7 +196,9 @@ interface FetchBibleEntry {
     name:{english:string, english_abbrev:string}
     year:number
     copyright:{
-        licenses:{license:string, url:string}[]
+        // 'license' is a standard license key string, or an inline restrictions object for a
+        // translation whose terms don't match any of the standard ones — treat that as 'custom'
+        licenses:{license:string|Record<string, unknown>, url:string}[]
         attribution:string
         attribution_url:string
     }
@@ -207,37 +209,61 @@ async function pull_fetch_bible(
     console.info('Fetching fetch.bible manifest...')
     const manifest = await fetch_json<{bibles:Record<string, FetchBibleEntry>}>(FETCH_BIBLE_MANIFEST)
 
-    // fetch.bible's own ids don't correspond to find.bible ids, so match via the DBL uid embedded
-    // in each entry's attribution_url (both reference the same underlying DBL content-entry uid)
-    const by_dbl_uid = new Map<string, FetchBibleEntry>()
-    for (const entry of Object.values(manifest.bibles)){
-        const uid_match = /([0-9a-f]{16})/.exec(entry.copyright.attribution_url)
-        if (uid_match) by_dbl_uid.set(uid_match[1]!, entry)
-    }
+    // Match to an existing find.bible translation via the DBL uid embedded in attribution_url
+    // (both reference the same underlying DBL content-entry uid), when there is one
+    const translation_id_by_dbl_uid = new Map(
+        translations.filter(t => t.external_ids.dbl).map(t => [t.external_ids.dbl!, t.id]))
 
-    let matched = 0
-    for (const translation of translations){
-        const dbl_uid = translation.external_ids.dbl
-        if (!dbl_uid) continue
-        const entry = by_dbl_uid.get(dbl_uid)
-        if (!entry) continue
-
+    let enriched = 0
+    let created = 0
+    for (const [fb_id, entry] of Object.entries(manifest.bibles)){
         const license = entry.copyright.licenses[0]
         if (!license) continue
 
+        const attribution_url = entry.copyright.attribution_url
+        const dbl_uid = /([0-9a-f]{16})/.exec(attribution_url)?.[1]
+        let translation_id = dbl_uid && translation_id_by_dbl_uid.get(dbl_uid)
+
+        if (!translation_id){
+            // Not already in our find.bible-sourced list — add it directly from fetch.bible's own
+            // data instead. This is how eBible-sourced translations get included without us
+            // consulting eBible ourselves: fetch.bible already did that aggregation for us.
+            // fetch.bible's own ids are `<language code>_<org abbrev>`, so the language is free.
+            const ebible_id = /ebible\.org\/Scriptures\/details\.php\?id=([\w-]+)/
+                .exec(attribution_url)?.[1]
+
+            translations.push({
+                id: fb_id,
+                name: entry.name.english || fb_id,
+                abbrev: entry.name.english_abbrev || fb_id,
+                language: fb_id.split('_')[0]!,
+                latest_year: entry.year || 0,
+                external_ids: {
+                    ...(dbl_uid ? {dbl: dbl_uid} : {}),
+                    ...(ebible_id ? {ebible: ebible_id} : {}),
+                },
+                info_url: attribution_url,
+            })
+            translation_id = fb_id
+            created += 1
+        } else {
+            enriched += 1
+        }
+
         const owner_id = owner_id_for(owners, entry.copyright.attribution)
+        const license_value = typeof license.license === 'string' ? license.license : 'custom'
 
         license_terms.push({
-            translation_id: translation.id,
+            translation_id,
             owner_id,
             type: 'text',
-            license: license.license,
+            license: license_value,
             url: license.url,
             last_verified: today(),
         })
-        matched += 1
     }
-    console.info(`fetch.bible: added license terms for ${matched} translations`)
+    console.info(`fetch.bible: enriched ${enriched} existing translations, `
+        + `added ${created} new translations — both now have license terms`)
 }
 
 

@@ -1,35 +1,1343 @@
 [
     {
+        "id": "alan_bunning_center_for_new_testament_restoration",
+        "name": "Alan Bunning / Center for New Testament Restoration"
+    },
+    {
+        "id": "anonymous",
+        "name": "Anonymous"
+    },
+    {
+        "id": "artists_for_israel_international",
+        "name": "Artists for Israel International"
+    },
+    {
         "id": "beyond_translation",
         "name": "Beyond Translation"
+    },
+    {
+        "id": "bib_sen_an",
+        "name": "Bib Sen An"
     },
     {
         "id": "bible_society_in_guinea_conakry",
         "name": "Bible Society in Guinea-Conakry"
     },
     {
+        "id": "bible_society_new_zealand_charitable_trust",
+        "name": "Bible Society New Zealand Charitable Trust"
+    },
+    {
+        "id": "bible_society_of_ethiopia",
+        "name": "Bible Society of Ethiopia"
+    },
+    {
+        "id": "bible_society_of_honduras",
+        "name": "Bible Society of Honduras"
+    },
+    {
         "id": "bible_society_of_myanmar",
         "name": "Bible Society of Myanmar"
+    },
+    {
+        "id": "bible_society_of_the_south_pacific",
+        "name": "Bible Society of the South Pacific"
+    },
+    {
+        "id": "bible_society_of_uganda",
+        "name": "Bible Society of Uganda"
+    },
+    {
+        "id": "biblica",
+        "name": "Biblica, Inc."
     },
     {
         "id": "bridge_connectivity_solutions",
         "name": "Bridge Connectivity Solutions Pvt. Ltd."
     },
     {
+        "id": "bsb_publishing",
+        "name": "BSB Publishing, LLC"
+    },
+    {
+        "id": "bukavu_mashi_and_other_kivu_languages_bible",
+        "name": "BUKAVU Mashi and other Kivu Languages Bible"
+    },
+    {
+        "id": "chutney_media_agency_limited",
+        "name": "Chutney Media Agency Limited"
+    },
+    {
+        "id": "copyright_1882_1983_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1882-1983 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1927_2009_wycliffe_bible_translators",
+        "name": "Copyright © 1927, 2009 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1947_1997_2011_2016_2018_wycliffe_bible_translators",
+        "name": "Copyright © 1947, 1997, 2011, 2016, 2018 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1951_genfer_bibelgeschellschaft_geneva_bible_society",
+        "name": "Copyright © 1951 Genfer Bibelgeschellschaft (Geneva Bible Society)"
+    },
+    {
+        "id": "copyright_1951_wycliffe_bible_translators",
+        "name": "Copyright © 1951 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1959_1973_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1959-1973 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1960_wycliffe_bible_translators",
+        "name": "Copyright © 1960 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1962_2003_united_bible_societies",
+        "name": "Copyright © 1962, 2003 United Bible Societies"
+    },
+    {
+        "id": "copyright_1964_1982_1994_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1964, 1982, 1994 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1969_2008_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1969–2008 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1970_wycliffe_bible_translators",
+        "name": "Copyright © 1970 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1971_wycliffe_bible_translators",
+        "name": "Copyright © 1971 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1972_wycliffe_bible_translators",
+        "name": "Copyright © 1972 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1973_1980_1987_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1973, 1980, 1987 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1973_1986_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1973, 1986 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1973_wycliffe_bible_translators",
+        "name": "Copyright © 1973 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1974_1997_wycliffe_bible_translators",
+        "name": "Copyright © 1974, 1997 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1974_2004_wycliffe_bible_translators",
+        "name": "Copyright © 1974, 2004 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1974_biblica",
+        "name": "Copyright © 1974 Biblica"
+    },
+    {
+        "id": "copyright_1974_wycliffe_bible_translators",
+        "name": "Copyright © 1974 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1975_1983_1990_rev_dr_allen_harry_hall_and_jollen_press",
+        "name": "Copyright © 1975, 1983, 1990 Rev. Dr. Allen Harry Hall and Jollen Press"
+    },
+    {
+        "id": "copyright_1975_1999_wycliffe_bible_translators",
+        "name": "Copyright © 1975, 1999 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1975_2001_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1975, 2001 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1975_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1975 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1975_wycliffe_bible_translators",
+        "name": "Copyright © 1975 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1976_1993_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1976, 1993 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1976_wycliffe_bible_translators",
+        "name": "Copyright © 1976 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1977_2021_wycliffe_bible_translators",
+        "name": "Copyright © 1977-2021 Wycliffe Bible Translators"
+    },
+    {
+        "id": "copyright_1977_wycliffe_bible_translators",
+        "name": "Copyright © 1977 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1978_2011_wycliffe_bible_translators",
+        "name": "Copyright © 1978, 2011 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1978_bible_society_of_australia",
+        "name": "Copyright © 1978 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_1978_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1978 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1978_wycliffe_bible_translators",
+        "name": "Copyright © 1978 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1979_1988_2009_la_liga_b_blica",
+        "name": "Copyright © 1979, 1988, 2009 La Liga Bíblica"
+    },
+    {
+        "id": "copyright_1979_1994_2005_2008_2009_2012_wycliffe_bible_translators",
+        "name": "Copyright © 1979, 1994, 2005, 2008, 2009, 2012 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1979_2008_society_for_international_ministries_kenya",
+        "name": "Copyright © 1979, 2008 Society for International Ministries -- Kenya"
+    },
+    {
+        "id": "copyright_1979_wycliffe_bible_translators",
+        "name": "Copyright © 1979 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1980_2004_lutheran_bible_translators",
+        "name": "Copyright © 1980, 2004 Lutheran Bible Translators"
+    },
+    {
+        "id": "copyright_1980_2010_wycliffe_bible_translators",
+        "name": "Copyright © 1980-2010 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1980_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1980 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1980_wycliffe_bible_translators",
+        "name": "Copyright © 1980 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1981_la_liga_b_blica",
+        "name": "Copyright © 1981 La Liga Bíblica"
+    },
+    {
+        "id": "copyright_1981_wycliffe_bible_translators",
+        "name": "Copyright © 1981 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1982_wycliffe_bible_translators",
+        "name": "Copyright © 1982 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1983_1991_2002_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1983, 1991, 2002 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1983_2001_2017_wycliffe_bible_translators",
+        "name": "Copyright © 1983, 2001, 2017 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1983_2003_wycliffe_bible_translators",
+        "name": "Copyright © 1983, 2003 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1983_2011_biblica",
+        "name": "Copyright © 1983, 2011 Biblica"
+    },
+    {
+        "id": "copyright_1983_wycliffe_bible_translators",
+        "name": "Copyright © 1983 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1984_1988_wycliffe_bible_translators",
+        "name": "Copyright © 1984, 1988 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1984_1989_1991_2001_liebenzel_mission",
+        "name": "Copyright © 1984, 1989, 1991, 2001 Liebenzel Mission"
+    },
+    {
+        "id": "copyright_1984_2023_wycliffe_bible_translators",
+        "name": "Copyright © 1984, 2023 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1984_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1984 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1984_wycliffe_bible_translators",
+        "name": "Copyright © 1984 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1985_2011_2014_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1985, 2011, 2014 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1985_2014_wycliffe_bible_translators_inc_and_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1985, 2014 Wycliffe Bible Translators, Inc. and Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1985_wycliffe_bible_translators",
+        "name": "Copyright © 1985 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1986_1989_wycliffe_bible_translators",
+        "name": "Copyright © 1986-1989 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1986_wycliffe_bible_translators",
+        "name": "Copyright © 1986 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1987_2001_wycliffe_bible_translators",
+        "name": "Copyright © 1987, 2001 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1987_wycliffe_bible_translators",
+        "name": "Copyright © 1987 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1988_wycliffe_bible_translators",
+        "name": "Copyright © 1988 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1989_2002_wycliffe_bible_translators",
+        "name": "Copyright © 1989, 2002 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1989_2017_bible_society_of_australia",
+        "name": "Copyright © 1989, 2017 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_1989_wycliffe_bible_translators",
+        "name": "Copyright © 1989 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1990_1992_wycliffe_bible_translators",
+        "name": "Copyright © 1990, 1992 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1990_2005_2006_2015_2018_wycliffe_bible_translators",
+        "name": "Copyright © 1990, 2005, 2006, 2015, 2018 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1990_2009_wycliffe_bible_translators",
+        "name": "Copyright © 1990, 2009 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1990_wycliffe_bible_translators",
+        "name": "Copyright © 1990 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1991_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1991 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1991_wycliffe_bible_translators",
+        "name": "Copyright © 1991 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1992_2002_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1992, 2002 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1992_wycliffe_bible_translators",
+        "name": "Copyright © 1992 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1993_1994_wycliffe_bible_translators",
+        "name": "Copyright © 1993, 1994 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1993_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1993 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1993_wycliffe_bible_translators",
+        "name": "Copyright © 1993 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1994_2006_wycliffe_bible_translators",
+        "name": "Copyright © 1994, 2006 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1994_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1994 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1994_wycliffe_bible_translators",
+        "name": "Copyright © 1994 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1995_2011_wycliffe_bible_translators",
+        "name": "Copyright © 1995, 2011 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1995_bible_society_of_micronesia",
+        "name": "Copyright © 1995 Bible Society of Micronesia"
+    },
+    {
+        "id": "copyright_1995_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1995 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1995_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1995 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1995_wycliffe_bible_translators",
+        "name": "Copyright © 1995 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1996_2012_2013_2023_wycliffe_bible_translators_inc_and_evangel_bible_translators_international",
+        "name": "Copyright © 1996, 2012, 2013, 2023 Wycliffe Bible Translators, Inc. and Evangel Bible Translators, International"
+    },
+    {
+        "id": "copyright_1996_2014_the_kapingamarangi_bible_translation_committee",
+        "name": "Copyright © 1996, 2014 The Kapingamarangi Bible translation committee"
+    },
+    {
+        "id": "copyright_1996_2016_biblical_studies_press_l_l_c",
+        "name": "Copyright © 1996-2016 Biblical Studies Press, L. L. C."
+    },
+    {
+        "id": "copyright_1996_bob_jones_university",
+        "name": "Copyright © 1996 Bob Jones University"
+    },
+    {
+        "id": "copyright_1996_michael_paul_johnson",
+        "name": "Copyright © 1996 Michael Paul Johnson"
+    },
+    {
+        "id": "copyright_1996_papua_new_guinea_bible_translation_association",
+        "name": "Copyright © 1996 Papua New Guinea Bible Translation Association"
+    },
+    {
+        "id": "copyright_1996_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1996 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1996_wycliffe_bible_translators",
+        "name": "Copyright © 1996 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1997_2011_wycliffe_bible_translators",
+        "name": "Copyright © 1997, 2011 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1997_2018_wycliffe_bible_translators",
+        "name": "Copyright © 1997-2018 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1997_bible_society_of_australia",
+        "name": "Copyright © 1997 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_1997_the_bible_league",
+        "name": "Copyright © 1997 The Bible League"
+    },
+    {
+        "id": "copyright_1997_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1997 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1997_wycliffe_bible_translators",
+        "name": "Copyright © 1997 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1998_2011_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1998, 2011 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1998_2022_wycliffe_bible_translators",
+        "name": "Copyright © 1998-2022 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1998_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1998 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1998_canadian_bible_society",
+        "name": "Copyright © 1998 Canadian Bible Society"
+    },
+    {
+        "id": "copyright_1998_sdruzeni_pro_novou_bibli_kralickou",
+        "name": "Copyright © 1998 Sdruzeni pro Novou Bibli kralickou"
+    },
+    {
+        "id": "copyright_1998_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1998 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1998_wycliffe_bible_translators",
+        "name": "Copyright © 1998 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1999_2014_unit_bahasa_dan_budaya_kupang_ntt_indonesia",
+        "name": "Copyright © 1999-2014 Unit Bahasa dan Budaya, Kupang NTT, Indonesia"
+    },
+    {
+        "id": "copyright_1999_sim",
+        "name": "Copyright © 1999 SIM"
+    },
+    {
+        "id": "copyright_1999_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 1999 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_1999_wycliffe_bible_translators",
+        "name": "Copyright © 1999 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_1999_wycliffe_bible_translators_australian",
+        "name": "Copyright © 1999 Wycliffe Bible Translators Australian"
+    },
+    {
+        "id": "copyright_2000_2006_j_warren_wells",
+        "name": "Copyright © 2000-2006 J Warren Wells"
+    },
+    {
+        "id": "copyright_2000_lutheran_bible_translators_australia",
+        "name": "Copyright © 2000 Lutheran Bible Translators Australia"
+    },
+    {
+        "id": "copyright_2000_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2000 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2000_tom_hoey",
+        "name": "Copyright © 2000 Tom Hoey"
+    },
+    {
+        "id": "copyright_2000_wycliffe_bible_translators",
+        "name": "Copyright © 2000 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2001_2010_2011_2012_2013_2015_terry_noble",
+        "name": "Copyright © 2001,2010,2011,2012,2013,2015 Terry Noble"
+    },
+    {
+        "id": "copyright_2001_sim_international",
+        "name": "Copyright © 2001 SIM International"
+    },
+    {
+        "id": "copyright_2001_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2001 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2001_wycliffe_bible_translators",
+        "name": "Copyright © 2001 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2002_2011_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2002, 2011 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2002_2014_wycliffe_bible_translators",
+        "name": "Copyright © 2002-2014 Wycliffe Bible Translators"
+    },
+    {
+        "id": "copyright_2002_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2002 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2002_wycliffe_bible_translators",
+        "name": "Copyright © 2002 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2003_2004_2007_2008_2013_tim_penterjemah_bahasa_nggem_the_nggem_translation_team",
+        "name": "Copyright © 2003, 2004, 2007, 2008, 2013 Tim Penterjemah Bahasa Nggem (The Nggem Translation Team)"
+    },
+    {
+        "id": "copyright_2003_2004_wycliffe_bible_translators",
+        "name": "Copyright © 2003, 2004 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2003_canadian_bible_society",
+        "name": "Copyright © 2003 Canadian Bible Society"
+    },
+    {
+        "id": "copyright_2003_philip_pope",
+        "name": "Copyright © 2003 Philip Pope"
+    },
+    {
+        "id": "copyright_2003_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2003 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2003_the_bible_society_of_papua_new_guinea_in_cooperation_with_wycliffe_bible_translators",
+        "name": "Copyright © 2003 The Bible Society of Papua New Guinea in cooperation with Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2003_wycliffe_bible_translators",
+        "name": "Copyright © 2003 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2004_2010_2023_dr_humberto_g_mez_caballero",
+        "name": "Copyright © 2004, 2010, 2023 Dr. Humberto Gómez Caballero"
+    },
+    {
+        "id": "copyright_2004_2011_unit_bahasa_dan_budaya",
+        "name": "Copyright © 2004-2011 Unit Bahasa dan Budaya"
+    },
+    {
+        "id": "copyright_2004_lembaga_alkitab_indonesia",
+        "name": "Copyright © 2004 Lembaga Alkitab Indonesia"
+    },
+    {
+        "id": "copyright_2004_sim",
+        "name": "Copyright © 2004 SIM"
+    },
+    {
+        "id": "copyright_2004_unit_bahasa_dan_budaya",
+        "name": "Copyright © 2004 Unit Bahasa dan Budaya"
+    },
+    {
+        "id": "copyright_2004_wycliffe_bible_translators",
+        "name": "Copyright © 2004 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2005_2008_wycliffe_bible_translators",
+        "name": "Copyright © 2005-2008 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2005_2014_wycliffe_bible_translators",
+        "name": "Copyright © 2005, 2014 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2005_sim_international",
+        "name": "Copyright © 2005 SIM International"
+    },
+    {
+        "id": "copyright_2005_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2005 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2005_wycliffe_bible_translators",
+        "name": "Copyright © 2005 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2006_2008_2013_2016_2018_wycliffe_bible_translators",
+        "name": "Copyright © 2006, 2008, 2013, 2016, 2018 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2006_2015_2017_wycliffe_bible_translators",
+        "name": "Copyright © 2006, 2015, 2017 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2006_2023_the_bible_society_of_papua_new_guinea_and_wycliffe_bible_translators",
+        "name": "Copyright © 2006, 2023 The Bible Society of Papua New Guinea and Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2006_bible_society_of_australia",
+        "name": "Copyright © 2006 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_2006_bible_society_of_the_south_pacific",
+        "name": "Copyright © 2006 Bible Society of the South Pacific"
+    },
+    {
+        "id": "copyright_2006_sim_international",
+        "name": "Copyright © 2006 SIM International"
+    },
+    {
+        "id": "copyright_2006_wycliffe_bible_translators",
+        "name": "Copyright © 2006 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2007_2009_wycliffe_bible_translators",
+        "name": "Copyright © 2007-2009 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2007_2013_2017_2021_wycliffe_bible_translators",
+        "name": "Copyright © 2007, 2013, 2017, 2021 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2007_bible_society_of_australia",
+        "name": "Copyright © 2007 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_2007_bible_society_of_micronesia",
+        "name": "Copyright © 2007 Bible Society of Micronesia"
+    },
+    {
+        "id": "copyright_2007_sociedad_b_blica_de_guatemala",
+        "name": "Copyright © 2007 Sociedad Bíblica de Guatemala"
+    },
+    {
+        "id": "copyright_2007_unit_bahasa_dan_budaya",
+        "name": "Copyright © 2007 Unit Bahasa dan Budaya"
+    },
+    {
+        "id": "copyright_2007_wycliffe_bible_translators",
+        "name": "Copyright © 2007 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2008_2012_2020_png_bible_translation_association",
+        "name": "Copyright © 2008, 2012, 2020 PNG Bible Translation Association"
+    },
+    {
+        "id": "copyright_2008_2017_ellis_w_deibler_jr",
+        "name": "Copyright © 2008-2017 Ellis W. Deibler, Jr."
+    },
+    {
+        "id": "copyright_2008_2023_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2008-2023 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2008_2023_wycliffe_bible_translators",
+        "name": "Copyright © 2008-2023 Wycliffe Bible Translators"
+    },
+    {
+        "id": "copyright_2008_bible_society_of_australia",
+        "name": "Copyright © 2008 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_2008_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2008 Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2008_la_liga_b_blica",
+        "name": "Copyright © 2008 La Liga Bíblica"
+    },
+    {
+        "id": "copyright_2008_m_q_dd_s_kitab_sirk_ti",
+        "name": "Copyright © 2008 Müqəddəs Kitab Sirkəti"
+    },
+    {
+        "id": "copyright_2008_papua_new_guinea_bible_translation_association",
+        "name": "Copyright © 2008 Papua New Guinea Bible Translation Association, Inc."
+    },
+    {
+        "id": "copyright_2008_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2008 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2008_wycliffe_bible_translators",
+        "name": "Copyright © 2008 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2008_yayasan_sumber_sejahtera",
+        "name": "Copyright © 2008 Yayasan Sumber Sejahtera"
+    },
+    {
+        "id": "copyright_2009_2018_wycliffe_bible_translators",
+        "name": "Copyright © 2009-2018 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2009_2019_wycliffe_bible_translators",
+        "name": "Copyright © 2009, 2019 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2009_2022_wycliffe_bible_translators",
+        "name": "Copyright © 2009-2022 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2009_anonymous",
+        "name": "Copyright © 2009 anonymous"
+    },
+    {
+        "id": "copyright_2009_canadian_bible_society",
+        "name": "Copyright © 2009 Canadian Bible Society"
+    },
+    {
+        "id": "copyright_2009_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2009 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2009_translation_committee_of_takuu_mortlock_community",
+        "name": "Copyright © 2009 Translation Committee of Takuu, Mortlock Community"
+    },
+    {
+        "id": "copyright_2009_wycliffe_bible_translators",
+        "name": "Copyright © 2009 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2010_2014",
+        "name": "Copyright © 2010, 2014 Фонди «Калом»"
+    },
+    {
+        "id": "copyright_2010_2016_wycliffe_bible_translators",
+        "name": "Copyright © 2010-2016 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2010_2020_wycliffe_bible_translators",
+        "name": "Copyright © 2010-2020 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2010_2022_wycliffe_bible_translators",
+        "name": "Copyright © 2010-2022 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2010_2023_wycliffe_bible_translators",
+        "name": "Copyright © 2010-2023 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2010_bible_society_of_australia",
+        "name": "Copyright © 2010 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_2010_folk_spr_k_and_swedish_mission_alliance",
+        "name": "Copyright © 2010 Folk&Språk and Swedish Mission Alliance"
+    },
+    {
+        "id": "copyright_2010_la_mission_baptiste_du_s_n_gal",
+        "name": "Copyright © 2010 La Mission Baptiste du Sénégal"
+    },
+    {
+        "id": "copyright_2010_mukeddes_kalam_uyghur_bible_translation_committee",
+        "name": "Copyright © 2010 Mukeddes Kalam - Uyghur Bible Translation Committee"
+    },
+    {
+        "id": "copyright_2010_sim_international",
+        "name": "Copyright © 2010 SIM International"
+    },
+    {
+        "id": "copyright_2010_society_of_biblical_literature_and_logos_bible_software",
+        "name": "Copyright © 2010 Society of Biblical Literature and Logos Bible Software"
+    },
+    {
+        "id": "copyright_2010_the_bible_society_of_papua_new_guinea",
+        "name": "Copyright © 2010 The Bible Society of Papua New Guinea"
+    },
+    {
+        "id": "copyright_2010_ueeb_sim_au_benin",
+        "name": "Copyright © 2010 UEEB/SIM au Benin"
+    },
+    {
+        "id": "copyright_2010_wycliffe",
+        "name": "Copyright © 2010 Wycliffe"
+    },
+    {
+        "id": "copyright_2010_wycliffe_bible_translators",
+        "name": "Copyright © 2010 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2010_wycliffe_bible_translators_inc_and_the_mal_people",
+        "name": "Copyright © 2010 Wycliffe Bible Translators, Inc. and The Malê people"
+    },
+    {
+        "id": "copyright_2011_2016_wycliffe_bible_translators",
+        "name": "Copyright © 2011-2016 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2011_2019_wycliffe_bible_translators",
+        "name": "Copyright © 2011-2019 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2011_2021_wycliffe_bible_translators",
+        "name": "Copyright © 2011-2021 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2011_2024_ylsa_ayt",
+        "name": "Copyright © 2011-2024 YLSA-AYT"
+    },
+    {
+        "id": "copyright_2011_eastern_tamang_language_team",
+        "name": "Copyright © 2011 Eastern Tamang Language Team"
+    },
+    {
+        "id": "copyright_2011_sim_international",
+        "name": "Copyright © 2011 SIM International"
+    },
+    {
+        "id": "copyright_2011_unit_bahasa_dan_budaya",
+        "name": "Copyright © 2011 Unit Bahasa dan Budaya"
+    },
+    {
+        "id": "copyright_2011_wycliffe_bible_translators",
+        "name": "Copyright © 2011 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2012_2014_wycliffe_bible_translators",
+        "name": "Copyright © 2012-2014 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2012_2019_wycliffe_bible_translators",
+        "name": "Copyright © 2012-2019 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2012_global_bible_translators",
+        "name": "Copyright © 2012 Global Bible Translators"
+    },
+    {
+        "id": "copyright_2012_sim_international",
+        "name": "Copyright © 2012 SIM International"
+    },
+    {
+        "id": "copyright_2012_the_bible_society_of_botswana",
+        "name": "Copyright © 2012 The Bible Society of Botswana"
+    },
+    {
+        "id": "copyright_2012_unit_bahasa_dan_budaya",
+        "name": "Copyright © 2012 Unit Bahasa dan Budaya"
+    },
+    {
+        "id": "copyright_2012_wycliffe_bible_translators",
+        "name": "Copyright © 2012 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2013_2017_2020_wycliffe_bible_translators",
+        "name": "Copyright © 2013, 2017, 2020 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2013_pengamat_kitab_mulia",
+        "name": "Copyright © 2013 Pengamat Kitab Mulia"
+    },
+    {
+        "id": "copyright_2013_sim",
+        "name": "Copyright © 2013 SIM"
+    },
+    {
+        "id": "copyright_2013_unit_bahasa_dan_budaya",
+        "name": "Copyright © 2013 Unit Bahasa dan Budaya"
+    },
+    {
+        "id": "copyright_2013_wycliffe_bible_translators",
+        "name": "Copyright © 2013 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2014_2021_wycliffe_bible_translators",
+        "name": "Copyright © 2014-2021 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2014_2023_wycliffe_bible_translators",
+        "name": "Copyright © 2014-2023 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2014_aramaic_bible_translation",
+        "name": "Copyright © 2014 Aramaic Bible Translation, Inc."
+    },
+    {
+        "id": "copyright_2014_dr_paul_w_esposito",
+        "name": "Copyright © 2014 Dr. Paul W. Esposito"
+    },
+    {
+        "id": "copyright_2014_gilakmedia_com",
+        "name": "Copyright © 2014 gilakmedia.com"
+    },
+    {
+        "id": "copyright_2014_sim_international",
+        "name": "Copyright © 2014 SIM International"
+    },
+    {
+        "id": "copyright_2014_wycliffe_bible_translators",
+        "name": "Copyright © 2014 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2015_2023_wycliffe_bible_translators",
+        "name": "Copyright © 2015-2023 Wycliffe Bible Translators"
+    },
+    {
+        "id": "copyright_2015_wycliffe_bible_translators",
+        "name": "Copyright © 2015 Wycliffe Bible Translators"
+    },
+    {
+        "id": "copyright_2015_wycliffe_switzerland",
+        "name": "Copyright © 2015 Wycliffe Switzerland"
+    },
+    {
+        "id": "copyright_2016_2019_thomas_robinson",
+        "name": "Copyright © 2016,2019 Thomas Robinson"
+    },
+    {
+        "id": "copyright_2016_2023_new_tibetan_bible_translation_committee",
+        "name": "Copyright © 2016-2023 New Tibetan Bible Translation Committee"
+    },
+    {
+        "id": "copyright_2016_unit_bahasa_dan_budaya",
+        "name": "Copyright © 2016 Unit Bahasa dan Budaya"
+    },
+    {
+        "id": "copyright_2016_wilbur_n_pickering_thm_phd",
+        "name": "Copyright © 2016 Wilbur N. Pickering, ThM, PhD"
+    },
+    {
+        "id": "copyright_2016_wycliffe_bible_translators",
+        "name": "Copyright © 2016 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2016_wycliffe_bible_translators_of_canada",
+        "name": "Copyright © 2016 Wycliffe Bible Translators of Canada, Inc."
+    },
+    {
+        "id": "copyright_2017_door43_world_missions_community",
+        "name": "Copyright © 2017 Door43 World Missions Community"
+    },
+    {
+        "id": "copyright_2017_wycliffe_bible_translators",
+        "name": "Copyright © 2017 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2018_2019_audiobiblia_org_irma_flores",
+        "name": "Copyright © 2018, 2019 AudioBiblia.org /Irma Flores"
+    },
+    {
+        "id": "copyright_2018_anonymous",
+        "name": "Copyright © 2018 anonymous"
+    },
+    {
+        "id": "copyright_2018_bible_society_australia",
+        "name": "Copyright © 2018 Bible Society Australia"
+    },
+    {
+        "id": "copyright_2018_bible_society_of_australia",
+        "name": "Copyright © 2018 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_2018_diego_santos_mario_s_rgio_e_marco_teles",
+        "name": "Copyright © 2018 Diego Santos, Mario Sérgio, e Marco Teles"
+    },
+    {
+        "id": "copyright_2018_door43_world_missions_community",
+        "name": "Copyright © 2018 Door43 World Missions Community"
+    },
+    {
+        "id": "copyright_2018_ellis_w_deibler_jr",
+        "name": "Copyright © 2018 Ellis W. Deibler, Jr."
+    },
+    {
+        "id": "copyright_2018_fundacja_wrota_nadziei",
+        "name": "Copyright © 2018 Fundacja Wrota Nadziei"
+    },
+    {
+        "id": "copyright_2018_pioneers",
+        "name": "Copyright © 2018 Pioneers"
+    },
+    {
+        "id": "copyright_2018_wycliffe_bible_translators",
+        "name": "Copyright © 2018 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2019_07_01_wycliffe_bible_translators",
+        "name": "Copyright © 2019-07-01 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2019_2023_bible_society_of_australia_wycliffe_bible_translators",
+        "name": "Copyright © 2019, 2023 Bible Society of Australia + Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2019_2023_wycliffe_bible_translators",
+        "name": "Copyright © 2019-2023 Wycliffe Bible Translators. Inc."
+    },
+    {
+        "id": "copyright_2019_bible_society_of_australia",
+        "name": "Copyright © 2019 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_2019_door43_world_missions_community",
+        "name": "Copyright © 2019 Door43 World Missions Community"
+    },
+    {
+        "id": "copyright_2019_mokilese_bible_translation_committee",
+        "name": "Copyright © 2019 Mokilese Bible Translation Committee"
+    },
+    {
+        "id": "copyright_2019_pioneer",
+        "name": "Copyright © 2019 Pioneer"
+    },
+    {
+        "id": "copyright_2019_pioneer_bible_translators",
+        "name": "Copyright © 2019 Pioneer Bible Translators"
+    },
+    {
+        "id": "copyright_2019_the_plain_english_project",
+        "name": "Copyright © 2019 The Plain English Project"
+    },
+    {
+        "id": "copyright_2019_urdu_geo_version",
+        "name": "Copyright © 2019 Urdu Geo Version"
+    },
+    {
+        "id": "copyright_2019_wyclif_e_bijbelvertalers_nederland",
+        "name": "Copyright © 2019 Wyclif e Bijbelvertalers Nederland"
+    },
+    {
+        "id": "copyright_2019_wycliffe_bible_translators",
+        "name": "Copyright © 2019 Wycliffe Bible Translators"
+    },
+    {
+        "id": "copyright_2019_wycliffe_switzerland",
+        "name": "Copyright © 2019 Wycliffe Switzerland"
+    },
+    {
+        "id": "copyright_2020_batupei_christian_fellowtship",
+        "name": "Copyright © 2020 Batupei Christian Fellowtship"
+    },
+    {
+        "id": "copyright_2020_batupuei_christian_fellowship",
+        "name": "Copyright © 2020 Batupuei Christian Fellowship"
+    },
+    {
+        "id": "copyright_2020_chongthu_bible_translation_team",
+        "name": "Copyright © 2020 Chongthu Bible Translation Team"
+    },
+    {
+        "id": "copyright_2020_door_43_international_mission_community",
+        "name": "Copyright © 2020 Door 43 International Mission Community"
+    },
+    {
+        "id": "copyright_2020_door_43_world_wide_mission_community",
+        "name": "Copyright © 2020 Door 43 world-wide mission community"
+    },
+    {
+        "id": "copyright_2020_door43_world_mission_community",
+        "name": "Copyright © 2020 Door43 World Mission Community"
+    },
+    {
+        "id": "copyright_2020_door43_world_missions_community",
+        "name": "Copyright © 2020 Door43 World Missions Community"
+    },
+    {
+        "id": "copyright_2020_door43_worldwide_mission_community",
+        "name": "Copyright © 2020 Door43 Worldwide Mission Community"
+    },
+    {
+        "id": "copyright_2020_siyin_kjv_bible_team",
+        "name": "Copyright © 2020 Siyin KJV Bible Team"
+    },
+    {
+        "id": "copyright_2020_wilbur_n_pickering",
+        "name": "Copyright © 2020 Wilbur N. Pickering"
+    },
+    {
+        "id": "copyright_2020_www_tarifit_info",
+        "name": "Copyright © 2020 www.tarifit.info"
+    },
+    {
+        "id": "copyright_2020_wycliffe_bible_translators",
+        "name": "Copyright © 2020 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2021_2023_jonathan_gallagher",
+        "name": "Copyright © 2021-2023 Jonathan Gallagher"
+    },
+    {
+        "id": "copyright_2021_bible_society_australia",
+        "name": "Copyright © 2021 Bible Society Australia"
+    },
+    {
+        "id": "copyright_2021_biblia_ba_ema_hotu",
+        "name": "Copyright © 2021 Biblia ba Ema Hotu"
+    },
+    {
+        "id": "copyright_2021_oleh_yayasan_alkitab_bahasakita_albata",
+        "name": "Copyright © 2021 oleh Yayasan Alkitab BahasaKita (Albata)"
+    },
+    {
+        "id": "copyright_2021_pioneer_bible_translators",
+        "name": "Copyright © 2021 Pioneer Bible Translators"
+    },
+    {
+        "id": "copyright_2022_2024_believers_bible_society",
+        "name": "Copyright © 2022-2024 Believers' Bible Society, Inc."
+    },
+    {
+        "id": "copyright_2022_fraternit_de_tib_riade",
+        "name": "Copyright © 2022 Fraternité de Tibériade"
+    },
+    {
+        "id": "copyright_2022_robert_adam_boyd",
+        "name": "Copyright © 2022 Robert Adam Boyd"
+    },
+    {
+        "id": "copyright_2022_wycliffe_bible_translators",
+        "name": "Copyright © 2022 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2023_2024_i_smail_serinken_and_ebible_org",
+        "name": "Copyright © 2023, 2024 İsmail Serinken and eBible.org"
+    },
+    {
+        "id": "copyright_2023_steve_lellelid",
+        "name": "Copyright © 2023 Steve Lellelid"
+    },
+    {
+        "id": "copyright_2023_wycliffe_bible_translators",
+        "name": "Copyright © 2023 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2023_wycliffe_bible_translators_australia",
+        "name": "Copyright © 2023 Wycliffe Bible Translators Australia"
+    },
+    {
+        "id": "copyright_2024_baq_thi",
+        "name": "Copyright © 2024 Baq Thi"
+    },
+    {
+        "id": "copyright_2024_bible_society_of_australia",
+        "name": "Copyright © 2024 Bible Society of Australia"
+    },
+    {
+        "id": "copyright_2024_global_bible_translators",
+        "name": "Copyright © 2024 Global Bible Translators"
+    },
+    {
+        "id": "copyright_2024_pioneer_bible_translators",
+        "name": "Copyright © 2024 Pioneer Bible Translators"
+    },
+    {
+        "id": "copyright_2024_sil_papua_new_guinea",
+        "name": "Copyright © 2024 SIL Papua New Guinea"
+    },
+    {
+        "id": "copyright_2024_sil_png_and_wycliffe_bible_translators",
+        "name": "Copyright © 2024 SIL PNG and Wycliffe Bible Translators"
+    },
+    {
+        "id": "copyright_2024_wycliffe_bible_translators",
+        "name": "Copyright © 2024 Wycliffe Bible Translators, Inc."
+    },
+    {
+        "id": "copyright_2025_sil_papua_new_guinea",
+        "name": "Copyright © 2025 SIL Papua New Guinea"
+    },
+    {
+        "id": "copyright_2025_tyndale_bible_translators",
+        "name": "Copyright © 2025 Tyndale Bible Translators"
+    },
+    {
+        "id": "copyright_2026_every_nation_iceland",
+        "name": "Copyright © 2026 Every Nation Iceland"
+    },
+    {
+        "id": "covenant_press",
+        "name": "Covenant Press"
+    },
+    {
+        "id": "det_danske_bibelselskab",
+        "name": "Det Danske Bibelselskab"
+    },
+    {
+        "id": "eastern_zone",
+        "name": "Eastern Zone"
+    },
+    {
+        "id": "ebible_org",
+        "name": "ebible.org"
+    },
+    {
+        "id": "empower_asia_bible_translation_movement",
+        "name": "Empower Asia Bible Translation Movement"
+    },
+    {
         "id": "free_bible_ministry",
         "name": "Free Bible Ministry, Inc."
+    },
+    {
+        "id": "global_bible_initiative",
+        "name": "Global Bible Initiative"
+    },
+    {
+        "id": "global_partners",
+        "name": "Global Partners"
+    },
+    {
+        "id": "institute_for_bible_translation_finland",
+        "name": "Institute for Bible Translation, Finland"
+    },
+    {
+        "id": "institute_for_bible_translation_russia",
+        "name": "Institute for Bible Translation, Russia"
+    },
+    {
+        "id": "j_n_darby",
+        "name": "J.N. Darby"
+    },
+    {
+        "id": "jantinus_daling",
+        "name": "Jantinus Daling"
     },
     {
         "id": "john_the_forerunner_church_of_christians_of_evangelical_faith_of_minsk_city",
         "name": "John the Forerunner Church of Christians of Evangelical Faith of Minsk City"
     },
     {
+        "id": "la_mission_baptiste_du_s_n_gal",
+        "name": "La Mission Baptiste du Sénégal"
+    },
+    {
+        "id": "latinamerican_textual_bible_foundation",
+        "name": "Latinamerican Textual Bible Foundation Inc"
+    },
+    {
+        "id": "lebenswasser",
+        "name": "Lebenswasser"
+    },
+    {
+        "id": "lexihub",
+        "name": "Lexihub"
+    },
+    {
+        "id": "logos_bible_software",
+        "name": "Logos Bible Software"
+    },
+    {
+        "id": "mission_evang_lique_r_form_e_n_erlandaise",
+        "name": "Mission Evangélique Réformée Néerlandaise"
+    },
+    {
+        "id": "operation_mobilization_international",
+        "name": "Operation Mobilization International"
+    },
+    {
+        "id": "orthodox_media_network",
+        "name": "Orthodox Media Network"
+    },
+    {
         "id": "pioneer_bible_translators",
         "name": "Pioneer Bible Translators"
     },
     {
+        "id": "river_street_publishing",
+        "name": "River Street Publishing"
+    },
+    {
+        "id": "robert_adam_boyd",
+        "name": "Robert Adam Boyd"
+    },
+    {
+        "id": "salkinson_and_ginsberg",
+        "name": "Salkinson and Ginsberg"
+    },
+    {
         "id": "sanskritbible_in",
         "name": "SanskritBible.in"
+    },
+    {
+        "id": "sihtasutus_piibel_k_igile",
+        "name": "Sihtasutus Piibel Kõigile"
+    },
+    {
+        "id": "stephen_l_brown",
+        "name": "Stephen L. Brown"
+    },
+    {
+        "id": "stiftelsen_svenska_folkbibeln_stockholm_och_stiftelsen_biblicum_ljungby",
+        "name": "Stiftelsen Svenska Folkbibeln, Stockholm, och Stiftelsen Biblicum, Ljungby"
+    },
+    {
+        "id": "svenska_k_rnbibeln",
+        "name": "Svenska Kärnbibeln"
+    },
+    {
+        "id": "swedish_reformation_bible_society",
+        "name": "Swedish Reformation Bible Society"
     },
     {
         "id": "the_free_bible_foundation",
@@ -40,6 +1348,14 @@
         "name": "The Love Fellowship"
     },
     {
+        "id": "the_our_language_bible_organization",
+        "name": "The Our Language Bible Organization"
+    },
+    {
+        "id": "the_seed_company",
+        "name": "The Seed Company"
+    },
+    {
         "id": "the_word_for_the_world_international",
         "name": "The Word for the World International"
     },
@@ -48,8 +1364,20 @@
         "name": "TovRose"
     },
     {
+        "id": "tyndale_bible_translators",
+        "name": "Tyndale Bible Translators"
+    },
+    {
         "id": "verbreitung_des_christlichen_glaubens",
         "name": "Verbreitung des christlichen Glaubens e.V."
+    },
+    {
+        "id": "word_biblical_ministries",
+        "name": "Word Biblical Ministries"
+    },
+    {
+        "id": "worldventure",
+        "name": "WorldVenture"
     },
     {
         "id": "wycliffe_bible_translators",
