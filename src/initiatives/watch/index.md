@@ -4,7 +4,6 @@ description: A registry of Bible translations, who owns them, and how they've re
 
 <script lang='ts' setup>
 import WatchOwnerDashboard from '@/_comp/watch/WatchOwnerDashboard.vue'
-import WatchTranslations from '@/_comp/watch/WatchTranslations.vue'
 </script>
 
 # Bible Society Watch
@@ -22,8 +21,7 @@ See also &nbsp; <VPButton text="Bible ratings" href='/initiatives/bibles/' theme
 
 ## Owners ranked by restriction
 
+Click an owner to see the translations behind its numbers, or browse the full
+&nbsp;<VPButton text="translation directory" href='/watch/translations/' theme='alt' />.
+
 <WatchOwnerDashboard/>
-
-## Translation directory
-
-<WatchTranslations/>

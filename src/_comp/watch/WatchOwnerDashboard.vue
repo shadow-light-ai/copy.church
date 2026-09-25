@@ -41,8 +41,12 @@ div.watch_dashboard_wrap
         tr(v-for='(owner, i) of shown' :key='owner.id')
             td.rank {{ i + 1 }}
             td.owner_name
-                a(v-if='owner.website' :href='owner.website' target='_blank' rel='noreferrer') {{ owner.name }}
-                span(v-else) {{ owner.name }}
+                a(:href='`/watch/translations/#o=${owner.id}`' :title='`See ${owner.name}\'s translations`')
+                    | {{ owner.name }}
+                a.website(
+                    v-if='owner.website' :href='owner.website' target='_blank' rel='noreferrer'
+                    title='Visit website'
+                ) ↗
                 a.ministry_watch(
                     v-if='owner.ministry_watch_url' :href='owner.ministry_watch_url'
                     target='_blank' rel='noreferrer' title='View on Ministry Watch'
@@ -271,7 +275,7 @@ const shown = computed(() => ranked.value.slice(0, LIMIT))
         width: 160px
 
     .owner_name
-        .ministry_watch
+        .website, .ministry_watch
             margin-left: 6px
             font-size: 0.75em
             padding: 1px 5px
