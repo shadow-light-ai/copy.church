@@ -23,6 +23,14 @@ div.watch_dashboard_wrap
             | Min. tracked translations
             input(v-model.number='min_tracked' type='number' min='1' :max='stats.translations')
 
+    p.legend
+        span.legend_item: span.swatch.open
+        | &nbsp;Open&emsp;
+        span.legend_item: span.swatch.limited
+        | &nbsp;NC or ND&emsp;
+        span.legend_item: span.swatch.restricted
+        | &nbsp;NC and ND (or custom)
+
     table.owner_table: tbody
         tr
             th Owner
@@ -43,7 +51,8 @@ div.watch_dashboard_wrap
             td.bar
                 div.meter
                     div.meter_segment.open(:style='{width: owner.open_pct + "%"}')
-                    div.meter_segment.restricted(:style='{width: owner.restricted_pct + "%"}')
+                    div.meter_segment.limited(:style='{width: owner.limited_pct + "%"}')
+                    div.meter_segment.restricted(:style='{width: owner.fully_restricted_pct + "%"}')
             td.num {{ owner.restricted }}
             td.num {{ owner.restricted_pct }}%
     p.more(v-if='ranked.length > shown.length')
@@ -62,12 +71,19 @@ import owners from '@/_data/watch/owners.json'
 import license_terms from '@/_data/watch/license_terms.json'
 
 
-// A license counts as restricted if it limits noncommercial use or derivatives,
-// or its terms are non-standard ('custom'). 'public', 'cc-by', and 'cc-by-sa'
-// place no such restriction on sharing.
-function is_restricted(license:string):boolean{
-    return license === 'custom' || license.includes('nc') || license.includes('nd')
+// A license's tier: 'open' places no restriction on sharing ('public', 'cc-by', 'cc-by-sa');
+// 'limited' carries exactly one of noncommercial or no-derivatives; 'restricted' carries both,
+// or its terms are non-standard ('custom'). Ranking/percentages treat limited + restricted as
+// both counting against an owner — only the bar breaks the two apart.
+function license_tier(license:string):'open' | 'limited' | 'restricted'{
+    if (license === 'custom') return 'restricted'
+    const nc = license.includes('nc')
+    const nd = license.includes('nd')
+    if (nc && nd) return 'restricted'
+    if (nc || nd) return 'limited'
+    return 'open'
 }
+const is_restricted = (license:string) => license_tier(license) !== 'open'
 
 // Tally each owner's tracked translations and how many carry a restricted license
 const owner_names:Record<string, string> = {}
@@ -77,28 +93,31 @@ for (const owner of owners){
     owner_meta[owner.id] = {website: owner.website, ministry_watch_url: owner.ministry_watch_url}
 }
 
-const tallies:Record<string, {tracked:number, restricted:number}> = {}
+const tallies:Record<string, {tracked:number, limited:number, fully_restricted:number}> = {}
 for (const term of license_terms){
-    const tally = tallies[term.owner_id] ??= {tracked: 0, restricted: 0}
+    const tally = tallies[term.owner_id] ??= {tracked: 0, limited: 0, fully_restricted: 0}
     tally.tracked += 1
-    if (is_restricted(term.license))
-        tally.restricted += 1
+    const tier = license_tier(term.license)
+    if (tier === 'limited') tally.limited += 1
+    else if (tier === 'restricted') tally.fully_restricted += 1
 }
 
 const owner_rows = Object.entries(tallies)
     .filter(([id]) => id !== 'unknown')
     .map(([id, tally]) => {
-        const restricted_pct = Math.round((tally.restricted / tally.tracked) * 100)
+        const restricted = tally.limited + tally.fully_restricted
+        const restricted_pct = Math.round((restricted / tally.tracked) * 100)
         return {
             id,
             name: owner_names[id] ?? id,
             website: owner_meta[id]?.website,
             ministry_watch_url: owner_meta[id]?.ministry_watch_url,
             tracked: tally.tracked,
-            restricted: tally.restricted,
-            open: tally.tracked - tally.restricted,
+            restricted,
             restricted_pct,
-            open_pct: 100 - restricted_pct,
+            open_pct: Math.round(((tally.tracked - restricted) / tally.tracked) * 100),
+            limited_pct: Math.round((tally.limited / tally.tracked) * 100),
+            fully_restricted_pct: Math.round((tally.fully_restricted / tally.tracked) * 100),
         }
     })
 
@@ -200,6 +219,30 @@ const shown = computed(() => ranked.value.slice(0, LIMIT))
         opacity: 0.7
         margin-top: 8px
 
+    .legend
+        font-size: 0.78em
+        opacity: 0.75
+        margin: 0 0 10px
+
+        .legend_item
+            display: inline-flex
+            vertical-align: middle
+
+        .swatch
+            display: inline-block
+            width: 10px
+            height: 10px
+            border-radius: 2px
+
+            &.open
+                background: var(--vp-c-green-2)
+
+            &.limited
+                background: var(--vp-c-yellow-2)
+
+            &.restricted
+                background: var(--vp-c-red-2)
+
 .owner_table
     width: 100%
     border-collapse: collapse
@@ -249,6 +292,9 @@ const shown = computed(() => ranked.value.slice(0, LIMIT))
 
         &.open
             background: var(--vp-c-green-2)
+
+        &.limited
+            background: var(--vp-c-yellow-2)
 
         &.restricted
             background: var(--vp-c-red-2)

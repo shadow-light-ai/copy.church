@@ -15,7 +15,7 @@ div.watch_translations_wrap
             td.condensed: a(:href='item.info_url' target='_blank' rel='noreferrer') {{ item.name }}
             td {{ item.abbrev }}
             td {{ item.language }}
-            td {{ item.license }}
+            td: span.license_pill(:class='license_tier(item.license)') {{ item.license }}
             td {{ item.owner_name }}
     p.more(v-if='filtered.length > shown.length')
         | Showing first {{ shown.length }} — narrow your search to see more specific results.
@@ -32,6 +32,17 @@ import translations from '@/_data/watch/translations.json'
 import owners from '@/_data/watch/owners.json'
 import license_terms from '@/_data/watch/license_terms.json'
 
+
+// Same tier scheme as the owner dashboard, used here to color-code each license pill
+function license_tier(license:string):'open' | 'limited' | 'restricted' | 'unknown'{
+    if (license === 'unknown') return 'unknown'
+    if (license === 'custom') return 'restricted'
+    const nc = license.includes('nc')
+    const nd = license.includes('nd')
+    if (nc && nd) return 'restricted'
+    if (nc || nd) return 'limited'
+    return 'open'
+}
 
 // Build an id -> name lookup so each row can show its owner's name
 const owner_names:Record<string, string> = {}
@@ -116,5 +127,27 @@ const shown = computed(() => filtered.value.slice(0, LIMIT))
         overflow: hidden
         text-overflow: ellipsis
         white-space: nowrap
+
+.license_pill
+    display: inline-block
+    padding: 1px 7px
+    border-radius: 5px
+    font-size: 0.9em
+
+    &.open
+        color: var(--vp-c-green-1)
+        background: var(--vp-c-green-soft)
+
+    &.limited
+        color: var(--vp-c-yellow-1)
+        background: var(--vp-c-yellow-soft)
+
+    &.restricted
+        color: var(--vp-c-red-1)
+        background: var(--vp-c-red-soft)
+
+    &.unknown
+        color: var(--vp-c-text-2)
+        background: var(--vp-c-bg-alt)
 
 </style>
