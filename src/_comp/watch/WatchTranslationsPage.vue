@@ -42,13 +42,10 @@ import license_terms from '@/_data/watch/license_terms.json'
 
 
 // Same tier scheme as the owner dashboard, used here to color-code each license pill
-function license_tier(license:string):'open' | 'limited' | 'restricted' | 'unknown'{
+function license_tier(license:string):'open' | 'semi_restricted' | 'restricted' | 'unknown'{
     if (license === 'unknown') return 'unknown'
     if (license === 'custom') return 'restricted'
-    const nc = license.includes('nc')
-    const nd = license.includes('nd')
-    if (nc && nd) return 'restricted'
-    if (nc || nd) return 'limited'
+    if (license.includes('nc') || license.includes('nd')) return 'semi_restricted'
     return 'open'
 }
 
@@ -210,7 +207,7 @@ const shown = computed(() => filtered.value.slice(0, LIMIT))
         color: var(--vp-c-green-1)
         background: var(--vp-c-green-soft)
 
-    &.limited
+    &.semi_restricted
         color: var(--vp-c-yellow-1)
         background: var(--vp-c-yellow-soft)
 

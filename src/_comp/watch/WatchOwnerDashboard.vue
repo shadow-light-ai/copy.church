@@ -23,10 +23,10 @@ div.watch_dashboard_wrap
     p.legend
         span.legend_item: span.swatch.open
         | &nbsp;Open&emsp;
-        span.legend_item: span.swatch.limited
-        | &nbsp;NC or ND&emsp;
+        span.legend_item: span.swatch.semi_restricted
+        | &nbsp;Semi-restricted&emsp;
         span.legend_item: span.swatch.restricted
-        | &nbsp;NC and ND (or custom)
+        | &nbsp;Restricted
 
     table.owner_table: tbody
         tr
@@ -52,8 +52,8 @@ div.watch_dashboard_wrap
             td.bar
                 div.meter
                     div.meter_segment.open(:style='{width: owner.open_pct + "%"}')
-                    div.meter_segment.limited(:style='{width: owner.limited_pct + "%"}')
-                    div.meter_segment.restricted(:style='{width: owner.fully_restricted_pct + "%"}')
+                    div.meter_segment.semi_restricted(:style='{width: owner.semi_restricted_pct + "%"}')
+                    div.meter_segment.restricted(:style='{width: owner.restricted_only_pct + "%"}')
             td.num {{ owner.restricted }}
             td.num {{ owner.restricted_pct }}%
 
@@ -70,15 +70,13 @@ import license_terms from '@/_data/watch/license_terms.json'
 
 
 // A license's tier: 'open' places no restriction on sharing ('public', 'cc-by', 'cc-by-sa');
-// 'limited' carries exactly one of noncommercial or no-derivatives; 'restricted' carries both,
-// or its terms are non-standard ('custom'). Ranking/percentages treat limited + restricted as
-// both counting against an owner — only the bar breaks the two apart.
-function license_tier(license:string):'open' | 'limited' | 'restricted'{
+// 'semi_restricted' carries a noncommercial and/or no-derivatives clause (including 'cc-by-nc-nd');
+// 'restricted' is non-standard terms ('custom'), the only case where what's actually allowed isn't
+// known upfront. Ranking/percentages treat semi_restricted + restricted as both counting against an
+// owner — only the bar breaks the two apart.
+function license_tier(license:string):'open' | 'semi_restricted' | 'restricted'{
     if (license === 'custom') return 'restricted'
-    const nc = license.includes('nc')
-    const nd = license.includes('nd')
-    if (nc && nd) return 'restricted'
-    if (nc || nd) return 'limited'
+    if (license.includes('nc') || license.includes('nd')) return 'semi_restricted'
     return 'open'
 }
 const is_restricted = (license:string) => license_tier(license) !== 'open'
@@ -91,19 +89,19 @@ for (const owner of owners){
     owner_meta[owner.id] = {website: owner.website, ministry_watch_url: owner.ministry_watch_url}
 }
 
-const tallies:Record<string, {tracked:number, limited:number, fully_restricted:number}> = {}
+const tallies:Record<string, {tracked:number, semi_restricted:number, restricted_only:number}> = {}
 for (const term of license_terms){
-    const tally = tallies[term.owner_id] ??= {tracked: 0, limited: 0, fully_restricted: 0}
+    const tally = tallies[term.owner_id] ??= {tracked: 0, semi_restricted: 0, restricted_only: 0}
     tally.tracked += 1
     const tier = license_tier(term.license)
-    if (tier === 'limited') tally.limited += 1
-    else if (tier === 'restricted') tally.fully_restricted += 1
+    if (tier === 'semi_restricted') tally.semi_restricted += 1
+    else if (tier === 'restricted') tally.restricted_only += 1
 }
 
 const owner_rows = Object.entries(tallies)
     .filter(([id]) => id !== 'unknown')
     .map(([id, tally]) => {
-        const restricted = tally.limited + tally.fully_restricted
+        const restricted = tally.semi_restricted + tally.restricted_only
         const restricted_pct = Math.round((restricted / tally.tracked) * 100)
         return {
             id,
@@ -114,8 +112,8 @@ const owner_rows = Object.entries(tallies)
             restricted,
             restricted_pct,
             open_pct: Math.round(((tally.tracked - restricted) / tally.tracked) * 100),
-            limited_pct: Math.round((tally.limited / tally.tracked) * 100),
-            fully_restricted_pct: Math.round((tally.fully_restricted / tally.tracked) * 100),
+            semi_restricted_pct: Math.round((tally.semi_restricted / tally.tracked) * 100),
+            restricted_only_pct: Math.round((tally.restricted_only / tally.tracked) * 100),
         }
     })
 
@@ -208,7 +206,7 @@ const ranked = computed(() => [...owner_rows].sort((a, b) => sort_mode.value ===
             &.open
                 background: var(--vp-c-green-2)
 
-            &.limited
+            &.semi_restricted
                 background: var(--vp-c-yellow-2)
 
             &.restricted
@@ -264,7 +262,7 @@ const ranked = computed(() => [...owner_rows].sort((a, b) => sort_mode.value ===
         &.open
             background: var(--vp-c-green-2)
 
-        &.limited
+        &.semi_restricted
             background: var(--vp-c-yellow-2)
 
         &.restricted

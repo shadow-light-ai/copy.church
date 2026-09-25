@@ -8,4 +8,4 @@ import WatchTranslationsPage from '@/_comp/watch/WatchTranslationsPage.vue'
 
 # Translations
 
-<WatchTranslationsPage/>
+<ClientOnly><WatchTranslationsPage/></ClientOnly>
