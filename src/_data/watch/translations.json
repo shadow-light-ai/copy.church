@@ -2402,17 +2402,6 @@
         "info_url": "https://find.bible/bibles/APZWBT/"
     },
     {
-        "id": "arb_eastern_zone_16c2ae",
-        "name": "True Meaning Arabic",
-        "abbrev": "arb",
-        "language": "arb",
-        "latest_year": 2021,
-        "external_ids": {
-            "dbl": "16c2ae6602e699ce"
-        },
-        "info_url": "https://app.library.bible/content/16c2ae6602e699ce"
-    },
-    {
         "id": "ARBAKI",
         "name": "Kidz Arabic Drama",
         "abbrev": "ARBAKI",
@@ -2732,17 +2721,6 @@
             "find_bible": "ASFAMB"
         },
         "info_url": "https://find.bible/bibles/ASFAMB/"
-    },
-    {
-        "id": "asg_the_seed_company_0241e0",
-        "name": "Cishingini Agwara Kambari [asg]",
-        "abbrev": "ASG",
-        "language": "asg",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "0241e02f3cb97e8c"
-        },
-        "info_url": "https://app.library.bible/content/0241e02f3cb97e8c"
     },
     {
         "id": "ASGWBT",
@@ -4435,17 +4413,6 @@
         "info_url": "https://find.bible/bibles/BFZBCS/"
     },
     {
-        "id": "bgc_beyond_translation_2ef130",
-        "name": "Haryanvi Bible",
-        "abbrev": "BGC",
-        "language": "bgc",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "2ef130d3485d3fe4"
-        },
-        "info_url": "https://find.bible/bibles/BGCOHB/"
-    },
-    {
         "id": "BGCOHB",
         "name": "The Open Haryanvi Bible",
         "abbrev": "BGCOHB",
@@ -4729,17 +4696,6 @@
             "find_bible": "BHTTLF"
         },
         "info_url": "https://find.bible/bibles/BHTTLF/"
-    },
-    {
-        "id": "bhu_the_word_for_34d2d8",
-        "name": "Bhumiya",
-        "abbrev": "BTP25",
-        "language": "bhu",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "34d2d843a792981b"
-        },
-        "info_url": "https://app.library.bible/content/34d2d843a792981b"
     },
     {
         "id": "BHWLAI",
@@ -6069,28 +6025,6 @@
             "find_bible": "BSTNEW"
         },
         "info_url": "https://find.bible/bibles/BSTNEW/"
-    },
-    {
-        "id": "bsw_the_word_for_14a5a8",
-        "name": "Bayso New Testament Ethiopic Version",
-        "abbrev": "BayNTEth",
-        "language": "bsw",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "14a5a814d81264ac"
-        },
-        "info_url": "https://app.library.bible/content/14a5a814d81264ac"
-    },
-    {
-        "id": "bsw_the_word_for_2c2067",
-        "name": "Bayso New Tetament",
-        "abbrev": "BayNT",
-        "language": "bsw",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "2c2067480f069dad"
-        },
-        "info_url": "https://app.library.bible/content/2c2067480f069dad"
     },
     {
         "id": "BTDLAI",
@@ -8230,17 +8164,6 @@
         "info_url": "https://find.bible/bibles/CMIWBT/"
     },
     {
-        "id": "cmn_free_bible_ministry_04fb2b",
-        "name": "免费的易读圣经 Free Easy-to-read Bible",
-        "abbrev": "FEB",
-        "language": "cmn",
-        "latest_year": 2022,
-        "external_ids": {
-            "dbl": "04fb2bec0d582d1f"
-        },
-        "info_url": "https://app.library.bible/content/04fb2bec0d582d1f"
-    },
-    {
         "id": "CMNBSW",
         "name": "Basset-Su Wenli New Testament",
         "abbrev": "CMNBSW",
@@ -9091,17 +9014,6 @@
         "info_url": "https://find.bible/bibles/CRHIBT/"
     },
     {
-        "id": "crj_canadian_bible_society_5ee655",
-        "name": "Southern East Cree (Roman) [crj] -Canada (web 2018)",
-        "abbrev": "crjrNT",
-        "language": "crj",
-        "latest_year": 2023,
-        "external_ids": {
-            "dbl": "5ee655ce82d17011"
-        },
-        "info_url": "https://find.bible/bibles/CRJWBT/"
-    },
-    {
         "id": "CRJWBT",
         "name": "South East Cree New Testament",
         "abbrev": "CRJWBT",
@@ -9227,17 +9139,6 @@
             "dbl": "08c66b989fa5fa17"
         },
         "info_url": "https://find.bible/bibles/CRTSBA/"
-    },
-    {
-        "id": "crw_far_east_broadcasting_030357",
-        "name": "Chrau Bible Literal Text",
-        "abbrev": "CRLT",
-        "language": "crw",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "0303570f15afd95e"
-        },
-        "info_url": "https://app.library.bible/content/0303570f15afd95e"
     },
     {
         "id": "CRWIBS",
@@ -9556,17 +9457,6 @@
         "info_url": "https://find.bible/bibles/CTUWBT/"
     },
     {
-        "id": "cua_far_east_broadcasting_37a1dc",
-        "name": "Cua Bible Literal Text",
-        "abbrev": "CLT",
-        "language": "cua",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "37a1dc7a54269bd3"
-        },
-        "info_url": "https://app.library.bible/content/37a1dc7a54269bd3"
-    },
-    {
         "id": "CUAGEN",
         "name": "Bible Portions in Cua",
         "abbrev": "CUAGEN",
@@ -9716,17 +9606,6 @@
             "find_bible": "CWAWBT"
         },
         "info_url": "https://find.bible/bibles/CWAWBT/"
-    },
-    {
-        "id": "cwe_the_word_for_33e024",
-        "name": "New Testament in Kwere",
-        "abbrev": "KwerNT14",
-        "language": "cwe",
-        "latest_year": 2023,
-        "external_ids": {
-            "dbl": "33e024fcc7010565"
-        },
-        "info_url": "https://app.library.bible/content/33e024fcc7010565"
     },
     {
         "id": "CWEPBT",
@@ -11651,17 +11530,6 @@
         "info_url": "https://find.bible/bibles/EJAWBT/"
     },
     {
-        "id": "eka_the_seed_company_147ebe",
-        "name": "Ekajuk Scriptures",
-        "abbrev": "EKA",
-        "language": "eka",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "147ebe97085ae322"
-        },
-        "info_url": "https://app.library.bible/content/147ebe97085ae322"
-    },
-    {
         "id": "EKANBT",
         "name": "Ekajuk New Testament",
         "abbrev": "EKANBT",
@@ -12018,50 +11886,6 @@
             "dbl": "970c2b42a00b11e7"
         },
         "info_url": "https://find.bible/bibles/ENBBTL/"
-    },
-    {
-        "id": "eng_covenant_press_01b29f",
-        "name": "Literal Standard Version",
-        "abbrev": "LSV",
-        "language": "eng",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "01b29f4b342acc35"
-        },
-        "info_url": "https://app.library.bible/content/01b29f4b342acc35"
-    },
-    {
-        "id": "eng_ebible_org_179568",
-        "name": "Duay-Rheims American Edition  1899 [eng] USA",
-        "abbrev": "engDRA",
-        "language": "eng",
-        "latest_year": 2020,
-        "external_ids": {
-            "dbl": "179568874c45066f"
-        },
-        "info_url": "https://app.library.bible/content/179568874c45066f"
-    },
-    {
-        "id": "eng_ebible_org_2f0fd8",
-        "name": "The English New Testament According to Family 35",
-        "abbrev": "engF35",
-        "language": "eng",
-        "latest_year": 2020,
-        "external_ids": {
-            "dbl": "2f0fd81d7b85b923"
-        },
-        "info_url": "https://app.library.bible/content/2f0fd81d7b85b923"
-    },
-    {
-        "id": "eng_ebible_org_32339c",
-        "name": "The Text-Critical English New Testament",
-        "abbrev": "engTCENT",
-        "language": "eng",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "32339cf2f720ff8e"
-        },
-        "info_url": "https://app.library.bible/content/32339cf2f720ff8e"
     },
     {
         "id": "ENGAAT",
@@ -15054,17 +14878,6 @@
         "info_url": "https://find.bible/bibles/GAXWFW/"
     },
     {
-        "id": "gaz_biblica_inc_184950",
-        "name": "Biblica® Open New Oromo Contemporary Version Latin 2022",
-        "abbrev": "ONOCV",
-        "language": "gaz",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "1849509e461c9a00"
-        },
-        "info_url": "https://app.library.bible/content/1849509e461c9a00"
-    },
-    {
         "id": "GAZBIB",
         "name": "Open New Oromo Contemporary Version",
         "abbrev": "GAZBIB",
@@ -15244,17 +15057,6 @@
             "dbl": "4fef815aa01011e7"
         },
         "info_url": "https://find.bible/bibles/GDEWBT/"
-    },
-    {
-        "id": "gdf_the_seed_company_29f2d7",
-        "name": "Gava",
-        "abbrev": "GDF",
-        "language": "gdf",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "29f2d73fdf71a11e"
-        },
-        "info_url": "https://app.library.bible/content/29f2d73fdf71a11e"
     },
     {
         "id": "GDGWBT",
@@ -15793,17 +15595,6 @@
         "info_url": "https://find.bible/bibles/GLWZZZ/"
     },
     {
-        "id": "gmv_the_word_for_049346",
-        "name": "Gamo Full Bible Ethiopic Version",
-        "abbrev": "GaFBEV",
-        "language": "gmv",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "049346536ed7f260"
-        },
-        "info_url": "https://app.library.bible/content/049346536ed7f260"
-    },
-    {
         "id": "GMVTBL",
         "name": "Ethiopic Gamo New Testament",
         "abbrev": "GMVTBL",
@@ -16033,17 +15824,6 @@
             "dbl": "8342418dcfa5a94b"
         },
         "info_url": "https://find.bible/bibles/GOGBST/"
-    },
-    {
-        "id": "gok_the_word_for_28d256",
-        "name": "Gawli Bible",
-        "abbrev": "GMi25",
-        "language": "gok",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "28d256cb603137cd"
-        },
-        "info_url": "https://app.library.bible/content/28d256cb603137cd"
     },
     {
         "id": "GOKFBI",
@@ -17195,17 +16975,6 @@
         "info_url": "https://find.bible/bibles/HATSBH/"
     },
     {
-        "id": "hau_biblica_inc_0ab0c7",
-        "name": "Biblica® Open Hausa Contemporary Bible 2020",
-        "abbrev": "OHCB",
-        "language": "hau",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "0ab0c764d56a715d"
-        },
-        "info_url": "https://app.library.bible/content/0ab0c764d56a715d"
-    },
-    {
         "id": "HAUBSN",
         "name": "The Bible in Hausa",
         "abbrev": "HAUBSN",
@@ -17318,17 +17087,6 @@
             "find_bible": "HBNZZZP"
         },
         "info_url": "https://find.bible/bibles/HBNZZZP/"
-    },
-    {
-        "id": "hbo_ebible_org_0b262f",
-        "name": "Westminister Leningrad Codex",
-        "abbrev": "hboWLC",
-        "language": "hbo",
-        "latest_year": 2023,
-        "external_ids": {
-            "dbl": "0b262f1ed7f084a6"
-        },
-        "info_url": "https://app.library.bible/content/0b262f1ed7f084a6"
     },
     {
         "id": "HBOMASP",
@@ -17570,17 +17328,6 @@
         "info_url": "https://find.bible/bibles/HIGTBL/"
     },
     {
-        "id": "hil_biblica_inc_091988",
-        "name": "Biblica® Open Hiligaynon Contemporary Bible 2022",
-        "abbrev": "OHCB",
-        "language": "hil",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "091988fde60272d7"
-        },
-        "info_url": "https://app.library.bible/content/091988fde60272d7"
-    },
-    {
         "id": "HILHLG",
         "name": "Hiligaynon Bible",
         "abbrev": "HILHLG",
@@ -17626,39 +17373,6 @@
             "find_bible": "HILPVV"
         },
         "info_url": "https://find.bible/bibles/HILPVV/"
-    },
-    {
-        "id": "hin_biblica_inc_213300",
-        "name": "Biblica® Open Hindi Contemporary Version 2019",
-        "abbrev": "OHCV",
-        "language": "hin",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "2133003bb8b5e62b"
-        },
-        "info_url": "https://app.library.bible/content/2133003bb8b5e62b"
-    },
-    {
-        "id": "hin_bridge_connectivity_solutions_1e8ab3",
-        "name": "Indian Revised Version(IRV) Hindi - 2019",
-        "abbrev": "IRVHin",
-        "language": "hin",
-        "latest_year": 2022,
-        "external_ids": {
-            "dbl": "1e8ab327edbce67f"
-        },
-        "info_url": "https://find.bible/bibles/HINOHB/"
-    },
-    {
-        "id": "hin_global_bible_initiative_38fa4b",
-        "name": "Hindi Standard Bible",
-        "abbrev": "HSB",
-        "language": "hin",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "38fa4be736b9bab9"
-        },
-        "info_url": "https://app.library.bible/content/38fa4be736b9bab9"
     },
     {
         "id": "HINBSI",
@@ -18173,17 +17887,6 @@
         "info_url": "https://find.bible/bibles/HROZZZ/"
     },
     {
-        "id": "hrv_croatian_bible_society_237997",
-        "name": "Croatian: Sarić translation revised with DC 2007",
-        "abbrev": "HRSDC",
-        "language": "hrv",
-        "latest_year": 2019,
-        "external_ids": {
-            "dbl": "237997b8dab43975"
-        },
-        "info_url": "https://app.library.bible/content/237997b8dab43975"
-    },
-    {
         "id": "HRVCBV",
         "name": "Croatian Bible",
         "abbrev": "HRVCBV",
@@ -18579,17 +18282,6 @@
             "dbl": "a54b32723ce622e5"
         },
         "info_url": "https://find.bible/bibles/HWCPGN/"
-    },
-    {
-        "id": "hwo_the_seed_company_0574f6",
-        "name": "Hona Bible",
-        "abbrev": "HWO",
-        "language": "hwo",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "0574f6c96804cf47"
-        },
-        "info_url": "https://app.library.bible/content/0574f6c96804cf47"
     },
     {
         "id": "HYEART",
@@ -19317,17 +19009,6 @@
             "dbl": "9dc9f108f1ed11e5"
         },
         "info_url": "https://find.bible/bibles/INBWBT/"
-    },
-    {
-        "id": "ind_the_our_language_2dd568",
-        "name": "Terjemahan Sederhana Indonesia",
-        "abbrev": "TSI",
-        "language": "ind",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "2dd568eeff29fb3c"
-        },
-        "info_url": "https://app.library.bible/content/2dd568eeff29fb3c"
     },
     {
         "id": "INDERV",
@@ -20484,17 +20165,6 @@
         "info_url": "https://find.bible/bibles/JNIDOR/"
     },
     {
-        "id": "jnj_the_word_for_0b8693",
-        "name": "Yemsa New Testament Ethiopic",
-        "abbrev": "YemNTEth",
-        "language": "jnj",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "0b869355f930f554"
-        },
-        "info_url": "https://app.library.bible/content/0b869355f930f554"
-    },
-    {
         "id": "JNJWFTF",
         "name": "Yemsa BIble",
         "abbrev": "JNJWFTF",
@@ -20848,17 +20518,6 @@
             "dbl": "91f76ed26b4c4909"
         },
         "info_url": "https://find.bible/bibles/KAMKKB/"
-    },
-    {
-        "id": "kan_biblica_inc_08389f",
-        "name": "Biblica® Open Kannada Contemporary Version 2022",
-        "abbrev": "OKCV",
-        "language": "kan",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "08389f036844c2de"
-        },
-        "info_url": "https://app.library.bible/content/08389f036844c2de"
     },
     {
         "id": "KANCLB",
@@ -22543,17 +22202,6 @@
             "find_bible": "KLENLI"
         },
         "info_url": "https://find.bible/bibles/KLENLI/"
-    },
-    {
-        "id": "klg_wycliffe_bible_translators_35e45e",
-        "name": "Tagakaulo Version",
-        "abbrev": "klg",
-        "language": "klg",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "35e45eb48e8d8642"
-        },
-        "info_url": "https://app.library.bible/content/35e45eb48e8d8642"
     },
     {
         "id": "KLGPOR",
@@ -24474,17 +24122,6 @@
             "dbl": "c31ff45c343111e7"
         },
         "info_url": "https://find.bible/bibles/KUEPNG/"
-    },
-    {
-        "id": "kuf_far_east_broadcasting_15a813",
-        "name": "Katu Bible Literal Text",
-        "abbrev": "KTLT",
-        "language": "kuf",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "15a813fef7fefb05"
-        },
-        "info_url": "https://app.library.bible/content/15a813fef7fefb05"
     },
     {
         "id": "KUJIFB",
@@ -26649,17 +26286,6 @@
         "info_url": "https://find.bible/bibles/LTGZZZP/"
     },
     {
-        "id": "lth_wycliffe_bible_translators_2d75eb",
-        "name": "Thur",
-        "abbrev": "ThurM",
-        "language": "lth",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "2d75eb8fe5beaceb"
-        },
-        "info_url": "https://app.library.bible/content/2d75eb8fe5beaceb"
-    },
-    {
         "id": "LTNNVV",
         "name": "Neo Vulgata",
         "abbrev": "LTNNVV",
@@ -27409,17 +27035,6 @@
         "info_url": "https://find.bible/bibles/MAQWBT/"
     },
     {
-        "id": "mar_biblica_inc_1c825c",
-        "name": "Biblica® Open Marathi Contemporary Version",
-        "abbrev": "OMRCV",
-        "language": "mar",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "1c825c8591183bb0"
-        },
-        "info_url": "https://app.library.bible/content/1c825c8591183bb0"
-    },
-    {
         "id": "MAROMB",
         "name": "The Revised Marathi Bible",
         "abbrev": "MAROMB",
@@ -27744,17 +27359,6 @@
             "dbl": "a8307874534f11e6"
         },
         "info_url": "https://find.bible/bibles/MBTWBT/"
-    },
-    {
-        "id": "mbu_the_seed_company_3109e7",
-        "name": "Mbula",
-        "abbrev": "mbu",
-        "language": "mbu",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "3109e777c3c9485a"
-        },
-        "info_url": "https://app.library.bible/content/3109e777c3c9485a"
     },
     {
         "id": "MBWGEN",
@@ -28100,17 +27704,6 @@
         "info_url": "https://find.bible/bibles/MDXDBS/"
     },
     {
-        "id": "mdy_bible_society_of_385573",
-        "name": "MAALE Bible",
-        "abbrev": "MB",
-        "language": "mdy",
-        "latest_year": 2022,
-        "external_ids": {
-            "dbl": "385573d4ba3ff72a"
-        },
-        "info_url": "https://find.bible/bibles/MDYBSE/"
-    },
-    {
         "id": "MDYBSE",
         "name": "Maale Bible",
         "abbrev": "MDYBSE",
@@ -28414,17 +28007,6 @@
         "info_url": "https://find.bible/bibles/MFKMFK/"
     },
     {
-        "id": "mfm_the_seed_company_0de04e",
-        "name": "Margi Tiwi Nga Tǝm [mfm]",
-        "abbrev": "mfmTNT",
-        "language": "mfm",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "0de04e26388bb8c9"
-        },
-        "info_url": "https://app.library.bible/content/0de04e26388bb8c9"
-    },
-    {
         "id": "MFNZZZ",
         "name": "1 Corinthians (tentative)",
         "abbrev": "MFNZZZ",
@@ -28445,17 +28027,6 @@
             "find_bible": "MFNZZZP"
         },
         "info_url": "https://find.bible/bibles/MFNZZZP/"
-    },
-    {
-        "id": "mfo_the_seed_company_2c04dc",
-        "name": "Mbembe Okohm",
-        "abbrev": "mfo",
-        "language": "mfo",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "2c04dc4efd036ce7"
-        },
-        "info_url": "https://app.library.bible/content/2c04dc4efd036ce7"
     },
     {
         "id": "MFPLAI",
@@ -28512,28 +28083,6 @@
             "find_bible": "MFVNTU"
         },
         "info_url": "https://find.bible/bibles/MFVNTU/"
-    },
-    {
-        "id": "mfx_the_word_for_1de321",
-        "name": "Melo New Testament Latin",
-        "abbrev": "MeloNTL",
-        "language": "mfx",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "1de321d5a85fcaee"
-        },
-        "info_url": "https://app.library.bible/content/1de321d5a85fcaee"
-    },
-    {
-        "id": "mfx_the_word_for_317070",
-        "name": "Melo New Testament Ethiopic",
-        "abbrev": "MeloNTEth",
-        "language": "mfx",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "317070e47ddf1f4e"
-        },
-        "info_url": "https://app.library.bible/content/317070e47ddf1f4e"
     },
     {
         "id": "MFXWFW",
@@ -30487,17 +30036,6 @@
         "info_url": "https://find.bible/bibles/MRHPOR/"
     },
     {
-        "id": "mri_bible_society_new_23a2ee",
-        "name": "Maori New Testament",
-        "abbrev": "MRNT",
-        "language": "mri",
-        "latest_year": 2022,
-        "external_ids": {
-            "dbl": "23a2ee55dfbc892c"
-        },
-        "info_url": "https://app.library.bible/content/23a2ee55dfbc892c"
-    },
-    {
         "id": "MRJITT",
         "name": "Mari, High New Testament",
         "abbrev": "MRJITT",
@@ -31455,17 +30993,6 @@
         "info_url": "https://find.bible/bibles/MXYNTP/"
     },
     {
-        "id": "mya_global_bible_initiative_218a77",
-        "name": "Myanmar Standard Bible (Unicode)",
-        "abbrev": "MSBU",
-        "language": "mya",
-        "latest_year": 2023,
-        "external_ids": {
-            "dbl": "218a7789e72a7d00"
-        },
-        "info_url": "https://find.bible/bibles/MYAMSB/"
-    },
-    {
         "id": "MYABCL",
         "name": "Burmese Common Language Version",
         "abbrev": "MYABCL",
@@ -32318,17 +31845,6 @@
         "info_url": "https://find.bible/bibles/NDDZZZP/"
     },
     {
-        "id": "nde_biblica_inc_0de391",
-        "name": "Biblica® Open Ndebele Contemporary Bible 2022",
-        "abbrev": "ONCB",
-        "language": "nde",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "0de391111a4cac1e"
-        },
-        "info_url": "https://app.library.bible/content/0de391111a4cac1e"
-    },
-    {
         "id": "NDEBIB",
         "name": "Ndebele Contemporary Version",
         "abbrev": "NDEBIB",
@@ -32708,17 +32224,6 @@
         "info_url": "https://find.bible/bibles/NGOWFW/"
     },
     {
-        "id": "ngp_the_word_for_324f45",
-        "name": "Nguu New Testament",
-        "abbrev": "NgBV",
-        "language": "ngp",
-        "latest_year": 2014,
-        "external_ids": {
-            "dbl": "324f457845cb5d21"
-        },
-        "info_url": "https://find.bible/bibles/NGPNNT/"
-    },
-    {
         "id": "NGPNNT",
         "name": "Nguu New Testament",
         "abbrev": "NGPNNT",
@@ -32771,8 +32276,7 @@
         "language": "nhd",
         "latest_year": 2013,
         "external_ids": {
-            "find_bible": "NHDN13",
-            "dbl": "5ad758fc90f8b6b4"
+            "find_bible": "NHDN13"
         },
         "info_url": "https://find.bible/bibles/NHDN13/"
     },
@@ -33135,17 +32639,6 @@
             "dbl": "a2a046289ef811e7"
         },
         "info_url": "https://find.bible/bibles/NIQNFB/"
-    },
-    {
-        "id": "nit_the_word_for_067286",
-        "name": "KOLAMI Bible",
-        "abbrev": "KP25",
-        "language": "nit",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "0672868a4bdc7281"
-        },
-        "info_url": "https://app.library.bible/content/0672868a4bdc7281"
     },
     {
         "id": "NIUBSSP",
@@ -33597,17 +33090,6 @@
         "info_url": "https://find.bible/bibles/NMABSI/"
     },
     {
-        "id": "nme_bridge_connectivity_solutions_067bdf",
-        "name": "Northern Zeme Bible",
-        "abbrev": "NorthZeme",
-        "language": "nme",
-        "latest_year": 2023,
-        "external_ids": {
-            "dbl": "067bdfb7336cd686"
-        },
-        "info_url": "https://app.library.bible/content/067bdfb7336cd686"
-    },
-    {
         "id": "NMEJHN",
         "name": "Naga Mzieme Gospel Portions",
         "abbrev": "NMEJHN",
@@ -33930,17 +33412,6 @@
         "info_url": "https://find.bible/bibles/NNPBSI/"
     },
     {
-        "id": "nnq_the_word_for_31c113",
-        "name": "Ngindo New Testament",
-        "abbrev": "NNQNT",
-        "language": "nnq",
-        "latest_year": 2018,
-        "external_ids": {
-            "dbl": "31c1130475000445"
-        },
-        "info_url": "https://find.bible/bibles/NNQPBT/"
-    },
-    {
         "id": "NNQPBT",
         "name": "Ngindo New Testament",
         "abbrev": "NNQPBT",
@@ -33987,17 +33458,6 @@
             "dbl": "fda60b2e535f11e6"
         },
         "info_url": "https://find.bible/bibles/NOAWBT/"
-    },
-    {
-        "id": "nob_biblica_inc_246ad9",
-        "name": "Biblica® Open Norwegian Living New Testament 2005",
-        "abbrev": "ONLNT",
-        "language": "nob",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "246ad95eade0d0a1"
-        },
-        "info_url": "https://app.library.bible/content/246ad95eade0d0a1"
     },
     {
         "id": "NOBB11",
@@ -35294,17 +34754,6 @@
         "info_url": "https://find.bible/bibles/OLOKOB/"
     },
     {
-        "id": "omb_pioneer_bible_translators_1f0fb3",
-        "name": "Havai",
-        "abbrev": "HavOTS",
-        "language": "omb",
-        "latest_year": 2022,
-        "external_ids": {
-            "dbl": "1f0fb3b67c603710"
-        },
-        "info_url": "https://app.library.bible/content/1f0fb3b67c603710"
-    },
-    {
         "id": "OMBPAR",
         "name": "Ambae, East Bible",
         "abbrev": "OMBPAR",
@@ -35566,17 +35015,6 @@
         "info_url": "https://find.bible/bibles/ORTNEW/"
     },
     {
-        "id": "ory_bridge_connectivity_solutions_03e08e",
-        "name": "Indian Revised Version(IRV) Odia - 2021",
-        "abbrev": "IRVOry",
-        "language": "ory",
-        "latest_year": 2022,
-        "external_ids": {
-            "dbl": "03e08e889c768aa7"
-        },
-        "info_url": "https://find.bible/bibles/ORIOOB/"
-    },
-    {
         "id": "ORYBSI",
         "name": "Odia Bible",
         "abbrev": "ORYBSI",
@@ -35726,17 +35164,6 @@
             "find_bible": "OWIGEN"
         },
         "info_url": "https://find.bible/bibles/OWIGEN/"
-    },
-    {
-        "id": "oyd_the_word_for_1468fe",
-        "name": "Oyda New Testament Latin",
-        "abbrev": "OydaNTL",
-        "language": "oyd",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "1468fe84d36e75bf"
-        },
-        "info_url": "https://app.library.bible/content/1468fe84d36e75bf"
     },
     {
         "id": "OYDTNT",
@@ -36469,17 +35896,6 @@
         "info_url": "https://find.bible/bibles/PFXOOS/"
     },
     {
-        "id": "pga_pioneer_bible_translators_30dbb5",
-        "name": "Southern Arabic",
-        "abbrev": "KMAJ",
-        "language": "pga",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "30dbb59c0d561d29"
-        },
-        "info_url": "https://app.library.bible/content/30dbb59c0d561d29"
-    },
-    {
         "id": "PGGZZZP",
         "name": "Walangi New Testament",
         "abbrev": "PGGZZZP",
@@ -36739,17 +36155,6 @@
             "dbl": "9f6e7b2529a04f9d"
         },
         "info_url": "https://find.bible/bibles/PLGTSN/"
-    },
-    {
-        "id": "plj_the_seed_company_0ae49e",
-        "name": "Zul",
-        "abbrev": "PLJ",
-        "language": "plj",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "0ae49e1d4d276551"
-        },
-        "info_url": "https://app.library.bible/content/0ae49e1d4d276551"
     },
     {
         "id": "PLSGEN",
@@ -37480,17 +36885,6 @@
         "info_url": "https://find.bible/bibles/POWWBT/"
     },
     {
-        "id": "poy_the_word_for_355792",
-        "name": "The New Testament in Pogoro",
-        "abbrev": "PBV",
-        "language": "poy",
-        "latest_year": 2014,
-        "external_ids": {
-            "dbl": "355792a03079ccdd"
-        },
-        "info_url": "https://find.bible/bibles/POYPNT/"
-    },
-    {
         "id": "POYPNT",
         "name": "The New Testament in Pogolo",
         "abbrev": "POYPNT",
@@ -37864,17 +37258,6 @@
             "find_bible": "PWONEW"
         },
         "info_url": "https://find.bible/bibles/PWONEW/"
-    },
-    {
-        "id": "pwr_the_word_for_2c42bb",
-        "name": "Powari Standard Project",
-        "abbrev": "PSP25",
-        "language": "pwr",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "2c42bb3d1b8a3f1c"
-        },
-        "info_url": "https://app.library.bible/content/2c42bb3d1b8a3f1c"
     },
     {
         "id": "PWWTBS",
@@ -39097,17 +38480,6 @@
         "info_url": "https://find.bible/bibles/RMLPOR/"
     },
     {
-        "id": "rmn_the_word_for_0a0927",
-        "name": "Romani Arli Bible 2024",
-        "abbrev": "Arli",
-        "language": "rmn",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "0a0927a2e4c58318"
-        },
-        "info_url": "https://app.library.bible/content/0a0927a2e4c58318"
-    },
-    {
         "id": "RMNBSS",
         "name": "Romani: Gurbeti Arlija",
         "abbrev": "RMNBSS",
@@ -40112,17 +39484,6 @@
         "info_url": "https://find.bible/bibles/SAJMAR/"
     },
     {
-        "id": "san_sanskritbible_in_0b07fc",
-        "name": "Sanskrit Bible (NT) in IAST Script (satyavedaḥ|)",
-        "abbrev": "SANIAS",
-        "language": "san",
-        "latest_year": 2018,
-        "external_ids": {
-            "dbl": "0b07fcef627a2db2"
-        },
-        "info_url": "https://find.bible/bibles/SANIAST/"
-    },
-    {
         "id": "SANBSI",
         "name": "Sanskrit New Testament",
         "abbrev": "SANBSI",
@@ -40375,17 +39736,6 @@
             "dbl": "023ee271344643e8"
         },
         "info_url": "https://find.bible/bibles/SBWSAG/"
-    },
-    {
-        "id": "sby_the_word_for_31ce26",
-        "name": "SOLI BIBLE TRANSLATION",
-        "abbrev": "SBT",
-        "language": "sby",
-        "latest_year": 2018,
-        "external_ids": {
-            "dbl": "31ce26b5803b75dd"
-        },
-        "info_url": "https://find.bible/bibles/SBY1567/"
     },
     {
         "id": "SBYWFW",
@@ -41146,17 +40496,6 @@
             "find_bible": "SLDTBL"
         },
         "info_url": "https://find.bible/bibles/SLDTBL/"
-    },
-    {
-        "id": "sle_the_word_for_239e3e",
-        "name": "Sikkiligar Bible",
-        "abbrev": "Srr25",
-        "language": "sle",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "239e3e9e3b8aac2e"
-        },
-        "info_url": "https://app.library.bible/content/239e3e9e3b8aac2e"
     },
     {
         "id": "SLKCPV",
@@ -42963,17 +42302,6 @@
         "info_url": "https://find.bible/bibles/SWESWE/"
     },
     {
-        "id": "swh_biblica_inc_0cd52d",
-        "name": "Biblica® Open Kiswahili Contemporary Scriptures™ 2024",
-        "abbrev": "ONMM",
-        "language": "swh",
-        "latest_year": 2025,
-        "external_ids": {
-            "dbl": "0cd52ddc726e2ee6"
-        },
-        "info_url": "https://app.library.bible/content/0cd52ddc726e2ee6"
-    },
-    {
         "id": "SWH1937",
         "name": "Swahili Roehl Bible 1937",
         "abbrev": "SWH1937",
@@ -43331,17 +42659,6 @@
             "dbl": "4318a59ac38711e5"
         },
         "info_url": "https://find.bible/bibles/TAJWBT/"
-    },
-    {
-        "id": "tam_biblica_inc_032ec2",
-        "name": "Biblica® Open Indian Tamil Contemporary Version",
-        "abbrev": "OTCV",
-        "language": "tam",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "032ec262506b719f"
-        },
-        "info_url": "https://app.library.bible/content/032ec262506b719f"
     },
     {
         "id": "TAMBIB",
@@ -44681,17 +43998,6 @@
         "info_url": "https://find.bible/bibles/TKLNEW/"
     },
     {
-        "id": "tkr_institute_for_bible_00cdf9",
-        "name": "Tsakhur",
-        "abbrev": "TKR",
-        "language": "tkr",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "00cdf9001d68edfa"
-        },
-        "info_url": "https://app.library.bible/content/00cdf9001d68edfa"
-    },
-    {
         "id": "TKRIBT",
         "name": "Book of Proverbs in Tsakhur",
         "abbrev": "TKRIBT",
@@ -45187,17 +44493,6 @@
             "dbl": "bf1138661d3c4310"
         },
         "info_url": "https://find.bible/bibles/TOMIBS/"
-    },
-    {
-        "id": "ton_ebible_org_252104",
-        "name": "Tongan Revised West Version",
-        "abbrev": "tonRWV",
-        "language": "ton",
-        "latest_year": 2019,
-        "external_ids": {
-            "dbl": "25210406001d9aae"
-        },
-        "info_url": "https://app.library.bible/content/25210406001d9aae"
     },
     {
         "id": "TONBAX",
@@ -46121,17 +45416,6 @@
         "info_url": "https://find.bible/bibles/TUOWBT/"
     },
     {
-        "id": "tur_ebible_org_085def",
-        "name": "Yorumsuz Türkçe Çeviri (YTC)",
-        "abbrev": "turytc",
-        "language": "tur",
-        "latest_year": 2026,
-        "external_ids": {
-            "dbl": "085defac6e17b9eb"
-        },
-        "info_url": "https://app.library.bible/content/085defac6e17b9eb"
-    },
-    {
         "id": "TURBLI",
         "name": "Turkish Bible Halk Dilinde 2012",
         "abbrev": "TURBLI",
@@ -46315,17 +45599,6 @@
             "find_bible": "TWHZZZ"
         },
         "info_url": "https://find.bible/bibles/TWHZZZ/"
-    },
-    {
-        "id": "twi_biblica_inc_18f6cf",
-        "name": "Biblica® Open Asante Twi Contemporary Bible 2020",
-        "abbrev": "OASCB",
-        "language": "twi",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "18f6cf27f7b43297"
-        },
-        "info_url": "https://app.library.bible/content/18f6cf27f7b43297"
     },
     {
         "id": "TWINTP",
@@ -47148,28 +46421,6 @@
         "info_url": "https://find.bible/bibles/URBWBT/"
     },
     {
-        "id": "urd_ebible_org_2a1480",
-        "name": "Urdu Geo Version (Urdu Script)",
-        "abbrev": "urdgvu",
-        "language": "urd",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "2a1480cfb6f181d7"
-        },
-        "info_url": "https://app.library.bible/content/2a1480cfb6f181d7"
-    },
-    {
-        "id": "urd_ebible_org_4b2019",
-        "name": "Urdu Geo Version (Roman Script)",
-        "abbrev": "urdgvr",
-        "language": "urd",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "4b2019a039084853"
-        },
-        "info_url": "https://app.library.bible/content/4b2019a039084853"
-    },
-    {
         "id": "URDB43",
         "name": "Urdu Bible",
         "abbrev": "URDB43",
@@ -47445,17 +46696,6 @@
         "info_url": "https://find.bible/bibles/UTHWBT/"
     },
     {
-        "id": "utr_the_seed_company_107c0b",
-        "name": "Etulo",
-        "abbrev": "UTR",
-        "language": "utr",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "107c0b030eea6ace"
-        },
-        "info_url": "https://app.library.bible/content/107c0b030eea6ace"
-    },
-    {
         "id": "UVHWBT",
         "name": "Uri New Testament",
         "abbrev": "UVHWBT",
@@ -47706,17 +46946,6 @@
             "dbl": "a795ed52ef5111e5"
         },
         "info_url": "https://find.bible/bibles/VIDWFW/"
-    },
-    {
-        "id": "vie_ebible_org_1b878d",
-        "name": "Vietnamese Bible 1925 [vie] Vietnam",
-        "abbrev": "vie1934",
-        "language": "vie",
-        "latest_year": 2022,
-        "external_ids": {
-            "dbl": "1b878de073afef07"
-        },
-        "info_url": "https://app.library.bible/content/1b878de073afef07"
     },
     {
         "id": "VIELHG",
@@ -49340,17 +48569,6 @@
         "info_url": "https://find.bible/bibles/YAEGLP/"
     },
     {
-        "id": "yaf_the_seed_company_0f8cde",
-        "name": "Projet Yaka",
-        "abbrev": "YAF",
-        "language": "yaf",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "0f8cdef1ba2120a5"
-        },
-        "info_url": "https://app.library.bible/content/0f8cdef1ba2120a5"
-    },
-    {
         "id": "YAFIBP",
         "name": "Iyaka Bible Portion",
         "abbrev": "YAFIBP",
@@ -49752,17 +48970,6 @@
             "dbl": "28c40de349db51a4"
         },
         "info_url": "https://find.bible/bibles/YMLWBT/"
-    },
-    {
-        "id": "yns_the_seed_company_23b95e",
-        "name": "Bible Iyansi",
-        "abbrev": "YNS",
-        "language": "yns",
-        "latest_year": 2024,
-        "external_ids": {
-            "dbl": "23b95e51ae5ff242"
-        },
-        "info_url": "https://app.library.bible/content/23b95e51ae5ff242"
     },
     {
         "id": "YNSZZZ",

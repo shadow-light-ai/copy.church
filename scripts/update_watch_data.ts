@@ -1,6 +1,9 @@
 
-// Pulls Bible translation, owner, and license data to update the static
-// Bible Society Watch dataset in src/_data/watch/*.json. Sources, in order:
+// Rebuilds the static Bible Society Watch dataset in src/_data/watch/*.json entirely from
+// scratch each run — translations.json, owners.json, and license_terms.json are NOT loaded and
+// merged with, they're fully replaced, so stale/removed fields and abandoned entries can't
+// accumulate across runs. (response_log.json is untouched — that one's hand-curated.) Sources,
+// in order:
 //   1. find.bible — via the public digitalbiblesociety/data dataset (base translation list)
 //   2. fetch.bible — v1.fetch.bible/manifest.json (license/owner for translations it distributes)
 //   3. DBL (Digital Bible Library) — only for translations still missing a license after 1-2,
@@ -8,10 +11,13 @@
 // Deliberately does NOT consult eBible or open.bible (open.bible was tried and dropped — see
 // git history if it needs revisiting; this sandbox's network can't reach it at all).
 //
+// NOTE Because owners.json is rebuilt fresh, any manually-added Owner fields (website,
+// ministry_watch_url) will be lost on the next run unless this script is taught to preserve them.
+//
 // Usage:
 //   node --experimental-strip-types scripts/update_watch_data.ts [--dry-run] [--with-dbl]
 
-import {readFileSync, writeFileSync} from 'node:fs'
+import {writeFileSync} from 'node:fs'
 import {createInterface} from 'node:readline/promises'
 import {createHmac} from 'node:crypto'
 
@@ -29,11 +35,6 @@ const WITH_DBL = args.has('--with-dbl')
 
 
 // ---- small generic helpers ----
-
-function load_json<T>(name:string):T{
-    // Read one of our own data files
-    return JSON.parse(readFileSync(new URL(name, DATA_DIR), 'utf8'))
-}
 
 function save_json(name:string, data:unknown):void{
     // Write one of our own data files, matching the repo's existing 4-space formatting
@@ -56,13 +57,6 @@ async function fetch_json<T>(url:string, headers:Record<string, string> = {}):Pr
     return res.json() as Promise<T>
 }
 
-function upsert_by_id<T extends {id:string}>(list:T[], item:T):void{
-    // Full replace, not a merge — so fields removed from the schema don't linger from old runs
-    const i = list.findIndex(x => x.id === item.id)
-    if (i === -1) list.push(item)
-    else list[i] = item
-}
-
 function get_or_create_owner(owners:Owner[], name:string):string{
     // Find an existing owner by name, or add a new one — returns the owner's id
     const id = slugify(name)
@@ -77,13 +71,6 @@ function owner_id_for(owners:Owner[], attribution:string):string{
     const name = attribution.trim()
     if (!name || /^public domain$/i.test(name)) return 'unknown'
     return get_or_create_owner(owners, name)
-}
-
-function upsert_license_terms(list:LicenseTerms[], item:LicenseTerms):void{
-    // Key on translation_id + type — replaces a stale/unknown entry rather than duplicating it
-    const i = list.findIndex(x => x.translation_id === item.translation_id && x.type === item.type)
-    if (i === -1) list.push(item)
-    else list[i] = item
 }
 
 const today = ():string => new Date().toISOString().slice(0, 10)
@@ -184,14 +171,10 @@ async function pull_find_bible(translations:Translation[]):Promise<void>{
             },
             info_url: `https://find.bible/bibles/${entry.id}/`,
         }
-        // Preserve any external_ids already on the existing record (e.g. a manually-added one)
-        const existing = translations.find(t => t.id === entry.id)
-        if (existing) translation.external_ids = {...existing.external_ids, ...translation.external_ids}
-
-        upsert_by_id(translations, translation)
+        translations.push(translation)
         added += 1
     }
-    console.info(`find.bible: upserted ${added} translations`)
+    console.info(`find.bible: added ${added} translations`)
 }
 
 
@@ -227,17 +210,12 @@ async function pull_fetch_bible(
         const entry = by_dbl_uid.get(dbl_uid)
         if (!entry) continue
 
-        // Already have a real (non-'unknown') license for this translation? Don't overwrite.
-        const existing = license_terms.find(
-            lt => lt.translation_id === translation.id && lt.type === 'text')
-        if (existing && existing.license !== 'unknown') continue
-
         const license = entry.copyright.licenses[0]
         if (!license) continue
 
         const owner_id = owner_id_for(owners, entry.copyright.attribution)
 
-        upsert_license_terms(license_terms, {
+        license_terms.push({
             translation_id: translation.id,
             owner_id,
             type: 'text',
@@ -302,8 +280,8 @@ async function fetch_dbl_open_access_entries():Promise<DblContentEntry[]>{
 
 async function pull_dbl(
         translations:Translation[], owners:Owner[], license_terms:LicenseTerms[]):Promise<void>{
-    const candidates = translations.filter(t => t.external_ids.dbl && !license_terms.some(
-        lt => lt.translation_id === t.id && lt.type === 'text' && lt.license !== 'unknown'))
+    const candidates = translations.filter(t => t.external_ids.dbl
+        && !license_terms.some(lt => lt.translation_id === t.id && lt.type === 'text'))
     if (!candidates.length){
         console.info('DBL: nothing left needing a lookup, skipping')
         return
@@ -340,7 +318,7 @@ async function pull_dbl(
         const owner_name = entry.primaryLicensorOrg?.name || entry.providedByOrg?.name || ''
         const owner_id = owner_id_for(owners, owner_name)
 
-        upsert_license_terms(license_terms, {
+        license_terms.push({
             translation_id: translation.id,
             owner_id,
             type: 'text',
@@ -357,42 +335,10 @@ async function pull_dbl(
 // ---- main ----
 
 async function main():Promise<void>{
-    let translations = load_json<Translation[]>('translations.json')
-    let owners = load_json<Owner[]>('owners.json')
-    const license_terms = load_json<LicenseTerms[]>('license_terms.json')
-
-    // Older manually-seeded entries predate the 'type' field — treat them as 'text' (the only
-    // kind ever pulled by hand) so the dedup logic above can recognize and replace them
-    for (const lt of license_terms){
-        if (!('type' in lt)) (lt as LicenseTerms).type = 'text'
-    }
-
-    // One-off fix: strip fields dropped from the Translation type that can otherwise linger on
-    // entries never touched by pull_find_bible (translations sourced only from DBL, not find.bible)
-    for (const t of translations){
-        delete (t as Record<string, unknown>)['scope']
-        delete (t as Record<string, unknown>)['owner_id']
-    }
-
-    // One-off fix: an earlier run of this script invented a fake "Public domain" owner instead
-    // of using owner_id_for()'s 'unknown' fallback — point those rows at 'unknown' instead
-    for (const lt of license_terms){
-        if (lt.owner_id === 'public_domain') lt.owner_id = 'unknown'
-    }
-    owners = owners.filter(o => o.id !== 'public_domain')
-
-    // One-off fix: the 'type' migration above can turn a legacy 'unknown' row and an already-added
-    // real one into two rows with the same (translation_id, type) — collapse them, preferring
-    // whichever has a real license
-    const best_by_key = new Map<string, LicenseTerms>()
-    for (const lt of license_terms){
-        const key = `${lt.translation_id}\0${lt.type}`
-        const current = best_by_key.get(key)
-        if (!current || (current.license === 'unknown' && lt.license !== 'unknown'))
-            best_by_key.set(key, lt)
-    }
-    license_terms.length = 0
-    license_terms.push(...best_by_key.values())
+    // Built fresh each run — see the NOTE at the top of this file
+    let translations:Translation[] = []
+    const owners:Owner[] = []
+    const license_terms:LicenseTerms[] = []
 
     await pull_find_bible(translations)
     await pull_fetch_bible(translations, owners, license_terms)
