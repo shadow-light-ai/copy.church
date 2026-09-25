@@ -10,7 +10,6 @@ export interface Translation {
     abbrev: string  // English abbreviation
     language: string  // ISO 639-3 code
     latest_year: number  // Most recent known year (revision, or completion)
-    scope: "full" | "nt" | "ot" | "portion" | "unknown"  // 'unknown' when the source doesn't say
     external_ids: {
         dbl?: string
         find_bible?: string
