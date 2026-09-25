@@ -1,4 +1,3 @@
-
 ---
 description: A registry of Bible translations, who owns them, and how they've responded when their work was shared.
 ---
