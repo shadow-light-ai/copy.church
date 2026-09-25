@@ -1,5 +1,5 @@
 
-// Shared types for the Bible Society Watch dataset (src/_data/watch/*.json)
+// Shared types for the Bible Org Watch dataset (src/_data/watch/*.json)
 // All data here is static and checked into the repo — no backend, no Firestore.
 
 

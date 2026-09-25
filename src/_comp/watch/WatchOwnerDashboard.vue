@@ -19,9 +19,6 @@ div.watch_dashboard_wrap
                 | Most restricted
             button(:class='{active: sort_mode === "pct"}' @click='sort_mode = "pct"')
                 | Highest % restricted
-        label.min_filter
-            | Min. tracked translations
-            input(v-model.number='min_tracked' type='number' min='1' :max='stats.translations')
 
     p.legend
         span.legend_item: span.swatch.open
@@ -38,7 +35,7 @@ div.watch_dashboard_wrap
             th.bar Restricted vs open
             th.num Restricted
             th.num %
-        tr(v-for='(owner, i) of shown' :key='owner.id')
+        tr(v-for='(owner, i) of ranked' :key='owner.id')
             td.rank {{ i + 1 }}
             td.owner_name
                 a(:href='`/watch/translations/#o=${owner.id}`' :title='`See ${owner.name}\'s translations`')
@@ -59,9 +56,6 @@ div.watch_dashboard_wrap
                     div.meter_segment.restricted(:style='{width: owner.fully_restricted_pct + "%"}')
             td.num {{ owner.restricted }}
             td.num {{ owner.restricted_pct }}%
-    p.more(v-if='ranked.length > shown.length')
-        | Showing top {{ shown.length }} of {{ ranked.length }} owners meeting the minimum — raise the
-        | limit or narrow the minimum to see more.
 
 </template>
 
@@ -70,7 +64,7 @@ div.watch_dashboard_wrap
 
 import {ref, computed} from 'vue'
 
-// Static Bible Society Watch data — checked into the repo, no backend
+// Static Bible Org Watch data — checked into the repo, no backend
 import owners from '@/_data/watch/owners.json'
 import license_terms from '@/_data/watch/license_terms.json'
 
@@ -136,19 +130,12 @@ const stats = computed(() => {
     }
 })
 
-// Ranking controls — by raw restricted count, or by restricted share of an owner's catalogue
+// Ranking control — by raw restricted count, or by restricted share of an owner's catalogue
 const sort_mode = ref<'count' | 'pct'>('count')
-const min_tracked = ref(3)
 
-const ranked = computed(() => {
-    const rows = owner_rows.filter(o => o.tracked >= min_tracked.value)
-    return rows.sort((a, b) => sort_mode.value === 'count'
-        ? (b.restricted - a.restricted) || (b.restricted_pct - a.restricted_pct)
-        : (b.restricted_pct - a.restricted_pct) || (b.restricted - a.restricted))
-})
-
-const LIMIT = 50
-const shown = computed(() => ranked.value.slice(0, LIMIT))
+const ranked = computed(() => [...owner_rows].sort((a, b) => sort_mode.value === 'count'
+    ? (b.restricted - a.restricted) || (b.restricted_pct - a.restricted_pct)
+    : (b.restricted_pct - a.restricted_pct) || (b.restricted - a.restricted)))
 
 </script>
 
@@ -202,26 +189,6 @@ const shown = computed(() => ranked.value.slice(0, LIMIT))
                 border-color: var(--vp-c-brand-1)
                 color: var(--vp-c-brand-1)
                 font-weight: 600
-
-    .min_filter
-        display: flex
-        align-items: center
-        gap: 6px
-        font-size: 0.8em
-        opacity: 0.8
-
-        input
-            width: 56px
-            padding: 4px 6px
-            border: 1px solid var(--vp-c-divider)
-            border-radius: 6px
-            background: var(--vp-c-bg)
-            color: var(--vp-c-text-1)
-
-    .more
-        font-size: 0.8em
-        opacity: 0.7
-        margin-top: 8px
 
     .legend
         font-size: 0.78em

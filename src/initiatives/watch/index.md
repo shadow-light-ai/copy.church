@@ -6,9 +6,9 @@ description: A registry of Bible translations, who owns them, and how they've re
 import WatchOwnerDashboard from '@/_comp/watch/WatchOwnerDashboard.vue'
 </script>
 
-# Bible Society Watch
+# Bible Org Watch
 
-Bible Society Watch tracks every known Bible translation, who owns or publishes it, and how
+Bible Org Watch tracks every known Bible translation, who owns or publishes it, and how
 restrictively that owner licenses it — ranking owners by how much of their catalogue is locked
 down, so restrictive behavior carries a reputational cost and generous licensing a reputational
 reward.

@@ -35,7 +35,7 @@ div.watch_translations_page
 
 import {ref, computed, onBeforeMount, watch} from 'vue'
 
-// Static Bible Society Watch data — checked into the repo, no backend
+// Static Bible Org Watch data — checked into the repo, no backend
 import translations from '@/_data/watch/translations.json'
 import owners from '@/_data/watch/owners.json'
 import license_terms from '@/_data/watch/license_terms.json'

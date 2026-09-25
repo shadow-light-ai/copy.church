@@ -1,5 +1,5 @@
 ---
-description: Every known Bible translation tracked by Bible Society Watch, filterable by owner and language.
+description: Every known Bible translation tracked by Bible Org Watch, filterable by owner and language.
 ---
 
 <script lang='ts' setup>
