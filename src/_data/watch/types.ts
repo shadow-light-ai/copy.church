@@ -48,11 +48,10 @@ export interface LicenseTerms {
 export interface ResponseLogEntry {
     id: string
     owner_id: string  // References an Owner's `id`
-    translation_id?: string  // Optionally scoped to a specific Translation
+    translation_ids: string[]  // Optionally scoped to specific Translations
     date: string  // ISO 8601 date
-    type: "cease_and_desist" | "access_revoked" | "permissive_statement"
-        | "license_liberalized" | "no_response" | "other"
     summary: string
     evidence_url: string
-    verification_status: "verified" | "unverified" | "disputed"
+    reporter_name: string  // Who reported this entry
+    reporter_url: string  // Link to the reporter (profile, site, contact page, etc.)
 }
