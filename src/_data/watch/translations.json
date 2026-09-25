@@ -10,7 +10,7 @@
         "external_ids": {
             "dbl": "2a65010324d677b6"
         },
-        "info_url": "https://app.library.bible/content/2a65010324d677b6"
+        "info_url": "https://find.bible/bibles/SPMPBT/"
     },
     {
         "id": "bsw_the_word_for_14a5a8",
@@ -62,7 +62,7 @@
         "external_ids": {
             "dbl": "17c44f6c89de00db"
         },
-        "info_url": "https://app.library.bible/content/17c44f6c89de00db"
+        "info_url": "https://find.bible/bibles/BELJFC/"
     },
     {
         "id": "yns_the_seed_company_23b95e",
@@ -231,7 +231,7 @@
         "external_ids": {
             "dbl": "0303570f15afd95e"
         },
-        "info_url": "https://find.bible/bibles/CRWIBS/"
+        "info_url": "https://app.library.bible/content/0303570f15afd95e"
     },
     {
         "id": "asg_the_seed_company_0241e0",
@@ -244,7 +244,7 @@
         "external_ids": {
             "dbl": "0241e02f3cb97e8c"
         },
-        "info_url": "https://find.bible/bibles/ASGWBT/"
+        "info_url": "https://app.library.bible/content/0241e02f3cb97e8c"
     },
     {
         "id": "hrv_croatian_bible_society_237997",
@@ -270,7 +270,7 @@
         "external_ids": {
             "dbl": "37a1dc7a54269bd3"
         },
-        "info_url": "https://find.bible/bibles/CUAGEN/"
+        "info_url": "https://app.library.bible/content/37a1dc7a54269bd3"
     },
     {
         "id": "eng_ebible_org_179568",
@@ -296,7 +296,7 @@
         "external_ids": {
             "dbl": "147ebe97085ae322"
         },
-        "info_url": "https://find.bible/bibles/EKANBT/"
+        "info_url": "https://app.library.bible/content/147ebe97085ae322"
     },
     {
         "id": "utr_the_seed_company_107c0b",
@@ -348,7 +348,7 @@
         "external_ids": {
             "dbl": "29f2d73fdf71a11e"
         },
-        "info_url": "https://find.bible/bibles/GDFLIST/"
+        "info_url": "https://app.library.bible/content/29f2d73fdf71a11e"
     },
     {
         "id": "gok_the_word_for_28d256",
@@ -413,7 +413,7 @@
         "external_ids": {
             "dbl": "0574f6c96804cf47"
         },
-        "info_url": "https://find.bible/bibles/HWOEBL/"
+        "info_url": "https://app.library.bible/content/0574f6c96804cf47"
     },
     {
         "id": "tam_bridge_connectivity_solutions_03a021",
@@ -426,7 +426,7 @@
         "external_ids": {
             "dbl": "03a021185023710b"
         },
-        "info_url": "https://app.library.bible/content/03a021185023710b"
+        "info_url": "https://find.bible/bibles/TAMOTB/"
     },
     {
         "id": "hin_bridge_connectivity_solutions_1e8ab3",
@@ -439,7 +439,7 @@
         "external_ids": {
             "dbl": "1e8ab327edbce67f"
         },
-        "info_url": "https://app.library.bible/content/1e8ab327edbce67f"
+        "info_url": "https://find.bible/bibles/HINOHB/"
     },
     {
         "id": "ory_bridge_connectivity_solutions_03e08e",
@@ -452,7 +452,7 @@
         "external_ids": {
             "dbl": "03e08e889c768aa7"
         },
-        "info_url": "https://app.library.bible/content/03e08e889c768aa7"
+        "info_url": "https://find.bible/bibles/ORIOOB/"
     },
     {
         "id": "juy_the_word_for_0aaff2",
@@ -504,7 +504,7 @@
         "external_ids": {
             "dbl": "16fb881ce1e27a60"
         },
-        "info_url": "https://app.library.bible/content/16fb881ce1e27a60"
+        "info_url": "https://find.bible/bibles/KFCWFW/"
     },
     {
         "id": "kff_the_word_for_0d5605",
@@ -517,7 +517,7 @@
         "external_ids": {
             "dbl": "0d5605ba6bf41754"
         },
-        "info_url": "https://app.library.bible/content/0d5605ba6bf41754"
+        "info_url": "https://find.bible/bibles/KFFWFW/"
     },
     {
         "id": "eng_covenant_press_01b29f",
@@ -582,7 +582,7 @@
         "external_ids": {
             "dbl": "2c04dc4efd036ce7"
         },
-        "info_url": "https://find.bible/bibles/MFOEBL/"
+        "info_url": "https://app.library.bible/content/2c04dc4efd036ce7"
     },
     {
         "id": "mbu_the_seed_company_3109e7",
@@ -634,7 +634,7 @@
         "external_ids": {
             "dbl": "218a7789e72a7d00"
         },
-        "info_url": "https://app.library.bible/content/218a7789e72a7d00"
+        "info_url": "https://find.bible/bibles/MYAMSB/"
     },
     {
         "id": "anh_pioneer_bible_translators_0c2ff0",
@@ -647,7 +647,7 @@
         "external_ids": {
             "dbl": "0c2ff0a5c8b9069c"
         },
-        "info_url": "https://app.library.bible/content/0c2ff0a5c8b9069c"
+        "info_url": "https://find.bible/bibles/ANHMYO/"
     },
     {
         "id": "cwe_the_word_for_33e024",
@@ -660,7 +660,7 @@
         "external_ids": {
             "dbl": "33e024fcc7010565"
         },
-        "info_url": "https://find.bible/bibles/CWEPBT/"
+        "info_url": "https://app.library.bible/content/33e024fcc7010565"
     },
     {
         "id": "nnq_the_word_for_31c113",
@@ -686,7 +686,7 @@
         "external_ids": {
             "dbl": "324f457845cb5d21"
         },
-        "info_url": "https://app.library.bible/content/324f457845cb5d21"
+        "info_url": "https://find.bible/bibles/NGPNNT/"
     },
     {
         "id": "nme_bridge_connectivity_solutions_067bdf",
@@ -738,7 +738,7 @@
         "external_ids": {
             "dbl": "0f8cdef1ba2120a5"
         },
-        "info_url": "https://find.bible/bibles/YAFIBP/"
+        "info_url": "https://app.library.bible/content/0f8cdef1ba2120a5"
     },
     {
         "id": "rmn_the_word_for_0a0927",
@@ -777,7 +777,7 @@
         "external_ids": {
             "dbl": "33b6449cacf22773"
         },
-        "info_url": "https://app.library.bible/content/33b6449cacf22773"
+        "info_url": "https://find.bible/bibles/SANIAST/"
     },
     {
         "id": "san_sanskritbible_in_0b07fc",
@@ -790,7 +790,7 @@
         "external_ids": {
             "dbl": "0b07fcef627a2db2"
         },
-        "info_url": "https://app.library.bible/content/0b07fcef627a2db2"
+        "info_url": "https://find.bible/bibles/SANIAST/"
     },
     {
         "id": "san_sanskritbible_in_119375",
@@ -803,7 +803,7 @@
         "external_ids": {
             "dbl": "119375d97b57cf04"
         },
-        "info_url": "https://app.library.bible/content/119375d97b57cf04"
+        "info_url": "https://find.bible/bibles/SANMSB/"
     },
     {
         "id": "san_sanskritbible_in_07225e",
@@ -816,7 +816,7 @@
         "external_ids": {
             "dbl": "07225eadadcb079a"
         },
-        "info_url": "https://app.library.bible/content/07225eadadcb079a"
+        "info_url": "https://find.bible/bibles/SANPSB/"
     },
     {
         "id": "san_sanskritbible_in_2c2cf8",
@@ -829,7 +829,7 @@
         "external_ids": {
             "dbl": "2c2cf8df5a22a46e"
         },
-        "info_url": "https://app.library.bible/content/2c2cf8df5a22a46e"
+        "info_url": "https://find.bible/bibles/SANSIN/"
     },
     {
         "id": "san_sanskritbible_in_143e0e",
@@ -842,7 +842,7 @@
         "external_ids": {
             "dbl": "143e0e03cf5b12ae"
         },
-        "info_url": "https://app.library.bible/content/143e0e03cf5b12ae"
+        "info_url": "https://find.bible/bibles/SANTSB/"
     },
     {
         "id": "san_sanskritbible_in_306d6a",
@@ -855,7 +855,7 @@
         "external_ids": {
             "dbl": "306d6ab1ca333a1e"
         },
-        "info_url": "https://app.library.bible/content/306d6ab1ca333a1e"
+        "info_url": "https://find.bible/bibles/SANTHA/"
     },
     {
         "id": "san_sanskritbible_in_018ff0",
@@ -868,7 +868,7 @@
         "external_ids": {
             "dbl": "018ff00d7f55cbc1"
         },
-        "info_url": "https://app.library.bible/content/018ff00d7f55cbc1"
+        "info_url": "https://find.bible/bibles/SANTNT/"
     },
     {
         "id": "san_sanskritbible_in_51b16e",
@@ -881,7 +881,7 @@
         "external_ids": {
             "dbl": "51b16e0b4b7c9825"
         },
-        "info_url": "https://app.library.bible/content/51b16e0b4b7c9825"
+        "info_url": "https://find.bible/bibles/SANUNT/"
     },
     {
         "id": "srp_ebible_org_06995c",
@@ -894,7 +894,7 @@
         "external_ids": {
             "dbl": "06995ce9cd23361b"
         },
-        "info_url": "https://app.library.bible/content/06995ce9cd23361b"
+        "info_url": "https://find.bible/bibles/SRPVDS/"
     },
     {
         "id": "sle_the_word_for_239e3e",
@@ -907,7 +907,7 @@
         "external_ids": {
             "dbl": "239e3e9e3b8aac2e"
         },
-        "info_url": "https://find.bible/bibles/SLEWFW/"
+        "info_url": "https://app.library.bible/content/239e3e9e3b8aac2e"
     },
     {
         "id": "sby_the_word_for_31ce26",
@@ -920,7 +920,7 @@
         "external_ids": {
             "dbl": "31ce26b5803b75dd"
         },
-        "info_url": "https://app.library.bible/content/31ce26b5803b75dd"
+        "info_url": "https://find.bible/bibles/SBY1567/"
     },
     {
         "id": "pga_pioneer_bible_translators_30dbb5",
@@ -959,7 +959,7 @@
         "external_ids": {
             "dbl": "2d5220a02a7aaac6"
         },
-        "info_url": "https://app.library.bible/content/2d5220a02a7aaac6"
+        "info_url": "https://find.bible/bibles/SUSAPB/"
     },
     {
         "id": "klg_wycliffe_bible_translators_35e45e",
@@ -1011,7 +1011,7 @@
         "external_ids": {
             "dbl": "2eb94132ad61ae75"
         },
-        "info_url": "https://app.library.bible/content/2eb94132ad61ae75"
+        "info_url": "https://find.bible/bibles/THAKJV/"
     },
     {
         "id": "eng_ebible_org_2f0fd8",
@@ -1076,7 +1076,7 @@
         "external_ids": {
             "dbl": "30cb581bcc911c45"
         },
-        "info_url": "https://app.library.bible/content/30cb581bcc911c45"
+        "info_url": "https://find.bible/bibles/TODPBT/"
     },
     {
         "id": "ton_ebible_org_252104",
@@ -1141,7 +1141,7 @@
         "external_ids": {
             "dbl": "28c40de349db51a4"
         },
-        "info_url": "https://app.library.bible/content/28c40de349db51a4"
+        "info_url": "https://find.bible/bibles/YMLWBT/"
     },
     {
         "id": "urd_ebible_org_4b2019",
@@ -1180,7 +1180,7 @@
         "external_ids": {
             "dbl": "1c9761e0230da6e0"
         },
-        "info_url": "https://app.library.bible/content/1c9761e0230da6e0"
+        "info_url": "https://find.bible/bibles/POLUBG/"
     },
     {
         "id": "vie_ebible_org_1b878d",
@@ -1219,7 +1219,7 @@
         "external_ids": {
             "dbl": "2c500771ea16da93"
         },
-        "info_url": "https://app.library.bible/content/2c500771ea16da93"
+        "info_url": "https://find.bible/bibles/HEBWLC/"
     },
     {
         "id": "eng_ebible_org_04da58",
@@ -1232,7 +1232,7 @@
         "external_ids": {
             "dbl": "04da588535d2f823"
         },
-        "info_url": "https://app.library.bible/content/04da588535d2f823"
+        "info_url": "https://find.bible/bibles/ENGWEBBM/"
     },
     {
         "id": "jnj_the_word_for_0b8693",
@@ -1271,7 +1271,7 @@
         "external_ids": {
             "dbl": "1a340f5ae072b2f4"
         },
-        "info_url": "https://app.library.bible/content/1a340f5ae072b2f4"
+        "info_url": "https://find.bible/bibles/CZTBSM/"
     },
     {
         "id": "plj_the_seed_company_0ae49e",
@@ -1284,7 +1284,7 @@
         "external_ids": {
             "dbl": "0ae49e1d4d276551"
         },
-        "info_url": "https://find.bible/bibles/PLJLDB/"
+        "info_url": "https://app.library.bible/content/0ae49e1d4d276551"
     },
     {
         "id": "cmn_free_bible_ministry_04fb2b",
