@@ -6,18 +6,10 @@
 // A single Bible translation (full, NT-only, or a partial/portion translation)
 export interface Translation {
     id: string  // Stable internal id, e.g. `<lang_code>_<org_abbrev>`
-    name: {
-        local: string
-        local_abbrev: string
-        english: string
-        english_abbrev: string
-    }
-    language: {
-        code: string  // ISO 639-3
-        name: string
-    }
-    country: string
-    year: number  // Earliest known year (submission or completion)
+    name: string  // English name
+    abbrev: string  // English abbreviation
+    language: string  // ISO 639-3 code
+    latest_year: number  // Most recent known year (revision, or completion)
     scope: "full" | "nt" | "ot" | "portion"
     owner_id: string  // References an Owner's `id`
     external_ids: {
@@ -25,7 +17,7 @@ export interface Translation {
         ebible?: string
         open_bibles?: string
     }
-    source_url: string  // Where to read/access the text
+    info_url: string  // find.bible page where possible, else a source-specific fallback
 }
 
 

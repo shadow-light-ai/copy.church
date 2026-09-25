@@ -21,7 +21,7 @@ restrictive or punitive responses carry a reputational cost, and generous ones a
 ## What it will cover
 
 - **Translation directory** — every known Bible translation, searchable and filterable by
-  language, country, owner, and how shareable its license actually is.
+  language, owner, and how shareable its license actually is.
 - **Owner directory** — the Bible societies, denominations, translators, and publishers behind
   those translations, each with the translations and response-log entries tied to them.
 - **Response log** — a dated record of how an owner has actually responded to sharing: a

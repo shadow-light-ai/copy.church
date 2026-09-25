@@ -4,14 +4,14 @@
 table.watch_translations: tbody
     tr
         th Translation
+        th Abbrev
         th Language
-        th Country
         th Scope
         th Provided by
     tr(v-for='item of rows' :key='item.id')
-        td.condensed {{ item.name.english }}
-        td {{ item.language.name }}
-        td {{ item.country }}
+        td.condensed: a(:href='item.info_url' target='_blank' rel='noreferrer') {{ item.name }}
+        td {{ item.abbrev }}
+        td {{ item.language }}
         td {{ item.scope }}
         td {{ item.owner_name }}
 
@@ -33,7 +33,7 @@ for (const owner of owners){
 
 // Sort translations alphabetically and attach the owner's name to each row
 const rows = [...translations]
-    .sort((a, b) => a.name.english.localeCompare(b.name.english))
+    .sort((a, b) => a.name.localeCompare(b.name))
     .map(item => ({...item, owner_name: owner_names[item.owner_id] ?? "Unknown"}))
 
 </script>

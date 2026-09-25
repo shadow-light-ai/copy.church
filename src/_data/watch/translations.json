@@ -1,2102 +1,1302 @@
 [
     {
         "id": "spm_pioneer_bible_translators_2a6501",
-        "name": {
-            "local": "Mak Osɨrisira Akaman Aghuuŋ ko Iesusɨm Mbɨsevisir Gumasi",
-            "local_abbrev": "",
-            "english": "Akukem Portions for DBL",
-            "english_abbrev": "AkgPor10"
-        },
-        "language": {
-            "code": "spm",
-            "name": "Akukem"
-        },
-        "country": "Papua New Guinea",
-        "year": 2017,
+        "name": "Akukem Portions for DBL",
+        "abbrev": "AkgPor10",
+        "language": "spm",
+        "latest_year": 2017,
         "scope": "portion",
         "owner_id": "pioneer_bible_translators",
         "external_ids": {
             "dbl": "2a65010324d677b6"
         },
-        "source_url": "https://app.library.bible/content/2a65010324d677b6"
+        "info_url": "https://app.library.bible/content/2a65010324d677b6"
     },
     {
         "id": "bsw_the_word_for_14a5a8",
-        "name": {
-            "local": "አማቶ ኦኡሱብ",
-            "local_abbrev": "BayNTEth",
-            "english": "Bayso New Testament Ethiopic Version",
-            "english_abbrev": "BayNTEth"
-        },
-        "language": {
-            "code": "bsw",
-            "name": "Baiso"
-        },
-        "country": "Ethiopia",
-        "year": 2024,
+        "name": "Bayso New Testament Ethiopic Version",
+        "abbrev": "BayNTEth",
+        "language": "bsw",
+        "latest_year": 2024,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "14a5a814d81264ac"
         },
-        "source_url": "https://app.library.bible/content/14a5a814d81264ac"
+        "info_url": "https://app.library.bible/content/14a5a814d81264ac"
     },
     {
         "id": "bsw_the_word_for_2c2067",
-        "name": {
-            "local": "Ammato Oɂusub",
-            "local_abbrev": "BayNT",
-            "english": "Bayso New Tetament",
-            "english_abbrev": "BayNT"
-        },
-        "language": {
-            "code": "bsw",
-            "name": "Baiso"
-        },
-        "country": "Ethiopia",
-        "year": 2024,
+        "name": "Bayso New Tetament",
+        "abbrev": "BayNT",
+        "language": "bsw",
+        "latest_year": 2024,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "2c2067480f069dad"
         },
-        "source_url": "https://app.library.bible/content/2c2067480f069dad"
+        "info_url": "https://app.library.bible/content/2c2067480f069dad"
     },
     {
         "id": "bhu_the_word_for_34d2d8",
-        "name": {
-            "local": "Bhumiya Bible",
-            "local_abbrev": "BTP25",
-            "english": "Bhumiya",
-            "english_abbrev": "BTP25"
-        },
-        "language": {
-            "code": "bhu",
-            "name": "Bhunjia"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "Bhumiya",
+        "abbrev": "BTP25",
+        "language": "bhu",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "34d2d843a792981b"
         },
-        "source_url": "https://app.library.bible/content/34d2d843a792981b"
+        "info_url": "https://app.library.bible/content/34d2d843a792981b"
     },
     {
         "id": "bel_john_the_forerunner_17c44f",
-        "name": {
-            "local": "Біблія (пераклад А.Бокуна)",
-            "local_abbrev": "БББ",
-            "english": "Bible (A.Bokun translation)",
-            "english_abbrev": "BBB"
-        },
-        "language": {
-            "code": "bel",
-            "name": "Belarusian"
-        },
-        "country": "Belarus",
-        "year": 2023,
+        "name": "Bible (A.Bokun translation)",
+        "abbrev": "BBB",
+        "language": "bel",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "john_the_forerunner_church_of_christians_of_evangelical_faith_of_minsk_city",
         "external_ids": {
             "dbl": "17c44f6c89de00db"
         },
-        "source_url": "https://app.library.bible/content/17c44f6c89de00db"
+        "info_url": "https://app.library.bible/content/17c44f6c89de00db"
     },
     {
         "id": "yns_the_seed_company_23b95e",
-        "name": {
-            "local": "Bible Iyansi",
-            "local_abbrev": "YNS",
-            "english": "Bible Iyansi",
-            "english_abbrev": "YNS"
-        },
-        "language": {
-            "code": "yns",
-            "name": "Yansi"
-        },
-        "country": "Congo, the Democratic Republic of the",
-        "year": 2024,
+        "name": "Bible Iyansi",
+        "abbrev": "YNS",
+        "language": "yns",
+        "latest_year": 2024,
         "scope": "portion",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "23b95e51ae5ff242"
         },
-        "source_url": "https://app.library.bible/content/23b95e51ae5ff242"
+        "info_url": "https://app.library.bible/content/23b95e51ae5ff242"
     },
     {
         "id": "twi_biblica_inc_18f6cf",
-        "name": {
-            "local": "Biblica® Wɔnhia ɛho kwamma nwoma Asante Twi Nkwa Asɛm",
-            "local_abbrev": "WASNA",
-            "english": "Biblica® Open Asante Twi Contemporary Bible 2020",
-            "english_abbrev": "OASCB"
-        },
-        "language": {
-            "code": "twi",
-            "name": "Twi"
-        },
-        "country": "Ghana",
-        "year": 2020,
+        "name": "Biblica® Open Asante Twi Contemporary Bible 2020",
+        "abbrev": "OASCB",
+        "language": "twi",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "18f6cf27f7b43297"
         },
-        "source_url": "https://app.library.bible/content/18f6cf27f7b43297"
+        "info_url": "https://app.library.bible/content/18f6cf27f7b43297"
     },
     {
         "id": "hau_biblica_inc_0ab0c7",
-        "name": {
-            "local": "Biblica® Buɗaɗɗen Littafi Mai Tsarki, Sabon Rai Don Kowa™",
-            "local_abbrev": "BSRK",
-            "english": "Biblica® Open Hausa Contemporary Bible 2020",
-            "english_abbrev": "OHCB"
-        },
-        "language": {
-            "code": "hau",
-            "name": "Hausa"
-        },
-        "country": "Nigeria",
-        "year": 2020,
+        "name": "Biblica® Open Hausa Contemporary Bible 2020",
+        "abbrev": "OHCB",
+        "language": "hau",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "0ab0c764d56a715d"
         },
-        "source_url": "https://app.library.bible/content/0ab0c764d56a715d"
+        "info_url": "https://app.library.bible/content/0ab0c764d56a715d"
     },
     {
         "id": "hil_biblica_inc_091988",
-        "name": {
-            "local": "Biblica® Libre Ang Pulong Sang Dios",
-            "local_abbrev": "LAPSD",
-            "english": "Biblica® Open Hiligaynon Contemporary Bible 2022",
-            "english_abbrev": "OHCB"
-        },
-        "language": {
-            "code": "hil",
-            "name": "Hiligaynon"
-        },
-        "country": "Philippines",
-        "year": 2022,
+        "name": "Biblica® Open Hiligaynon Contemporary Bible 2022",
+        "abbrev": "OHCB",
+        "language": "hil",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "091988fde60272d7"
         },
-        "source_url": "https://app.library.bible/content/091988fde60272d7"
+        "info_url": "https://app.library.bible/content/091988fde60272d7"
     },
     {
         "id": "hin_biblica_inc_213300",
-        "name": {
-            "local": "Biblica® हिंदी समकालीन संस्करण-स्वतंत्र उपलब्धि",
-            "local_abbrev": "OHSS",
-            "english": "Biblica® Open Hindi Contemporary Version 2019",
-            "english_abbrev": "OHCV"
-        },
-        "language": {
-            "code": "hin",
-            "name": "Hindi"
-        },
-        "country": "India",
-        "year": 2022,
+        "name": "Biblica® Open Hindi Contemporary Version 2019",
+        "abbrev": "OHCV",
+        "language": "hin",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "2133003bb8b5e62b"
         },
-        "source_url": "https://app.library.bible/content/2133003bb8b5e62b"
+        "info_url": "https://app.library.bible/content/2133003bb8b5e62b"
     },
     {
         "id": "tam_biblica_inc_032ec2",
-        "name": {
-            "local": "Biblica® திறந்தநிலை தமிழ் சமகால பதிப்பு",
-            "local_abbrev": "OTCV",
-            "english": "Biblica® Open Indian Tamil Contemporary Version",
-            "english_abbrev": "OTCV"
-        },
-        "language": {
-            "code": "tam",
-            "name": "Tamil"
-        },
-        "country": "India",
-        "year": 2022,
+        "name": "Biblica® Open Indian Tamil Contemporary Version",
+        "abbrev": "OTCV",
+        "language": "tam",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "032ec262506b719f"
         },
-        "source_url": "https://app.library.bible/content/032ec262506b719f"
+        "info_url": "https://app.library.bible/content/032ec262506b719f"
     },
     {
         "id": "kan_biblica_inc_08389f",
-        "name": {
-            "local": "Biblica® ಉಚಿತ ಕನ್ನಡ ಸಮಕಾಲಿಕ ಭಾಷಾಂತರ",
-            "local_abbrev": "OKCV",
-            "english": "Biblica® Open Kannada Contemporary Version 2022",
-            "english_abbrev": "OKCV"
-        },
-        "language": {
-            "code": "kan",
-            "name": "Kannada"
-        },
-        "country": "India",
-        "year": 2022,
+        "name": "Biblica® Open Kannada Contemporary Version 2022",
+        "abbrev": "OKCV",
+        "language": "kan",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "08389f036844c2de"
         },
-        "source_url": "https://app.library.bible/content/08389f036844c2de"
+        "info_url": "https://app.library.bible/content/08389f036844c2de"
     },
     {
         "id": "swh_biblica_inc_0cd52d",
-        "name": {
-            "local": "Biblica® Toleo Wazi Neno: Maandiko Matakatifu",
-            "local_abbrev": "ONMM",
-            "english": "Biblica® Open Kiswahili Contemporary Scriptures™ 2024",
-            "english_abbrev": "ONMM"
-        },
-        "language": {
-            "code": "swh",
-            "name": "Swahili"
-        },
-        "country": "Tanzania, United Republic of",
-        "year": 2024,
+        "name": "Biblica® Open Kiswahili Contemporary Scriptures™ 2024",
+        "abbrev": "ONMM",
+        "language": "swh",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "0cd52ddc726e2ee6"
         },
-        "source_url": "https://app.library.bible/content/0cd52ddc726e2ee6"
+        "info_url": "https://app.library.bible/content/0cd52ddc726e2ee6"
     },
     {
         "id": "mar_biblica_inc_1c825c",
-        "name": {
-            "local": "Biblica® मराठी समकालीन स्वतंत्र संस्करण",
-            "local_abbrev": "OMRCV",
-            "english": "Biblica® Open Marathi Contemporary Version",
-            "english_abbrev": "OMRCV"
-        },
-        "language": {
-            "code": "mar",
-            "name": "Marathi"
-        },
-        "country": "India",
-        "year": 2024,
+        "name": "Biblica® Open Marathi Contemporary Version",
+        "abbrev": "OMRCV",
+        "language": "mar",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "1c825c8591183bb0"
         },
-        "source_url": "https://app.library.bible/content/1c825c8591183bb0"
+        "info_url": "https://app.library.bible/content/1c825c8591183bb0"
     },
     {
         "id": "nde_biblica_inc_0de391",
-        "name": {
-            "local": "Biblica® IBhayibhili Elingcwele LesiNdebele Elifinyelelekayo",
-            "local_abbrev": "OBEN",
-            "english": "Biblica® Open Ndebele Contemporary Bible 2022",
-            "english_abbrev": "ONCB"
-        },
-        "language": {
-            "code": "nde",
-            "name": "Ndebele"
-        },
-        "country": "Zimbabwe",
-        "year": 2022,
+        "name": "Biblica® Open Ndebele Contemporary Bible 2022",
+        "abbrev": "ONCB",
+        "language": "nde",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "0de391111a4cac1e"
         },
-        "source_url": "https://app.library.bible/content/0de391111a4cac1e"
+        "info_url": "https://app.library.bible/content/0de391111a4cac1e"
     },
     {
         "id": "gaz_biblica_inc_184950",
-        "name": {
-            "local": "Kitaaba Qulqulluu, Biblica® Hiikkaa Ammayyaa Banamaa Haaraa, Loqoda Dhiʼaa",
-            "local_abbrev": "HABH",
-            "english": "Biblica® Open New Oromo Contemporary Version Latin 2022",
-            "english_abbrev": "ONOCV"
-        },
-        "language": {
-            "code": "gaz",
-            "name": "Oromo, West Central"
-        },
-        "country": "Ethiopia",
-        "year": 2022,
+        "name": "Biblica® Open New Oromo Contemporary Version Latin 2022",
+        "abbrev": "ONOCV",
+        "language": "gaz",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "1849509e461c9a00"
         },
-        "source_url": "https://app.library.bible/content/1849509e461c9a00"
+        "info_url": "https://app.library.bible/content/1849509e461c9a00"
     },
     {
         "id": "nob_biblica_inc_246ad9",
-        "name": {
-            "local": "Biblica® Open En Levende Bok: Det Nye Testamentet",
-            "local_abbrev": "OELB",
-            "english": "Biblica® Open Norwegian Living New Testament 2005",
-            "english_abbrev": "ONLNT"
-        },
-        "language": {
-            "code": "nob",
-            "name": "Norwegian Bokmål"
-        },
-        "country": "Norway",
-        "year": 2005,
+        "name": "Biblica® Open Norwegian Living New Testament 2005",
+        "abbrev": "ONLNT",
+        "language": "nob",
+        "latest_year": 2024,
         "scope": "nt",
         "owner_id": "biblica_inc",
         "external_ids": {
             "dbl": "246ad95eade0d0a1"
         },
-        "source_url": "https://app.library.bible/content/246ad95eade0d0a1"
+        "info_url": "https://app.library.bible/content/246ad95eade0d0a1"
     },
     {
         "id": "crw_far_east_broadcasting_030357",
-        "name": {
-            "local": "Bản Dịch Kinh Thánh Tiếng Chơ Ro",
-            "local_abbrev": "Chrau2024",
-            "english": "Chrau Bible Literal Text",
-            "english_abbrev": "CRLT"
-        },
-        "language": {
-            "code": "crw",
-            "name": "Chrau"
-        },
-        "country": "Viet Nam",
-        "year": 2024,
+        "name": "Chrau Bible Literal Text",
+        "abbrev": "CRLT",
+        "language": "crw",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "far_east_broadcasting_company",
         "external_ids": {
             "dbl": "0303570f15afd95e"
         },
-        "source_url": "https://app.library.bible/content/0303570f15afd95e"
+        "info_url": "https://find.bible/bibles/CRWIBS/"
     },
     {
         "id": "asg_the_seed_company_0241e0",
-        "name": {
-            "local": "Cishingini Agwara Kambari [asg]",
-            "local_abbrev": "ASG",
-            "english": "Cishingini Agwara Kambari [asg]",
-            "english_abbrev": "ASG"
-        },
-        "language": {
-            "code": "asg",
-            "name": "Cishingini"
-        },
-        "country": "Nigeria",
-        "year": 2025,
+        "name": "Cishingini Agwara Kambari [asg]",
+        "abbrev": "ASG",
+        "language": "asg",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "0241e02f3cb97e8c"
         },
-        "source_url": "https://app.library.bible/content/0241e02f3cb97e8c"
+        "info_url": "https://find.bible/bibles/ASGWBT/"
     },
     {
         "id": "hrv_croatian_bible_society_237997",
-        "name": {
-            "local": "Hrvatski prijevod  - Šarić sa deuterokanoskim knjigama",
-            "local_abbrev": "HRSDC",
-            "english": "Croatian: Sarić translation revised with DC 2007",
-            "english_abbrev": "HRSDC"
-        },
-        "language": {
-            "code": "hrv",
-            "name": "Croatian"
-        },
-        "country": "Croatia",
-        "year": 2007,
+        "name": "Croatian: Sarić translation revised with DC 2007",
+        "abbrev": "HRSDC",
+        "language": "hrv",
+        "latest_year": 2019,
         "scope": "portion",
         "owner_id": "croatian_bible_society",
         "external_ids": {
             "dbl": "237997b8dab43975"
         },
-        "source_url": "https://app.library.bible/content/237997b8dab43975"
+        "info_url": "https://app.library.bible/content/237997b8dab43975"
     },
     {
         "id": "cua_far_east_broadcasting_37a1dc",
-        "name": {
-            "local": "Bản Dịch Kinh Thánh Tiếng Cor",
-            "local_abbrev": "Cor2024",
-            "english": "Cua Bible Literal Text",
-            "english_abbrev": "CLT"
-        },
-        "language": {
-            "code": "cua",
-            "name": "Cua"
-        },
-        "country": "Viet Nam",
-        "year": 2024,
+        "name": "Cua Bible Literal Text",
+        "abbrev": "CLT",
+        "language": "cua",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "far_east_broadcasting_company",
         "external_ids": {
             "dbl": "37a1dc7a54269bd3"
         },
-        "source_url": "https://app.library.bible/content/37a1dc7a54269bd3"
+        "info_url": "https://find.bible/bibles/CUAGEN/"
     },
     {
         "id": "eng_ebible_org_179568",
-        "name": {
-            "local": "Douay-Rheims American 1899",
-            "local_abbrev": "DRA",
-            "english": "Duay-Rheims American Edition  1899 [eng] USA",
-            "english_abbrev": "engDRA"
-        },
-        "language": {
-            "code": "eng",
-            "name": "English"
-        },
-        "country": "United States",
-        "year": 1899,
+        "name": "Duay-Rheims American Edition  1899 [eng] USA",
+        "abbrev": "engDRA",
+        "language": "eng",
+        "latest_year": 2020,
         "scope": "portion",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "179568874c45066f"
         },
-        "source_url": "https://app.library.bible/content/179568874c45066f"
+        "info_url": "https://app.library.bible/content/179568874c45066f"
     },
     {
         "id": "eka_the_seed_company_147ebe",
-        "name": {
-            "local": "Ekajuk Scriptures Bible Portions",
-            "local_abbrev": "EKA-011",
-            "english": "Ekajuk Scriptures",
-            "english_abbrev": "EKA"
-        },
-        "language": {
-            "code": "eka",
-            "name": "Ekajuk"
-        },
-        "country": "Nigeria",
-        "year": 2024,
+        "name": "Ekajuk Scriptures",
+        "abbrev": "EKA",
+        "language": "eka",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "147ebe97085ae322"
         },
-        "source_url": "https://app.library.bible/content/147ebe97085ae322"
+        "info_url": "https://find.bible/bibles/EKANBT/"
     },
     {
         "id": "utr_the_seed_company_107c0b",
-        "name": {
-            "local": "Etulo NT",
-            "local_abbrev": "UTR",
-            "english": "Etulo",
-            "english_abbrev": "UTR"
-        },
-        "language": {
-            "code": "utr",
-            "name": "Etulo"
-        },
-        "country": "Nigeria",
-        "year": 2024,
+        "name": "Etulo",
+        "abbrev": "UTR",
+        "language": "utr",
+        "latest_year": 2024,
         "scope": "portion",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "107c0b030eea6ace"
         },
-        "source_url": "https://app.library.bible/content/107c0b030eea6ace"
+        "info_url": "https://app.library.bible/content/107c0b030eea6ace"
     },
     {
         "id": "gmv_the_word_for_049346",
-        "name": {
-            "local": "ጌሻ ማጻፋ",
-            "local_abbrev": "GaFBEV",
-            "english": "Gamo Full Bible Ethiopic Version",
-            "english_abbrev": "GaFBEV"
-        },
-        "language": {
-            "code": "gmv",
-            "name": "Gamo"
-        },
-        "country": "Ethiopia",
-        "year": 2024,
+        "name": "Gamo Full Bible Ethiopic Version",
+        "abbrev": "GaFBEV",
+        "language": "gmv",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "049346536ed7f260"
         },
-        "source_url": "https://app.library.bible/content/049346536ed7f260"
+        "info_url": "https://app.library.bible/content/049346536ed7f260"
     },
     {
         "id": "gaq_the_word_for_219367",
-        "name": {
-            "local": "Gata Didayi Bible",
-            "local_abbrev": "Daa25",
-            "english": "Gata Didayi Bible",
-            "english_abbrev": "Daa25"
-        },
-        "language": {
-            "code": "gaq",
-            "name": "Gata’"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "Gata Didayi Bible",
+        "abbrev": "Daa25",
+        "language": "gaq",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "2193678febf23d26"
         },
-        "source_url": "https://app.library.bible/content/2193678febf23d26"
+        "info_url": "https://find.bible/bibles/GAQWFW/"
     },
     {
         "id": "gdf_the_seed_company_29f2d7",
-        "name": {
-            "local": "Gava NT",
-            "local_abbrev": "GDF",
-            "english": "Gava",
-            "english_abbrev": "GDF"
-        },
-        "language": {
-            "code": "gdf",
-            "name": "Guduf-Gava"
-        },
-        "country": "Nigeria",
-        "year": 2024,
+        "name": "Gava",
+        "abbrev": "GDF",
+        "language": "gdf",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "29f2d73fdf71a11e"
         },
-        "source_url": "https://app.library.bible/content/29f2d73fdf71a11e"
+        "info_url": "https://find.bible/bibles/GDFLIST/"
     },
     {
         "id": "gok_the_word_for_28d256",
-        "name": {
-            "local": "Gawli Bible",
-            "local_abbrev": "GMi25",
-            "english": "Gawli Bible",
-            "english_abbrev": "GMi25"
-        },
-        "language": {
-            "code": "gok",
-            "name": "Gowli"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "Gawli Bible",
+        "abbrev": "GMi25",
+        "language": "gok",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "28d256cb603137cd"
         },
-        "source_url": "https://app.library.bible/content/28d256cb603137cd"
+        "info_url": "https://app.library.bible/content/28d256cb603137cd"
     },
     {
         "id": "bgc_beyond_translation_2ef130",
-        "name": {
-            "local": "Haryanvi Bible",
-            "local_abbrev": "BGC",
-            "english": "Haryanvi Bible",
-            "english_abbrev": "BGC"
-        },
-        "language": {
-            "code": "bgc",
-            "name": "Haryanvi"
-        },
-        "country": "India",
-        "year": 2021,
+        "name": "Haryanvi Bible",
+        "abbrev": "BGC",
+        "language": "bgc",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "beyond_translation",
         "external_ids": {
             "dbl": "2ef130d3485d3fe4"
         },
-        "source_url": "https://app.library.bible/content/2ef130d3485d3fe4"
+        "info_url": "https://find.bible/bibles/BGCOHB/"
     },
     {
         "id": "omb_pioneer_bible_translators_1f0fb3",
-        "name": {
-            "local": "Waratau Siaga Tatuei mo Vilegi",
-            "local_abbrev": "WSTmV",
-            "english": "Havai",
-            "english_abbrev": "HavOTS"
-        },
-        "language": {
-            "code": "omb",
-            "name": "Ambae, East"
-        },
-        "country": "Vanuatu",
-        "year": 2022,
+        "name": "Havai",
+        "abbrev": "HavOTS",
+        "language": "omb",
+        "latest_year": 2022,
         "scope": "ot",
         "owner_id": "pioneer_bible_translators",
         "external_ids": {
             "dbl": "1f0fb3b67c603710"
         },
-        "source_url": "https://app.library.bible/content/1f0fb3b67c603710"
+        "info_url": "https://app.library.bible/content/1f0fb3b67c603710"
     },
     {
         "id": "hin_global_bible_initiative_38fa4b",
-        "name": {
-            "local": "Hindi Standard Bible",
-            "local_abbrev": "HSB",
-            "english": "Hindi Standard Bible",
-            "english_abbrev": "HSB"
-        },
-        "language": {
-            "code": "hin",
-            "name": "Hindi"
-        },
-        "country": "India",
-        "year": 2023,
+        "name": "Hindi Standard Bible",
+        "abbrev": "HSB",
+        "language": "hin",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "global_bible_initiative",
         "external_ids": {
             "dbl": "38fa4be736b9bab9"
         },
-        "source_url": "https://app.library.bible/content/38fa4be736b9bab9"
+        "info_url": "https://app.library.bible/content/38fa4be736b9bab9"
     },
     {
         "id": "hwo_the_seed_company_0574f6",
-        "name": {
-            "local": "Hona Bible",
-            "local_abbrev": "HWO",
-            "english": "Hona Bible",
-            "english_abbrev": "HWO"
-        },
-        "language": {
-            "code": "hwo",
-            "name": "Hwana"
-        },
-        "country": "Nigeria",
-        "year": 2025,
+        "name": "Hona Bible",
+        "abbrev": "HWO",
+        "language": "hwo",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "0574f6c96804cf47"
         },
-        "source_url": "https://app.library.bible/content/0574f6c96804cf47"
+        "info_url": "https://find.bible/bibles/HWOEBL/"
     },
     {
         "id": "tam_bridge_connectivity_solutions_03a021",
-        "name": {
-            "local": "இண்டியன் ரிவைஸ்டு வெர்ஸன் (IRV) - தமிழ்",
-            "local_abbrev": "IRVTam",
-            "english": "Indian Revised Version (IRV) Tamil - 2019",
-            "english_abbrev": "IRVTam"
-        },
-        "language": {
-            "code": "tam",
-            "name": "Tamil"
-        },
-        "country": "India",
-        "year": 2019,
+        "name": "Indian Revised Version (IRV) Tamil - 2019",
+        "abbrev": "IRVTam",
+        "language": "tam",
+        "latest_year": 2022,
         "scope": "full",
         "owner_id": "bridge_connectivity_solutions",
         "external_ids": {
             "dbl": "03a021185023710b"
         },
-        "source_url": "https://app.library.bible/content/03a021185023710b"
+        "info_url": "https://app.library.bible/content/03a021185023710b"
     },
     {
         "id": "hin_bridge_connectivity_solutions_1e8ab3",
-        "name": {
-            "local": "इंडियन रिवाइज्ड वर्जन (IRV) हिंदी - 2019",
-            "local_abbrev": "IRVHin",
-            "english": "Indian Revised Version(IRV) Hindi - 2019",
-            "english_abbrev": "IRVHin"
-        },
-        "language": {
-            "code": "hin",
-            "name": "Hindi"
-        },
-        "country": "India",
-        "year": 2022,
+        "name": "Indian Revised Version(IRV) Hindi - 2019",
+        "abbrev": "IRVHin",
+        "language": "hin",
+        "latest_year": 2022,
         "scope": "full",
         "owner_id": "bridge_connectivity_solutions",
         "external_ids": {
             "dbl": "1e8ab327edbce67f"
         },
-        "source_url": "https://app.library.bible/content/1e8ab327edbce67f"
+        "info_url": "https://app.library.bible/content/1e8ab327edbce67f"
     },
     {
         "id": "ory_bridge_connectivity_solutions_03e08e",
-        "name": {
-            "local": "ଇଣ୍ଡିୟାନ ରିୱାଇସ୍ଡ୍ ୱରସନ୍ ଓଡିଆ",
-            "local_abbrev": "IRVOry",
-            "english": "Indian Revised Version(IRV) Odia - 2021",
-            "english_abbrev": "IRVOry"
-        },
-        "language": {
-            "code": "ory",
-            "name": "Oriya"
-        },
-        "country": "India",
-        "year": 2018,
+        "name": "Indian Revised Version(IRV) Odia - 2021",
+        "abbrev": "IRVOry",
+        "language": "ory",
+        "latest_year": 2022,
         "scope": "full",
         "owner_id": "bridge_connectivity_solutions",
         "external_ids": {
             "dbl": "03e08e889c768aa7"
         },
-        "source_url": "https://app.library.bible/content/03e08e889c768aa7"
+        "info_url": "https://app.library.bible/content/03e08e889c768aa7"
     },
     {
         "id": "juy_the_word_for_0aaff2",
-        "name": {
-            "local": "Juray Soura Bible",
-            "local_abbrev": "Jaa25",
-            "english": "Juray Soura Bible",
-            "english_abbrev": "Jaa25"
-        },
-        "language": {
-            "code": "juy",
-            "name": "Juray"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "Juray Soura Bible",
+        "abbrev": "Jaa25",
+        "language": "juy",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "0aaff251e76ae6ba"
         },
-        "source_url": "https://app.library.bible/content/0aaff251e76ae6ba"
+        "info_url": "https://find.bible/bibles/JUYWFW/"
     },
     {
         "id": "kuf_far_east_broadcasting_15a813",
-        "name": {
-            "local": "Bản Dịch Kinh Thánh Tiếng Katu",
-            "local_abbrev": "Katu2024",
-            "english": "Katu Bible Literal Text",
-            "english_abbrev": "KTLT"
-        },
-        "language": {
-            "code": "kuf",
-            "name": "Katu, Western"
-        },
-        "country": "Viet Nam",
-        "year": 2024,
+        "name": "Katu Bible Literal Text",
+        "abbrev": "KTLT",
+        "language": "kuf",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "far_east_broadcasting_company",
         "external_ids": {
             "dbl": "15a813fef7fefb05"
         },
-        "source_url": "https://app.library.bible/content/15a813fef7fefb05"
+        "info_url": "https://app.library.bible/content/15a813fef7fefb05"
     },
     {
         "id": "nit_the_word_for_067286",
-        "name": {
-            "local": "Kolami Bible",
-            "local_abbrev": "KP25",
-            "english": "KOLAMI Bible",
-            "english_abbrev": "KP25"
-        },
-        "language": {
-            "code": "nit",
-            "name": "Kolami, Southeastern"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "KOLAMI Bible",
+        "abbrev": "KP25",
+        "language": "nit",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "0672868a4bdc7281"
         },
-        "source_url": "https://app.library.bible/content/0672868a4bdc7281"
+        "info_url": "https://app.library.bible/content/0672868a4bdc7281"
     },
     {
         "id": "kfc_the_word_for_16fb88",
-        "name": {
-            "local": "Konda Porja Bible",
-            "local_abbrev": "Koo25",
-            "english": "Konda Porja Bible",
-            "english_abbrev": "Koo25"
-        },
-        "language": {
-            "code": "kfc",
-            "name": "Konda-Dora"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "Konda Porja Bible",
+        "abbrev": "Koo25",
+        "language": "kfc",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "16fb881ce1e27a60"
         },
-        "source_url": "https://app.library.bible/content/16fb881ce1e27a60"
+        "info_url": "https://app.library.bible/content/16fb881ce1e27a60"
     },
     {
         "id": "kff_the_word_for_0d5605",
-        "name": {
-            "local": "Koya Bible",
-            "local_abbrev": "Kaa25",
-            "english": "Koya Bible",
-            "english_abbrev": "Kaa25"
-        },
-        "language": {
-            "code": "kff",
-            "name": "Koya"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "Koya Bible",
+        "abbrev": "Kaa25",
+        "language": "kff",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "0d5605ba6bf41754"
         },
-        "source_url": "https://app.library.bible/content/0d5605ba6bf41754"
+        "info_url": "https://app.library.bible/content/0d5605ba6bf41754"
     },
     {
         "id": "eng_covenant_press_01b29f",
-        "name": {
-            "local": "Literal Standard Version",
-            "local_abbrev": "LSV",
-            "english": "Literal Standard Version",
-            "english_abbrev": "LSV"
-        },
-        "language": {
-            "code": "eng",
-            "name": "English"
-        },
-        "country": "United States of America",
-        "year": 2020,
+        "name": "Literal Standard Version",
+        "abbrev": "LSV",
+        "language": "eng",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "covenant_press",
         "external_ids": {
             "dbl": "01b29f4b342acc35"
         },
-        "source_url": "https://app.library.bible/content/01b29f4b342acc35"
+        "info_url": "https://app.library.bible/content/01b29f4b342acc35"
     },
     {
         "id": "mdy_bible_society_of_385573",
-        "name": {
-            "local": "ጌኤዦ ማፃኣፖ",
-            "local_abbrev": "ጌኤ.ማፃ",
-            "english": "MAALE Bible",
-            "english_abbrev": "MB"
-        },
-        "language": {
-            "code": "mdy",
-            "name": "Male"
-        },
-        "country": "Ethiopia",
-        "year": 2015,
+        "name": "MAALE Bible",
+        "abbrev": "MB",
+        "language": "mdy",
+        "latest_year": 2022,
         "scope": "full",
         "owner_id": "bible_society_of_ethiopia",
         "external_ids": {
             "dbl": "385573d4ba3ff72a"
         },
-        "source_url": "https://app.library.bible/content/385573d4ba3ff72a"
+        "info_url": "https://find.bible/bibles/MDYBSE/"
     },
     {
         "id": "mri_bible_society_new_23a2ee",
-        "name": {
-            "local": "Te Kawenata Hou",
-            "local_abbrev": "MRNT",
-            "english": "Maori New Testament",
-            "english_abbrev": "MRNT"
-        },
-        "language": {
-            "code": "mri",
-            "name": "Maori"
-        },
-        "country": "New Zealand",
-        "year": 2018,
+        "name": "Maori New Testament",
+        "abbrev": "MRNT",
+        "language": "mri",
+        "latest_year": 2022,
         "scope": "nt",
         "owner_id": "bible_society_new_zealand_charitable_trust",
         "external_ids": {
             "dbl": "23a2ee55dfbc892c"
         },
-        "source_url": "https://app.library.bible/content/23a2ee55dfbc892c"
+        "info_url": "https://app.library.bible/content/23a2ee55dfbc892c"
     },
     {
         "id": "mfm_the_seed_company_0de04e",
-        "name": {
-            "local": "Ndǝshiguˈyar Foɗǝu Ənga Thlǝr Camaˈyar",
-            "local_abbrev": "mfmTNT",
-            "english": "Margi Tiwi Nga Tǝm [mfm]",
-            "english_abbrev": "mfmTNT"
-        },
-        "language": {
-            "code": "mfm",
-            "name": "Marghi South"
-        },
-        "country": "Nigeria",
-        "year": 2024,
+        "name": "Margi Tiwi Nga Tǝm [mfm]",
+        "abbrev": "mfmTNT",
+        "language": "mfm",
+        "latest_year": 2024,
         "scope": "nt",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "0de04e26388bb8c9"
         },
-        "source_url": "https://app.library.bible/content/0de04e26388bb8c9"
+        "info_url": "https://app.library.bible/content/0de04e26388bb8c9"
     },
     {
         "id": "mfo_the_seed_company_2c04dc",
-        "name": {
-            "local": "Mbembe Okohm",
-            "local_abbrev": "mfo-latn",
-            "english": "Mbembe Okohm",
-            "english_abbrev": "mfo"
-        },
-        "language": {
-            "code": "mfo",
-            "name": "Mbe"
-        },
-        "country": "Nigeria",
-        "year": 2025,
+        "name": "Mbembe Okohm",
+        "abbrev": "mfo",
+        "language": "mfo",
+        "latest_year": 2025,
         "scope": "ot",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "2c04dc4efd036ce7"
         },
-        "source_url": "https://app.library.bible/content/2c04dc4efd036ce7"
+        "info_url": "https://find.bible/bibles/MFOEBL/"
     },
     {
         "id": "mbu_the_seed_company_3109e7",
-        "name": {
-            "local": "Mbula-Bwazza",
-            "local_abbrev": "mbu",
-            "english": "Mbula",
-            "english_abbrev": "mbu"
-        },
-        "language": {
-            "code": "mbu",
-            "name": "Mbula-Bwazza"
-        },
-        "country": "Nigeria",
-        "year": 2025,
+        "name": "Mbula",
+        "abbrev": "mbu",
+        "language": "mbu",
+        "latest_year": 2025,
         "scope": "portion",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "3109e777c3c9485a"
         },
-        "source_url": "https://app.library.bible/content/3109e777c3c9485a"
+        "info_url": "https://app.library.bible/content/3109e777c3c9485a"
     },
     {
         "id": "mfx_the_word_for_317070",
-        "name": {
-            "local": "ኦሮ ጫቆ",
-            "local_abbrev": "MeloNTEth",
-            "english": "Melo New Testament Ethiopic",
-            "english_abbrev": "MeloNTEth"
-        },
-        "language": {
-            "code": "mfx",
-            "name": "Melo"
-        },
-        "country": "Ethiopia",
-        "year": 2025,
+        "name": "Melo New Testament Ethiopic",
+        "abbrev": "MeloNTEth",
+        "language": "mfx",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "317070e47ddf1f4e"
         },
-        "source_url": "https://app.library.bible/content/317070e47ddf1f4e"
+        "info_url": "https://app.library.bible/content/317070e47ddf1f4e"
     },
     {
         "id": "mfx_the_word_for_1de321",
-        "name": {
-            "local": "Oroth Caaqo",
-            "local_abbrev": "MeloNTL",
-            "english": "Melo New Testament Latin",
-            "english_abbrev": "MeloNTL"
-        },
-        "language": {
-            "code": "mfx",
-            "name": "Melo"
-        },
-        "country": "Ethiopia",
-        "year": 2025,
+        "name": "Melo New Testament Latin",
+        "abbrev": "MeloNTL",
+        "language": "mfx",
+        "latest_year": 2025,
         "scope": "portion",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "1de321d5a85fcaee"
         },
-        "source_url": "https://app.library.bible/content/1de321d5a85fcaee"
+        "info_url": "https://app.library.bible/content/1de321d5a85fcaee"
     },
     {
         "id": "mya_global_bible_initiative_218a77",
-        "name": {
-            "local": "မြန်​မာ့​စံ​မီ​သမ္မာ​ကျမ်း",
-            "local_abbrev": "MSBU",
-            "english": "Myanmar Standard Bible (Unicode)",
-            "english_abbrev": "MSBU"
-        },
-        "language": {
-            "code": "mya",
-            "name": "Burmese"
-        },
-        "country": "Myanmar",
-        "year": 2023,
+        "name": "Myanmar Standard Bible (Unicode)",
+        "abbrev": "MSBU",
+        "language": "mya",
+        "latest_year": 2023,
         "scope": "full",
         "owner_id": "global_bible_initiative",
         "external_ids": {
             "dbl": "218a7789e72a7d00"
         },
-        "source_url": "https://app.library.bible/content/218a7789e72a7d00"
+        "info_url": "https://app.library.bible/content/218a7789e72a7d00"
     },
     {
         "id": "anh_pioneer_bible_translators_0c2ff0",
-        "name": {
-            "local": "MAK Yakŋ Ohɨrand Ya Imbɨr Makɨv Mpamar",
-            "local_abbrev": "",
-            "english": "Nend Portions - Mark",
-            "english_abbrev": "NendNP03"
-        },
-        "language": {
-            "code": "anh",
-            "name": "Nend"
-        },
-        "country": "Papua New Guinea",
-        "year": 2003,
+        "name": "Nend Portions - Mark",
+        "abbrev": "NendNP03",
+        "language": "anh",
+        "latest_year": 2019,
         "scope": "portion",
         "owner_id": "pioneer_bible_translators",
         "external_ids": {
             "dbl": "0c2ff0a5c8b9069c"
         },
-        "source_url": "https://app.library.bible/content/0c2ff0a5c8b9069c"
+        "info_url": "https://app.library.bible/content/0c2ff0a5c8b9069c"
     },
     {
         "id": "cwe_the_word_for_33e024",
-        "name": {
-            "local": "Lagano da Sambi kwa Wanhu Wose",
-            "local_abbrev": "KwerNT14",
-            "english": "New Testament in Kwere",
-            "english_abbrev": "KwerNT14"
-        },
-        "language": {
-            "code": "cwe",
-            "name": "Kwere"
-        },
-        "country": "Tanzania, United Republic of",
-        "year": 2014,
+        "name": "New Testament in Kwere",
+        "abbrev": "KwerNT14",
+        "language": "cwe",
+        "latest_year": 2023,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "33e024fcc7010565"
         },
-        "source_url": "https://app.library.bible/content/33e024fcc7010565"
+        "info_url": "https://find.bible/bibles/CWEPBT/"
     },
     {
         "id": "nnq_the_word_for_31c113",
-        "name": {
-            "local": "",
-            "local_abbrev": "",
-            "english": "Ngindo New Testament",
-            "english_abbrev": "NNQNT"
-        },
-        "language": {
-            "code": "nnq",
-            "name": "Ngindo"
-        },
-        "country": "Tanzania",
-        "year": 2018,
+        "name": "Ngindo New Testament",
+        "abbrev": "NNQNT",
+        "language": "nnq",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "31c1130475000445"
         },
-        "source_url": "https://app.library.bible/content/31c1130475000445"
+        "info_url": "https://find.bible/bibles/NNQPBT/"
     },
     {
         "id": "ngp_the_word_for_324f45",
-        "name": {
-            "local": "Ndagano mp'ya kwa wanth'u wose",
-            "local_abbrev": "",
-            "english": "Nguu New Testament",
-            "english_abbrev": "NgBV"
-        },
-        "language": {
-            "code": "ngp",
-            "name": "Nguu"
-        },
-        "country": "Tanzania",
-        "year": 2014,
+        "name": "Nguu New Testament",
+        "abbrev": "NgBV",
+        "language": "ngp",
+        "latest_year": 2014,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "324f457845cb5d21"
         },
-        "source_url": "https://app.library.bible/content/324f457845cb5d21"
+        "info_url": "https://app.library.bible/content/324f457845cb5d21"
     },
     {
         "id": "nme_bridge_connectivity_solutions_067bdf",
-        "name": {
-            "local": "Northern Zeme Bible",
-            "local_abbrev": "NorthZeme",
-            "english": "Northern Zeme Bible",
-            "english_abbrev": "NorthZeme"
-        },
-        "language": {
-            "code": "nme",
-            "name": "Naga, Mzieme"
-        },
-        "country": "India",
-        "year": 2023,
+        "name": "Northern Zeme Bible",
+        "abbrev": "NorthZeme",
+        "language": "nme",
+        "latest_year": 2023,
         "scope": "full",
         "owner_id": "bridge_connectivity_solutions",
         "external_ids": {
             "dbl": "067bdfb7336cd686"
         },
-        "source_url": "https://app.library.bible/content/067bdfb7336cd686"
+        "info_url": "https://app.library.bible/content/067bdfb7336cd686"
     },
     {
         "id": "oyd_the_word_for_1468fe",
-        "name": {
-            "local": "Kille Caaqo",
-            "local_abbrev": "OydaNTL",
-            "english": "Oyda New Testament Latin",
-            "english_abbrev": "OydaNTL"
-        },
-        "language": {
-            "code": "oyd",
-            "name": "Oyda"
-        },
-        "country": "Ethiopia",
-        "year": 2025,
+        "name": "Oyda New Testament Latin",
+        "abbrev": "OydaNTL",
+        "language": "oyd",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "1468fe84d36e75bf"
         },
-        "source_url": "https://app.library.bible/content/1468fe84d36e75bf"
+        "info_url": "https://app.library.bible/content/1468fe84d36e75bf"
     },
     {
         "id": "pwr_the_word_for_2c42bb",
-        "name": {
-            "local": "Powari Bible",
-            "local_abbrev": "PSP25",
-            "english": "Powari Standard Project",
-            "english_abbrev": "PSP25"
-        },
-        "language": {
-            "code": "pwr",
-            "name": "Powari"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "Powari Standard Project",
+        "abbrev": "PSP25",
+        "language": "pwr",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "2c42bb3d1b8a3f1c"
         },
-        "source_url": "https://app.library.bible/content/2c42bb3d1b8a3f1c"
+        "info_url": "https://app.library.bible/content/2c42bb3d1b8a3f1c"
     },
     {
         "id": "yaf_the_seed_company_0f8cde",
-        "name": {
-            "local": "Yaka NT",
-            "local_abbrev": "YAF",
-            "english": "Projet Yaka",
-            "english_abbrev": "YAF"
-        },
-        "language": {
-            "code": "yaf",
-            "name": "Yaka"
-        },
-        "country": "Congo, the Democratic Republic of the",
-        "year": 2024,
+        "name": "Projet Yaka",
+        "abbrev": "YAF",
+        "language": "yaf",
+        "latest_year": 2024,
         "scope": "portion",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "0f8cdef1ba2120a5"
         },
-        "source_url": "https://app.library.bible/content/0f8cdef1ba2120a5"
+        "info_url": "https://find.bible/bibles/YAFIBP/"
     },
     {
         "id": "rmn_the_word_for_0a0927",
-        "name": {
-            "local": "I Biblija ki Arli romani čhib Srbija",
-            "local_abbrev": "RAB",
-            "english": "Romani Arli Bible 2024",
-            "english_abbrev": "Arli"
-        },
-        "language": {
-            "code": "rmn",
-            "name": "Romani, Balkan"
-        },
-        "country": "Serbia",
-        "year": 2025,
+        "name": "Romani Arli Bible 2024",
+        "abbrev": "Arli",
+        "language": "rmn",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "0a0927a2e4c58318"
         },
-        "source_url": "https://app.library.bible/content/0a0927a2e4c58318"
+        "info_url": "https://app.library.bible/content/0a0927a2e4c58318"
     },
     {
         "id": "sav_wycliffe_bible_translators_15ff63",
-        "name": {
-            "local": "Saafi-Saafi",
-            "local_abbrev": "Saafi",
-            "english": "Saafi-Saafi Scripture for Digital",
-            "english_abbrev": "SAV"
-        },
-        "language": {
-            "code": "sav",
-            "name": "Saafi-Saafi"
-        },
-        "country": "Senegal",
-        "year": 2024,
+        "name": "Saafi-Saafi Scripture for Digital",
+        "abbrev": "SAV",
+        "language": "sav",
+        "latest_year": 2025,
         "scope": "portion",
         "owner_id": "wycliffe_bible_translators_inc",
         "external_ids": {
             "dbl": "15ff63b842ada9e3"
         },
-        "source_url": "https://app.library.bible/content/15ff63b842ada9e3"
+        "info_url": "https://find.bible/bibles/SAVWBT/"
     },
     {
         "id": "san_sanskritbible_in_33b644",
-        "name": {
-            "local": "Sanskrit Bible (NT) in Cologne Script",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in Cologne Script (satyavEdaH|)",
-            "english_abbrev": "SANCOL"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "India",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in Cologne Script (satyavEdaH|)",
+        "abbrev": "SANCOL",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "33b6449cacf22773"
         },
-        "source_url": "https://app.library.bible/content/33b6449cacf22773"
+        "info_url": "https://app.library.bible/content/33b6449cacf22773"
     },
     {
         "id": "san_sanskritbible_in_0b07fc",
-        "name": {
-            "local": "",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in IAST Script (satyavedaḥ|)",
-            "english_abbrev": "SANIAS"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "India",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in IAST Script (satyavedaḥ|)",
+        "abbrev": "SANIAS",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "0b07fcef627a2db2"
         },
-        "source_url": "https://app.library.bible/content/0b07fcef627a2db2"
+        "info_url": "https://app.library.bible/content/0b07fcef627a2db2"
     },
     {
         "id": "san_sanskritbible_in_119375",
-        "name": {
-            "local": "",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in Malayalam Script (സത്യവേദഃ।)",
-            "english_abbrev": "SANMAL"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "India",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in Malayalam Script (സത്യവേദഃ।)",
+        "abbrev": "SANMAL",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "119375d97b57cf04"
         },
-        "source_url": "https://app.library.bible/content/119375d97b57cf04"
+        "info_url": "https://app.library.bible/content/119375d97b57cf04"
     },
     {
         "id": "san_sanskritbible_in_07225e",
-        "name": {
-            "local": "0 Sanskrit Bible (NT) in Punjabi Script (ਸਤ੍ਯਵੇਦਃ।)",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in Punjabi Script (ਸਤ੍ਯਵੇਦਃ।)",
-            "english_abbrev": "SANPUN"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "India",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in Punjabi Script (ਸਤ੍ਯਵੇਦਃ।)",
+        "abbrev": "SANPUN",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "07225eadadcb079a"
         },
-        "source_url": "https://app.library.bible/content/07225eadadcb079a"
+        "info_url": "https://app.library.bible/content/07225eadadcb079a"
     },
     {
         "id": "san_sanskritbible_in_2c2cf8",
-        "name": {
-            "local": "",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in Sinhala Script (සත්‍යවේදඃ।)",
-            "english_abbrev": "SANSIN"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "Sri Lanka",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in Sinhala Script (සත්‍යවේදඃ।)",
+        "abbrev": "SANSIN",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "2c2cf8df5a22a46e"
         },
-        "source_url": "https://app.library.bible/content/2c2cf8df5a22a46e"
+        "info_url": "https://app.library.bible/content/2c2cf8df5a22a46e"
     },
     {
         "id": "san_sanskritbible_in_143e0e",
-        "name": {
-            "local": "Sanskrit Bible (NT) in Tamil Script",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in Tamil Script (ஸத்யவேத³​:।)",
-            "english_abbrev": "SANTAM"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "India",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in Tamil Script (ஸத்யவேத³​:।)",
+        "abbrev": "SANTAM",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "143e0e03cf5b12ae"
         },
-        "source_url": "https://app.library.bible/content/143e0e03cf5b12ae"
+        "info_url": "https://app.library.bible/content/143e0e03cf5b12ae"
     },
     {
         "id": "san_sanskritbible_in_306d6a",
-        "name": {
-            "local": "",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in Thai Script (สตฺยเวท:ฯ)",
-            "english_abbrev": "SANTHA"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "Thailand",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in Thai Script (สตฺยเวท:ฯ)",
+        "abbrev": "SANTHA",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "306d6ab1ca333a1e"
         },
-        "source_url": "https://app.library.bible/content/306d6ab1ca333a1e"
+        "info_url": "https://app.library.bible/content/306d6ab1ca333a1e"
     },
     {
         "id": "san_sanskritbible_in_018ff0",
-        "name": {
-            "local": "",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in Tibetan Script (སཏྱཝེདཿ།)",
-            "english_abbrev": "SANTIB"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "China",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in Tibetan Script (སཏྱཝེདཿ།)",
+        "abbrev": "SANTIB",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "018ff00d7f55cbc1"
         },
-        "source_url": "https://app.library.bible/content/018ff00d7f55cbc1"
+        "info_url": "https://app.library.bible/content/018ff00d7f55cbc1"
     },
     {
         "id": "san_sanskritbible_in_51b16e",
-        "name": {
-            "local": "",
-            "local_abbrev": "",
-            "english": "Sanskrit Bible (NT) in Urdu Script (سَتْیَویدَح۔)",
-            "english_abbrev": "SANURD"
-        },
-        "language": {
-            "code": "san",
-            "name": "Sanskrit"
-        },
-        "country": "India",
-        "year": 2018,
+        "name": "Sanskrit Bible (NT) in Urdu Script (سَتْیَویدَح۔)",
+        "abbrev": "SANURD",
+        "language": "san",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "sanskritbible_in",
         "external_ids": {
             "dbl": "51b16e0b4b7c9825"
         },
-        "source_url": "https://app.library.bible/content/51b16e0b4b7c9825"
+        "info_url": "https://app.library.bible/content/51b16e0b4b7c9825"
     },
     {
         "id": "srp_ebible_org_06995c",
-        "name": {
-            "local": "Sveta Biblija",
-            "local_abbrev": "SRP1865",
-            "english": "Serbian Bible (Vuk Karadžić, Đura Daničić) [srp] Serbia",
-            "english_abbrev": "srp1865"
-        },
-        "language": {
-            "code": "srp",
-            "name": "Serbian"
-        },
-        "country": "Serbia",
-        "year": 1867,
+        "name": "Serbian Bible (Vuk Karadžić, Đura Daničić) [srp] Serbia",
+        "abbrev": "srp1865",
+        "language": "srp",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "06995ce9cd23361b"
         },
-        "source_url": "https://app.library.bible/content/06995ce9cd23361b"
+        "info_url": "https://app.library.bible/content/06995ce9cd23361b"
     },
     {
         "id": "sle_the_word_for_239e3e",
-        "name": {
-            "local": "Sikkiligar Bible",
-            "local_abbrev": "Srr25",
-            "english": "Sikkiligar Bible",
-            "english_abbrev": "Srr25"
-        },
-        "language": {
-            "code": "sle",
-            "name": "Sholaga"
-        },
-        "country": "India",
-        "year": 2025,
+        "name": "Sikkiligar Bible",
+        "abbrev": "Srr25",
+        "language": "sle",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "239e3e9e3b8aac2e"
         },
-        "source_url": "https://app.library.bible/content/239e3e9e3b8aac2e"
+        "info_url": "https://find.bible/bibles/SLEWFW/"
     },
     {
         "id": "sby_the_word_for_31ce26",
-        "name": {
-            "local": "Soli New Testament",
-            "local_abbrev": "",
-            "english": "SOLI BIBLE TRANSLATION",
-            "english_abbrev": "SBT"
-        },
-        "language": {
-            "code": "sby",
-            "name": "Soli"
-        },
-        "country": "Zambia",
-        "year": 2018,
+        "name": "SOLI BIBLE TRANSLATION",
+        "abbrev": "SBT",
+        "language": "sby",
+        "latest_year": 2018,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "31ce26b5803b75dd"
         },
-        "source_url": "https://app.library.bible/content/31ce26b5803b75dd"
+        "info_url": "https://app.library.bible/content/31ce26b5803b75dd"
     },
     {
         "id": "pga_pioneer_bible_translators_30dbb5",
-        "name": {
-            "local": "Kitab al Mukadas ma Arabi Juba",
-            "local_abbrev": "KMAJ",
-            "english": "Southern Arabic",
-            "english_abbrev": "KMAJ"
-        },
-        "language": {
-            "code": "pga",
-            "name": "Arabic, Sudanese Creole"
-        },
-        "country": "South Sudan",
-        "year": 2025,
+        "name": "Southern Arabic",
+        "abbrev": "KMAJ",
+        "language": "pga",
+        "latest_year": 2025,
         "scope": "full",
         "owner_id": "pioneer_bible_translators",
         "external_ids": {
             "dbl": "30dbb59c0d561d29"
         },
-        "source_url": "https://app.library.bible/content/30dbb59c0d561d29"
+        "info_url": "https://app.library.bible/content/30dbb59c0d561d29"
     },
     {
         "id": "crj_canadian_bible_society_5ee655",
-        "name": {
-            "local": "Chishemanituu Utayimuwin Kaa Uskaach Testament",
-            "local_abbrev": "crjrNT",
-            "english": "Southern East Cree (Roman) [crj] -Canada (web 2018)",
-            "english_abbrev": "crjrNT"
-        },
-        "language": {
-            "code": "crj",
-            "name": "Cree, Southern East"
-        },
-        "country": "Canada",
-        "year": 2001,
+        "name": "Southern East Cree (Roman) [crj] -Canada (web 2018)",
+        "abbrev": "crjrNT",
+        "language": "crj",
+        "latest_year": 2023,
         "scope": "nt",
         "owner_id": "canadian_bible_society",
         "external_ids": {
             "dbl": "5ee655ce82d17011"
         },
-        "source_url": "https://app.library.bible/content/5ee655ce82d17011"
+        "info_url": "https://find.bible/bibles/CRJWBT/"
     },
     {
         "id": "sus_pioneer_bible_translators_2d5220",
-        "name": {
-            "local": "Ala xa Kitaabui Sosoe bɛ",
-            "local_abbrev": "Susu",
-            "english": "Susu Arabic",
-            "english_abbrev": "AKS"
-        },
-        "language": {
-            "code": "sus",
-            "name": "Susu"
-        },
-        "country": "Guinea",
-        "year": 2018,
+        "name": "Susu Arabic",
+        "abbrev": "AKS",
+        "language": "sus",
+        "latest_year": 2022,
         "scope": "full",
         "owner_id": "pioneer_bible_translators",
         "external_ids": {
             "dbl": "2d5220a02a7aaac6"
         },
-        "source_url": "https://app.library.bible/content/2d5220a02a7aaac6"
+        "info_url": "https://app.library.bible/content/2d5220a02a7aaac6"
     },
     {
         "id": "klg_wycliffe_bible_translators_35e45e",
-        "name": {
-            "local": "Tagakaulo New Testament",
-            "local_abbrev": "klgv",
-            "english": "Tagakaulo Version",
-            "english_abbrev": "klg"
-        },
-        "language": {
-            "code": "klg",
-            "name": "Tagakolu"
-        },
-        "country": "Philippines",
-        "year": 2025,
+        "name": "Tagakaulo Version",
+        "abbrev": "klg",
+        "language": "klg",
+        "latest_year": 2025,
         "scope": "portion",
         "owner_id": "wycliffe_bible_translators_inc",
         "external_ids": {
             "dbl": "35e45eb48e8d8642"
         },
-        "source_url": "https://app.library.bible/content/35e45eb48e8d8642"
+        "info_url": "https://app.library.bible/content/35e45eb48e8d8642"
     },
     {
         "id": "nho_ebible_org_312df0",
-        "name": {
-            "local": "Na Taratara TeAtua i naa taratara Takuu",
-            "local_abbrev": "NHO",
-            "english": "Takuu New Testament",
-            "english_abbrev": "nho"
-        },
-        "language": {
-            "code": "nho",
-            "name": "Takuu"
-        },
-        "country": "Papua New Guinea",
-        "year": 2009,
+        "name": "Takuu New Testament",
+        "abbrev": "nho",
+        "language": "nho",
+        "latest_year": 2022,
         "scope": "nt",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "312df00520eac624"
         },
-        "source_url": "https://app.library.bible/content/312df00520eac624"
+        "info_url": "https://find.bible/bibles/NHOTCT/"
     },
     {
         "id": "ind_the_our_language_2dd568",
-        "name": {
-            "local": "Alkitab Terjemahan Sederhana Indonesia, Edisi Ketiga",
-            "local_abbrev": "TSI",
-            "english": "Terjemahan Sederhana Indonesia",
-            "english_abbrev": "TSI"
-        },
-        "language": {
-            "code": "ind",
-            "name": "Indonesian"
-        },
-        "country": "Indonesia",
-        "year": 2025,
+        "name": "Terjemahan Sederhana Indonesia",
+        "abbrev": "TSI",
+        "language": "ind",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "the_our_language_bible_organization",
         "external_ids": {
             "dbl": "2dd568eeff29fb3c"
         },
-        "source_url": "https://app.library.bible/content/2dd568eeff29fb3c"
+        "info_url": "https://app.library.bible/content/2dd568eeff29fb3c"
     },
     {
         "id": "tha_ebible_org_2eb941",
-        "name": {
-            "local": "พระคัมภีร์ภาษาไทยฉบับ KJV",
-            "local_abbrev": "KJV",
-            "english": "Thai KJV",
-            "english_abbrev": "thaKJV"
-        },
-        "language": {
-            "code": "tha",
-            "name": "Thai"
-        },
-        "country": "Thailand",
-        "year": 2003,
+        "name": "Thai KJV",
+        "abbrev": "thaKJV",
+        "language": "tha",
+        "latest_year": 2022,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "2eb94132ad61ae75"
         },
-        "source_url": "https://app.library.bible/content/2eb94132ad61ae75"
+        "info_url": "https://app.library.bible/content/2eb94132ad61ae75"
     },
     {
         "id": "eng_ebible_org_2f0fd8",
-        "name": {
-            "local": "The English New Testament According to Family 35",
-            "local_abbrev": "F35",
-            "english": "The English New Testament According to Family 35",
-            "english_abbrev": "engF35"
-        },
-        "language": {
-            "code": "eng",
-            "name": "English"
-        },
-        "country": "Unspecific",
-        "year": 2016,
+        "name": "The English New Testament According to Family 35",
+        "abbrev": "engF35",
+        "language": "eng",
+        "latest_year": 2020,
         "scope": "nt",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "2f0fd81d7b85b923"
         },
-        "source_url": "https://app.library.bible/content/2f0fd81d7b85b923"
+        "info_url": "https://app.library.bible/content/2f0fd81d7b85b923"
     },
     {
         "id": "poy_the_word_for_355792",
-        "name": {
-            "local": "Lipatanu Lya Syayi Kwa Wantu Woseri",
-            "local_abbrev": "",
-            "english": "The New Testament in Pogoro",
-            "english_abbrev": "PBV"
-        },
-        "language": {
-            "code": "poy",
-            "name": "Shipogoro"
-        },
-        "country": "Tanzania",
-        "year": 2014,
+        "name": "The New Testament in Pogoro",
+        "abbrev": "PBV",
+        "language": "poy",
+        "latest_year": 2014,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "355792a03079ccdd"
         },
-        "source_url": "https://app.library.bible/content/355792a03079ccdd"
+        "info_url": "https://find.bible/bibles/POYPNT/"
     },
     {
         "id": "eng_ebible_org_32339c",
-        "name": {
-            "local": "Text-Critical English New Testament",
-            "local_abbrev": "TCENT",
-            "english": "The Text-Critical English New Testament",
-            "english_abbrev": "engTCENT"
-        },
-        "language": {
-            "code": "eng",
-            "name": "English"
-        },
-        "country": "United States of America",
-        "year": 2022,
+        "name": "The Text-Critical English New Testament",
+        "abbrev": "engTCENT",
+        "language": "eng",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "32339cf2f720ff8e"
         },
-        "source_url": "https://app.library.bible/content/32339cf2f720ff8e"
+        "info_url": "https://app.library.bible/content/32339cf2f720ff8e"
     },
     {
         "id": "lth_wycliffe_bible_translators_2d75eb",
-        "name": {
-            "local": "Leb-Thur",
-            "local_abbrev": "Thur",
-            "english": "Thur",
-            "english_abbrev": "ThurM"
-        },
-        "language": {
-            "code": "lth",
-            "name": "Thur"
-        },
-        "country": "Uganda",
-        "year": 2024,
+        "name": "Thur",
+        "abbrev": "ThurM",
+        "language": "lth",
+        "latest_year": 2025,
         "scope": "portion",
         "owner_id": "wycliffe_bible_translators_inc",
         "external_ids": {
             "dbl": "2d75eb8fe5beaceb"
         },
-        "source_url": "https://app.library.bible/content/2d75eb8fe5beaceb"
+        "info_url": "https://app.library.bible/content/2d75eb8fe5beaceb"
     },
     {
         "id": "tod_pioneer_bible_translators_30cb58",
-        "name": {
-            "local": "GALA Daawoo Zɛʋɛi",
-            "local_abbrev": "GDZ",
-            "english": "Toma Bible",
-            "english_abbrev": "GDZ"
-        },
-        "language": {
-            "code": "tod",
-            "name": "Toma"
-        },
-        "country": "Guinea",
-        "year": 2022,
+        "name": "Toma Bible",
+        "abbrev": "GDZ",
+        "language": "tod",
+        "latest_year": 2023,
         "scope": "full",
         "owner_id": "pioneer_bible_translators",
         "external_ids": {
             "dbl": "30cb581bcc911c45"
         },
-        "source_url": "https://app.library.bible/content/30cb581bcc911c45"
+        "info_url": "https://app.library.bible/content/30cb581bcc911c45"
     },
     {
         "id": "ton_ebible_org_252104",
-        "name": {
-            "local": "KO E TOHI TAPU KĀTOA",
-            "local_abbrev": "RWV",
-            "english": "Tongan Revised West Version",
-            "english_abbrev": "tonRWV"
-        },
-        "language": {
-            "code": "ton",
-            "name": "Tonga (Tonga Islands)"
-        },
-        "country": "Tonga",
-        "year": 2014,
+        "name": "Tongan Revised West Version",
+        "abbrev": "tonRWV",
+        "language": "ton",
+        "latest_year": 2019,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "25210406001d9aae"
         },
-        "source_url": "https://app.library.bible/content/25210406001d9aae"
+        "info_url": "https://app.library.bible/content/25210406001d9aae"
     },
     {
         "id": "arb_eastern_zone_16c2ae",
-        "name": {
-            "local": "المعنى الصحيح لإنجيل المسيح",
-            "local_abbrev": "arbTMA",
-            "english": "True Meaning Arabic",
-            "english_abbrev": "arb"
-        },
-        "language": {
-            "code": "arb",
-            "name": "Arabic, Standard"
-        },
-        "country": "Lebanon",
-        "year": 2021,
+        "name": "True Meaning Arabic",
+        "abbrev": "arb",
+        "language": "arb",
+        "latest_year": 2021,
         "scope": "portion",
         "owner_id": "eastern_zone",
         "external_ids": {
             "dbl": "16c2ae6602e699ce"
         },
-        "source_url": "https://app.library.bible/content/16c2ae6602e699ce"
+        "info_url": "https://app.library.bible/content/16c2ae6602e699ce"
     },
     {
         "id": "tkr_institute_for_bible_00cdf9",
-        "name": {
-            "local": "Tsakhur",
-            "local_abbrev": "TKR",
-            "english": "Tsakhur",
-            "english_abbrev": "TKR"
-        },
-        "language": {
-            "code": "tkr",
-            "name": "Tsakhur"
-        },
-        "country": "Azerbaijan",
-        "year": 2026,
+        "name": "Tsakhur",
+        "abbrev": "TKR",
+        "language": "tkr",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "institute_for_bible_translation_russia",
         "external_ids": {
             "dbl": "00cdf9001d68edfa"
         },
-        "source_url": "https://app.library.bible/content/00cdf9001d68edfa"
+        "info_url": "https://app.library.bible/content/00cdf9001d68edfa"
     },
     {
         "id": "tvt_the_word_for_29d558",
-        "name": {
-            "local": "Esa Leedap Ena Banlam",
-            "local_abbrev": "",
-            "english": "Tutsa: Bible Translation 1st Edition",
-            "english_abbrev": "TUT"
-        },
-        "language": {
-            "code": "tvt",
-            "name": "Tutsa Naga"
-        },
-        "country": "India",
-        "year": 2019,
+        "name": "Tutsa: Bible Translation 1st Edition",
+        "abbrev": "TUT",
+        "language": "tvt",
+        "latest_year": 2019,
         "scope": "full",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "29d55810bbb2fbcd"
         },
-        "source_url": "https://app.library.bible/content/29d55810bbb2fbcd"
+        "info_url": "https://find.bible/bibles/TVTWFW/"
     },
     {
         "id": "yml_wycliffe_bible_translators_28c40d",
-        "name": {
-            "local": "YAUBADA YANA VONA'AWAUFAUFA 'IVAUNA",
-            "local_abbrev": "YML",
-            "english": "Ubuvala (Iamalele) New Testament",
-            "english_abbrev": "yml"
-        },
-        "language": {
-            "code": "yml",
-            "name": "Ubuvala"
-        },
-        "country": "Papua New Guinea",
-        "year": 2022,
+        "name": "Ubuvala (Iamalele) New Testament",
+        "abbrev": "yml",
+        "language": "yml",
+        "latest_year": 2026,
         "scope": "nt",
         "owner_id": "wycliffe_bible_translators_inc",
         "external_ids": {
             "dbl": "28c40de349db51a4"
         },
-        "source_url": "https://app.library.bible/content/28c40de349db51a4"
+        "info_url": "https://app.library.bible/content/28c40de349db51a4"
     },
     {
         "id": "urd_ebible_org_4b2019",
-        "name": {
-            "local": "Kitab-i Muqaddas",
-            "local_abbrev": "UGV",
-            "english": "Urdu Geo Version (Roman Script)",
-            "english_abbrev": "urdgvr"
-        },
-        "language": {
-            "code": "urd",
-            "name": "Urdu"
-        },
-        "country": "Pakistan",
-        "year": 2019,
+        "name": "Urdu Geo Version (Roman Script)",
+        "abbrev": "urdgvr",
+        "language": "urd",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "4b2019a039084853"
         },
-        "source_url": "https://app.library.bible/content/4b2019a039084853"
+        "info_url": "https://app.library.bible/content/4b2019a039084853"
     },
     {
         "id": "urd_ebible_org_2a1480",
-        "name": {
-            "local": "کتابِ مقدّس",
-            "local_abbrev": "URDGVU",
-            "english": "Urdu Geo Version (Urdu Script)",
-            "english_abbrev": "urdgvu"
-        },
-        "language": {
-            "code": "urd",
-            "name": "Urdu"
-        },
-        "country": "Pakistan",
-        "year": 2019,
+        "name": "Urdu Geo Version (Urdu Script)",
+        "abbrev": "urdgvu",
+        "language": "urd",
+        "latest_year": 2024,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "2a1480cfb6f181d7"
         },
-        "source_url": "https://app.library.bible/content/2a1480cfb6f181d7"
+        "info_url": "https://app.library.bible/content/2a1480cfb6f181d7"
     },
     {
         "id": "pol_ebible_org_1c9761",
-        "name": {
-            "local": "UWSPÓŁCZEŚNIONA BIBLIA GDAŃSKA",
-            "local_abbrev": "UBG",
-            "english": "UWSPÓŁCZEŚNIONA BIBLIA GDAŃSKA [pol]",
-            "english_abbrev": "polUBG"
-        },
-        "language": {
-            "code": "pol",
-            "name": "Polish"
-        },
-        "country": "Poland",
-        "year": 2018,
+        "name": "UWSPÓŁCZEŚNIONA BIBLIA GDAŃSKA [pol]",
+        "abbrev": "polUBG",
+        "language": "pol",
+        "latest_year": 2018,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "1c9761e0230da6e0"
         },
-        "source_url": "https://app.library.bible/content/1c9761e0230da6e0"
+        "info_url": "https://app.library.bible/content/1c9761e0230da6e0"
     },
     {
         "id": "vie_ebible_org_1b878d",
-        "name": {
-            "local": "Kinh Thánh",
-            "local_abbrev": "VIE",
-            "english": "Vietnamese Bible 1925 [vie] Vietnam",
-            "english_abbrev": "vie1934"
-        },
-        "language": {
-            "code": "vie",
-            "name": "Vietnamese"
-        },
-        "country": "Viet Nam",
-        "year": 1925,
+        "name": "Vietnamese Bible 1925 [vie] Vietnam",
+        "abbrev": "vie1934",
+        "language": "vie",
+        "latest_year": 2022,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "1b878de073afef07"
         },
-        "source_url": "https://app.library.bible/content/1b878de073afef07"
+        "info_url": "https://app.library.bible/content/1b878de073afef07"
     },
     {
         "id": "hbo_ebible_org_0b262f",
-        "name": {
-            "local": "כתבי הקודש",
-            "local_abbrev": "WLC",
-            "english": "Westminister Leningrad Codex",
-            "english_abbrev": "hboWLC"
-        },
-        "language": {
-            "code": "hbo",
-            "name": "Hebrew, Ancient"
-        },
-        "country": "Israel",
-        "year": 2023,
+        "name": "Westminister Leningrad Codex",
+        "abbrev": "hboWLC",
+        "language": "hbo",
+        "latest_year": 2023,
         "scope": "ot",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "0b262f1ed7f084a6"
         },
-        "source_url": "https://app.library.bible/content/0b262f1ed7f084a6"
+        "info_url": "https://app.library.bible/content/0b262f1ed7f084a6"
     },
     {
         "id": "heb_united_bible_societies_2c5007",
-        "name": {
-            "local": "",
-            "local_abbrev": "",
-            "english": "Westminster Leningrad Codex",
-            "english_abbrev": "WLC"
-        },
-        "language": {
-            "code": "heb",
-            "name": "Hebrew"
-        },
-        "country": "Unspecific",
-        "year": 2018,
+        "name": "Westminster Leningrad Codex",
+        "abbrev": "WLC",
+        "language": "heb",
+        "latest_year": 2018,
         "scope": "ot",
         "owner_id": "united_bible_societies",
         "external_ids": {
             "dbl": "2c500771ea16da93"
         },
-        "source_url": "https://app.library.bible/content/2c500771ea16da93"
+        "info_url": "https://app.library.bible/content/2c500771ea16da93"
     },
     {
         "id": "eng_ebible_org_04da58",
-        "name": {
-            "local": "World Messianic Bible British Edition",
-            "local_abbrev": "WMBBE",
-            "english": "World Messianic Bible British Edition",
-            "english_abbrev": "engWMBBE"
-        },
-        "language": {
-            "code": "eng",
-            "name": "English"
-        },
-        "country": "Australia",
-        "year": 2026,
+        "name": "World Messianic Bible British Edition",
+        "abbrev": "engWMBBE",
+        "language": "eng",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "04da588535d2f823"
         },
-        "source_url": "https://app.library.bible/content/04da588535d2f823"
+        "info_url": "https://app.library.bible/content/04da588535d2f823"
     },
     {
         "id": "jnj_the_word_for_0b8693",
-        "name": {
-            "local": "ጋዶ ቴያ",
-            "local_abbrev": "YemNTEth",
-            "english": "Yemsa New Testament Ethiopic",
-            "english_abbrev": "YemNTEth"
-        },
-        "language": {
-            "code": "jnj",
-            "name": "Yemsa"
-        },
-        "country": "Ethiopia",
-        "year": 2025,
+        "name": "Yemsa New Testament Ethiopic",
+        "abbrev": "YemNTEth",
+        "language": "jnj",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "the_word_for_the_world_international",
         "external_ids": {
             "dbl": "0b869355f930f554"
         },
-        "source_url": "https://app.library.bible/content/0b869355f930f554"
+        "info_url": "https://app.library.bible/content/0b869355f930f554"
     },
     {
         "id": "tur_ebible_org_085def",
-        "name": {
-            "local": "Yorumsuz Türkçe Çeviri",
-            "local_abbrev": "YTC",
-            "english": "Yorumsuz Türkçe Çeviri (YTC)",
-            "english_abbrev": "turytc"
-        },
-        "language": {
-            "code": "tur",
-            "name": "Turkish"
-        },
-        "country": "Turkey",
-        "year": 2026,
+        "name": "Yorumsuz Türkçe Çeviri (YTC)",
+        "abbrev": "turytc",
+        "language": "tur",
+        "latest_year": 2026,
         "scope": "full",
         "owner_id": "ebible_org",
         "external_ids": {
             "dbl": "085defac6e17b9eb"
         },
-        "source_url": "https://app.library.bible/content/085defac6e17b9eb"
+        "info_url": "https://app.library.bible/content/085defac6e17b9eb"
     },
     {
         "id": "czt_bible_society_of_1a340f",
-        "name": {
-            "local": "Zotung Bible 2016",
-            "local_abbrev": "",
-            "english": "Zotung Bible",
-            "english_abbrev": "ZB16"
-        },
-        "language": {
-            "code": "czt",
-            "name": "Zotung Chin"
-        },
-        "country": "Myanmar",
-        "year": 2016,
+        "name": "Zotung Bible",
+        "abbrev": "ZB16",
+        "language": "czt",
+        "latest_year": 2019,
         "scope": "full",
         "owner_id": "bible_society_of_myanmar",
         "external_ids": {
             "dbl": "1a340f5ae072b2f4"
         },
-        "source_url": "https://app.library.bible/content/1a340f5ae072b2f4"
+        "info_url": "https://app.library.bible/content/1a340f5ae072b2f4"
     },
     {
         "id": "plj_the_seed_company_0ae49e",
-        "name": {
-            "local": "Zul",
-            "local_abbrev": "PLJ",
-            "english": "Zul",
-            "english_abbrev": "PLJ"
-        },
-        "language": {
-            "code": "plj",
-            "name": "Polci"
-        },
-        "country": "Nigeria",
-        "year": 2023,
+        "name": "Zul",
+        "abbrev": "PLJ",
+        "language": "plj",
+        "latest_year": 2025,
         "scope": "nt",
         "owner_id": "the_seed_company",
         "external_ids": {
             "dbl": "0ae49e1d4d276551"
         },
-        "source_url": "https://app.library.bible/content/0ae49e1d4d276551"
+        "info_url": "https://find.bible/bibles/PLJLDB/"
     },
     {
         "id": "cmn_free_bible_ministry_04fb2b",
-        "name": {
-            "local": "免费的易读圣经 Free Easy-to-read Bible",
-            "local_abbrev": "FEB",
-            "english": "免费的易读圣经 Free Easy-to-read Bible",
-            "english_abbrev": "FEB"
-        },
-        "language": {
-            "code": "cmn",
-            "name": "Chinese, Mandarin"
-        },
-        "country": "China",
-        "year": 2022,
+        "name": "免费的易读圣经 Free Easy-to-read Bible",
+        "abbrev": "FEB",
+        "language": "cmn",
+        "latest_year": 2022,
         "scope": "full",
         "owner_id": "free_bible_ministry_inc",
         "external_ids": {
             "dbl": "04fb2bec0d582d1f"
         },
-        "source_url": "https://app.library.bible/content/04fb2bec0d582d1f"
+        "info_url": "https://app.library.bible/content/04fb2bec0d582d1f"
     }
 ]
