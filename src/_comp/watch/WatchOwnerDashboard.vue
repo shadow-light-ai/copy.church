@@ -7,10 +7,10 @@ div.watch_dashboard_wrap
             div.stat_value {{ stats.known_translations }}
             div.stat_label Known Bible translations
         div.stat.restricted
-            div.stat_value {{ stats.restricted }}
+            div.stat_value {{ stats.restricted_pct }}%
             div.stat_label Restricted
         div.stat.semi_restricted
-            div.stat_value {{ stats.semi_restricted_or_worse }}
+            div.stat_value {{ stats.semi_restricted_or_worse_pct }}%
             div.stat_label Semi-restricted / Restricted
 
     div.controls
@@ -146,10 +146,11 @@ const owner_rows = Object.entries(tallies)
 const stats = computed(() => {
     const restricted = license_terms.filter(t => license_tier(t.license) === 'restricted').length
     const semi_restricted_or_worse = license_terms.filter(t => license_tier(t.license) !== 'open').length
+    const known_licenses = license_terms.length
     return {
         known_translations: translations.length,
-        restricted,
-        semi_restricted_or_worse,
+        restricted_pct: known_licenses ? Math.round((restricted / known_licenses) * 100) : 0,
+        semi_restricted_or_worse_pct: known_licenses ? Math.round((semi_restricted_or_worse / known_licenses) * 100) : 0,
     }
 })
 
