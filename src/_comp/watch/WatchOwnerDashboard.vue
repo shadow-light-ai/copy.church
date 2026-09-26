@@ -65,8 +65,7 @@ div.watch_dashboard_wrap
                         v-if='response_log_by_owner[owner.id]' @click='toggle_responses(owner.id)'
                         :class='{active: expanded.has(owner.id)}'
                     )
-                        | Responses
-                        span.badge_count {{ response_log_by_owner[owner.id].length }}
+                        | Cases ({{ response_log_by_owner[owner.id].length }})
             div.responses_panel(v-if='expanded.has(owner.id)')
                 div.response_entry(v-for='entry of response_log_by_owner[owner.id]' :key='entry.id')
                     div.response_top
@@ -329,34 +328,19 @@ function toggle_responses(owner_id:string){
         white-space: nowrap
 
     .responses_btn
-        position: relative
         padding: 3px 10px
         font-size: 0.75em
         font-family: inherit
-        border: 1px solid var(--vp-c-divider)
+        font-variant-numeric: tabular-nums
+        border: 1px solid var(--vp-c-yellow-2)
         border-radius: 5px
-        background: var(--vp-c-bg)
-        color: var(--vp-c-text-2)
+        background: var(--vp-c-yellow-soft)
+        color: var(--vp-c-yellow-1)
         cursor: pointer
 
         &:hover, &.active
-            border-color: var(--vp-c-red-2)
-            color: var(--vp-c-red-1)
-
-        .badge_count
-            position: absolute
-            top: -7px
-            right: -7px
-            min-width: 16px
-            height: 16px
-            padding: 0 3px
-            border-radius: 8px
-            background: var(--vp-c-red-2)
-            color: white
-            font-size: 0.72em
-            font-weight: 700
-            line-height: 16px
-            text-align: center
+            border-color: var(--vp-c-yellow-1)
+            font-weight: 600
 
     @media (max-width: 640px)
         .owner_row
