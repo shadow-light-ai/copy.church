@@ -22,21 +22,13 @@ div.watch_dashboard_wrap
             button(:class='{active: sort_mode === "pct"}' @click='sort_mode = "pct"')
                 | Percent restricted
 
-    p.legend
-        span.legend_item: span.swatch.open
-        | &nbsp;Open&emsp;
-        span.legend_item: span.swatch.semi_restricted
-        | &nbsp;Semi-restricted&emsp;
-        span.legend_item: span.swatch.restricted
-        | &nbsp;Restricted
-
     table.owner_table: tbody
         tr
-            th Owner
-            th.num Tracked
-            th.bar Restricted vs open
+            th
+            th Org Name
+            th.num Translations owned
             th.num Restricted
-            th.num %
+            th.num Semi-restricted
         template(v-for='(owner, i) of ranked' :key='owner.id')
             tr
                 td.rank {{ i + 1 }}
@@ -58,13 +50,8 @@ div.watch_dashboard_wrap
                         | Responses
                         span.badge_count {{ response_log_by_owner[owner.id].length }}
                 td.num {{ owner.tracked }}
-                td.bar
-                    div.meter
-                        div.meter_segment.open(:style='{width: owner.open_pct + "%"}')
-                        div.meter_segment.semi_restricted(:style='{width: owner.semi_restricted_pct + "%"}')
-                        div.meter_segment.restricted(:style='{width: owner.restricted_pct + "%"}')
                 td.num {{ owner.restricted }}
-                td.num {{ owner.restricted_pct }}%
+                td.num {{ owner.semi_restricted }}
             tr(v-if='expanded.has(owner.id)')
                 td.responses_cell(colspan='5')
                     div.response_entry(v-for='entry of response_log_by_owner[owner.id]' :key='entry.id')
@@ -124,8 +111,8 @@ for (const term of license_terms){
 const owner_rows = Object.entries(tallies)
     .filter(([id]) => id !== 'unknown')
     .map(([id, tally]) => {
-        // 'restricted' here (used for ranking/columns) is the strict tier only — semi_restricted
-        // doesn't count as restricted. The bar below still shows all three tiers.
+        // 'restricted' (used for ranking/sorting) is the strict tier only — semi_restricted is
+        // shown as its own column but doesn't count as restricted.
         return {
             id,
             name: owner_names[id] ?? id,
@@ -133,9 +120,8 @@ const owner_rows = Object.entries(tallies)
             ministry_watch_url: owner_meta[id]?.ministry_watch_url,
             tracked: tally.tracked,
             restricted: tally.restricted_only,
+            semi_restricted: tally.semi_restricted,
             restricted_pct: Math.round((tally.restricted_only / tally.tracked) * 100),
-            open_pct: Math.round(((tally.tracked - tally.semi_restricted - tally.restricted_only) / tally.tracked) * 100),
-            semi_restricted_pct: Math.round((tally.semi_restricted / tally.tracked) * 100),
         }
     })
 
@@ -175,9 +161,8 @@ for (const [key, entries] of Object.entries(response_log_by_owner)){
             ministry_watch_url: owner_meta[key]?.ministry_watch_url,
             tracked: 0,
             restricted: 0,
+            semi_restricted: 0,
             restricted_pct: 0,
-            open_pct: 0,
-            semi_restricted_pct: 0,
         })
     }
 }
@@ -258,30 +243,6 @@ function toggle_responses(owner_id:string){
                 color: var(--vp-c-brand-1)
                 font-weight: 600
 
-    .legend
-        font-size: 0.78em
-        opacity: 0.75
-        margin: 0 0 10px
-
-        .legend_item
-            display: inline-flex
-            vertical-align: middle
-
-        .swatch
-            display: inline-block
-            width: 10px
-            height: 10px
-            border-radius: 2px
-
-            &.open
-                background: var(--vp-c-green-2)
-
-            &.semi_restricted
-                background: var(--vp-c-yellow-2)
-
-            &.restricted
-                background: var(--vp-c-red-2)
-
 .owner_table
     width: 100%
     border-collapse: collapse
@@ -305,9 +266,6 @@ function toggle_responses(owner_id:string){
         opacity: 0.5
         text-align: right
         width: 2em
-
-    .bar
-        width: 160px
 
     .owner_name
         .website, .ministry_watch
@@ -379,25 +337,5 @@ function toggle_responses(owner_id:string){
             margin: 0
             font-size: 0.8em
             color: var(--vp-c-text-2)
-
-.meter
-    display: flex
-    width: 100%
-    height: 8px
-    border-radius: 4px
-    overflow: hidden
-    background: var(--vp-c-bg-alt)
-
-    .meter_segment
-        height: 100%
-
-        &.open
-            background: var(--vp-c-green-2)
-
-        &.semi_restricted
-            background: var(--vp-c-yellow-2)
-
-        &.restricted
-            background: var(--vp-c-red-2)
 
 </style>
