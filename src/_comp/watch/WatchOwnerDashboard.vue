@@ -141,16 +141,30 @@ const owner_rows = Object.entries(tallies)
     })
 
 // Overall stats shown as headline tiles. known_translations is every translation in the whole
-// dataset (most have no known license at all); restricted/semi_restricted_or_worse are counted
-// only across the subset with a known license (license_terms) — the rest are simply unknown.
+// dataset (translations.json — already excludes anything too old to still be under copyright,
+// see too_old_for_copyright() in update_watch_data.ts). The other two are percentages of that
+// same total, not just the subset with a resolved license — a translation with no license_terms
+// entry at all has an unknown license, and unknown is assumed restricted rather than open.
+const license_by_translation:Record<string, string> = {}
+for (const term of license_terms){
+    if (!license_by_translation[term.translation_id] || term.type === 'text')
+        license_by_translation[term.translation_id] = term.license
+}
+
 const stats = computed(() => {
-    const restricted = license_terms.filter(t => license_tier(t.license) === 'restricted').length
-    const semi_restricted_or_worse = license_terms.filter(t => license_tier(t.license) !== 'open').length
-    const known_licenses = license_terms.length
+    let restricted = 0
+    let semi_restricted_or_worse = 0
+    for (const translation of translations){
+        const license = license_by_translation[translation.id]
+        const tier = license ? license_tier(license) : 'restricted'
+        if (tier === 'restricted') restricted += 1
+        if (tier !== 'open') semi_restricted_or_worse += 1
+    }
+    const total = translations.length
     return {
-        known_translations: translations.length,
-        restricted_pct: known_licenses ? Math.round((restricted / known_licenses) * 100) : 0,
-        semi_restricted_or_worse_pct: known_licenses ? Math.round((semi_restricted_or_worse / known_licenses) * 100) : 0,
+        known_translations: total,
+        restricted_pct: total ? Math.round((restricted / total) * 100) : 0,
+        semi_restricted_or_worse_pct: total ? Math.round((semi_restricted_or_worse / total) * 100) : 0,
     }
 })
 
