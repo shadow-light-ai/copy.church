@@ -17,9 +17,6 @@ files (translations, owners, license terms, response log) with types in `types.t
 
 See also &nbsp; <VPButton text="Bible ratings" href='/initiatives/bibles/' theme='alt' /> &nbsp; <VPButton text="Critical Text ratings" href='/initiatives/critical-texts/' theme='alt' />
 
-## Owners ranked by restriction
-
-Click an owner to see the translations behind its numbers, or browse the full
-&nbsp;<VPButton text="translation directory" href='/watch/translations/' theme='alt' />.
-
 <WatchOwnerDashboard/>
+
+<VPButton text="All Bibles" href='/watch/translations/' theme='alt' />
