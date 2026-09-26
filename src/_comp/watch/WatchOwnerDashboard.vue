@@ -15,10 +15,11 @@ div.watch_dashboard_wrap
 
     div.controls
         div.sort_toggle
+            span.sort_label Sort by
             button(:class='{active: sort_mode === "total"}' @click='sort_mode = "total"')
-                | Total translations
+                | Total owned
             button(:class='{active: sort_mode === "count"}' @click='sort_mode = "count"')
-                | Restricted translations
+                | Num. Restricted
             button(:class='{active: sort_mode === "pct"}' @click='sort_mode = "pct"')
                 | Percent restricted
 
@@ -227,7 +228,13 @@ function toggle_responses(owner_id:string){
     .sort_toggle
         display: flex
         flex-wrap: wrap
+        align-items: center
         gap: 6px
+
+        .sort_label
+            font-size: 0.85em
+            color: var(--vp-c-text-2)
+            margin-right: 2px
 
         button
             padding: 6px 12px
