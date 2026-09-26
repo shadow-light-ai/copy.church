@@ -33,7 +33,7 @@ div.watch_dashboard_wrap
             div.cell.bar Restricted vs open
             div.cell.responses
         template(v-for='(owner, i) of ranked' :key='owner.id')
-            div.owner_row
+            div.owner_row.clickable(@click='handle_row_click(owner, $event)')
                 div.cell.rank {{ i + 1 }}
                 div.cell.name
                     a(:href='`/watch/translations/#o=${owner.id}`' :title='`See ${owner.name}\'s translations`')
@@ -208,6 +208,13 @@ function toggle_responses(owner_id:string){
     expanded.value = new Set(expanded.value)
 }
 
+// Make the whole row act like the name link, except for its own interactive children (website/MW
+// badges, the Cases button) — those already do their own thing, so let their clicks through
+function handle_row_click(owner:typeof display_rows[0], event:MouseEvent){
+    if ((event.target as HTMLElement).closest('a, button')) return
+    location.href = `/watch/translations/#o=${owner.id}`
+}
+
 </script>
 
 
@@ -293,6 +300,12 @@ function toggle_responses(owner_id:string){
         &.header_row
             font-weight: 600
             border-bottom: 2px solid var(--vp-c-divider)
+
+        &.clickable
+            cursor: pointer
+
+            &:hover
+                background: var(--vp-c-bg-alt)
 
     .cell
         min-width: 0
