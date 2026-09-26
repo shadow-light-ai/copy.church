@@ -11,6 +11,10 @@ import WatchOwnerDashboard from '@/_comp/watch/WatchOwnerDashboard.vue'
 Bible Org Watch tracks which organizations hold the rights to God's word, and how much of it
 they choose to restrict rather than release.
 
+- **Restricted**: You cannot share the Bible translation without their permission
+- **Semi-restricted**: You cannot use the translation as a base for a new Bible translation
+  and/or sell printed copies (no derivatives / non-commercial)
+
 All data behind this feature is static, checked into this repository like the rest of the
 site — there's no database or backend. The schema lives in `src/_data/watch/` as four JSON
 files (translations, owners, license terms, response log) with types in `types.ts`.
