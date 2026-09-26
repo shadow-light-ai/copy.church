@@ -19,9 +19,9 @@ div.watch_dashboard_wrap
             button(:class='{active: sort_mode === "total"}' @click='sort_mode = "total"')
                 | Total owned
             button(:class='{active: sort_mode === "count"}' @click='sort_mode = "count"')
-                | Num. Restricted
+                | Restricted (#)
             button(:class='{active: sort_mode === "pct"}' @click='sort_mode = "pct"')
-                | Percent restricted
+                | Restricted (%)
 
     table.owner_table: tbody
         tr
