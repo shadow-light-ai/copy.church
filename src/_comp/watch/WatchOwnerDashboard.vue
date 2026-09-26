@@ -23,17 +23,19 @@ div.watch_dashboard_wrap
             button(:class='{active: sort_mode === "pct"}' @click='sort_mode = "pct"')
                 | Restricted (%)
 
-    table.owner_table: tbody
-        tr
-            th
-            th Org Name
-            th.num Translations owned
-            th.num Restricted
-            th.num Semi-restricted
+    div.owner_table
+        div.owner_row.header_row
+            div.cell.rank
+            div.cell.name Org Name
+            div.cell.tracked.num Translations owned
+            div.cell.restricted_num.num Restricted
+            div.cell.semi_num.num Semi-restricted
+            div.cell.bar Restricted vs open
+            div.cell.responses
         template(v-for='(owner, i) of ranked' :key='owner.id')
-            tr
-                td.rank {{ i + 1 }}
-                td.owner_name
+            div.owner_row
+                div.cell.rank {{ i + 1 }}
+                div.cell.name
                     a(:href='`/watch/translations/#o=${owner.id}`' :title='`See ${owner.name}\'s translations`')
                         | {{ owner.name }}
                     a.website(
@@ -44,27 +46,38 @@ div.watch_dashboard_wrap
                         v-if='owner.ministry_watch_url' :href='owner.ministry_watch_url'
                         target='_blank' rel='noreferrer' title='View on Ministry Watch'
                     ) MW
+                div.cell.tracked.num
+                    span.cell_label Owned
+                    | {{ owner.tracked }}
+                div.cell.restricted_num.num
+                    span.cell_label Restricted
+                    | {{ owner.restricted }}
+                div.cell.semi_num.num
+                    span.cell_label Semi
+                    | {{ owner.semi_restricted }}
+                div.cell.bar
+                    div.meter
+                        div.meter_segment.open(:style='{width: owner.open_pct + "%"}')
+                        div.meter_segment.semi_restricted(:style='{width: owner.semi_restricted_pct + "%"}')
+                        div.meter_segment.restricted(:style='{width: owner.restricted_pct + "%"}')
+                div.cell.responses
                     button.responses_btn(
                         v-if='response_log_by_owner[owner.id]' @click='toggle_responses(owner.id)'
                         :class='{active: expanded.has(owner.id)}'
                     )
                         | Responses
                         span.badge_count {{ response_log_by_owner[owner.id].length }}
-                td.num {{ owner.tracked }}
-                td.num {{ owner.restricted }}
-                td.num {{ owner.semi_restricted }}
-            tr(v-if='expanded.has(owner.id)')
-                td.responses_cell(colspan='5')
-                    div.response_entry(v-for='entry of response_log_by_owner[owner.id]' :key='entry.id')
-                        div.response_top
-                            span.response_date {{ entry.date || 'Undated' }}
-                            a(:href='entry.evidence_url' target='_blank' rel='noreferrer') Evidence ↗
-                        p.response_summary {{ entry.summary }}
-                        p.response_reporter
-                            | Reported by
-                            a(v-if='entry.reporter_url' :href='entry.reporter_url' target='_blank' rel='noreferrer')
-                                | &nbsp;{{ entry.reporter_name }}
-                            span(v-else) &nbsp;{{ entry.reporter_name }}
+            div.responses_panel(v-if='expanded.has(owner.id)')
+                div.response_entry(v-for='entry of response_log_by_owner[owner.id]' :key='entry.id')
+                    div.response_top
+                        span.response_date {{ entry.date || 'Undated' }}
+                        a(:href='entry.evidence_url' target='_blank' rel='noreferrer') Evidence ↗
+                    p.response_summary {{ entry.summary }}
+                    p.response_reporter
+                        | Reported by
+                        a(v-if='entry.reporter_url' :href='entry.reporter_url' target='_blank' rel='noreferrer')
+                            | &nbsp;{{ entry.reporter_name }}
+                        span(v-else) &nbsp;{{ entry.reporter_name }}
 
 </template>
 
@@ -123,6 +136,8 @@ const owner_rows = Object.entries(tallies)
             restricted: tally.restricted_only,
             semi_restricted: tally.semi_restricted,
             restricted_pct: Math.round((tally.restricted_only / tally.tracked) * 100),
+            semi_restricted_pct: Math.round((tally.semi_restricted / tally.tracked) * 100),
+            open_pct: Math.round(((tally.tracked - tally.semi_restricted - tally.restricted_only) / tally.tracked) * 100),
         }
     })
 
@@ -164,6 +179,8 @@ for (const [key, entries] of Object.entries(response_log_by_owner)){
             restricted: 0,
             semi_restricted: 0,
             restricted_pct: 0,
+            semi_restricted_pct: 0,
+            open_pct: 0,
         })
     }
 }
@@ -250,31 +267,40 @@ function toggle_responses(owner_id:string){
                 color: var(--vp-c-brand-1)
                 font-weight: 600
 
+// A CSS-grid "table" rather than a real <table> — at narrow widths each owner's row reflows
+// from one line into two (numbers, then bar + responses) without ever scrolling horizontally,
+// which a real <table> can't do without either an overflow scrollbar or losing columns.
 .owner_table
     width: 100%
-    border-collapse: collapse
     font-size: 0.85em
 
-    th
-        text-align: left
-        padding: 6px 10px
-        border-bottom: 2px solid var(--vp-c-divider)
-
-    td
+    .owner_row
+        display: grid
+        grid-template-columns: 2em minmax(160px, 1fr) auto auto auto 140px auto
+        grid-template-areas: "rank name tracked restricted semi bar responses"
+        align-items: center
+        column-gap: 10px
         padding: 6px 10px
         border-bottom: 1px solid var(--vp-c-divider)
-        vertical-align: middle
 
-    .num
-        text-align: right
-        white-space: nowrap
+        &.header_row
+            font-weight: 600
+            border-bottom: 2px solid var(--vp-c-divider)
+
+    .cell
+        min-width: 0
+
+    .cell_label
+        display: none
 
     .rank
+        grid-area: rank
         opacity: 0.5
         text-align: right
-        width: 2em
 
-    .owner_name
+    .name
+        grid-area: name
+
         .website, .ministry_watch
             margin-left: 6px
             font-size: 0.75em
@@ -283,40 +309,82 @@ function toggle_responses(owner_id:string){
             border-radius: 4px
             color: var(--vp-c-text-2)
 
-        .responses_btn
-            position: relative
-            margin-left: 8px
-            padding: 3px 10px
-            font-size: 0.75em
-            font-family: inherit
-            border: 1px solid var(--vp-c-divider)
-            border-radius: 5px
-            background: var(--vp-c-bg)
-            color: var(--vp-c-text-2)
-            cursor: pointer
+    .tracked
+        grid-area: tracked
 
-            &:hover, &.active
-                border-color: var(--vp-c-red-2)
-                color: var(--vp-c-red-1)
+    .restricted_num
+        grid-area: restricted
 
-            .badge_count
-                position: absolute
-                top: -7px
-                right: -7px
-                min-width: 16px
-                height: 16px
-                padding: 0 3px
-                border-radius: 8px
-                background: var(--vp-c-red-2)
-                color: white
-                font-size: 0.72em
-                font-weight: 700
-                line-height: 16px
-                text-align: center
+    .semi_num
+        grid-area: semi
 
-    .responses_cell
+    .bar
+        grid-area: bar
+
+    .responses
+        grid-area: responses
+
+    .num
+        text-align: right
+        white-space: nowrap
+
+    .responses_btn
+        position: relative
+        padding: 3px 10px
+        font-size: 0.75em
+        font-family: inherit
+        border: 1px solid var(--vp-c-divider)
+        border-radius: 5px
+        background: var(--vp-c-bg)
+        color: var(--vp-c-text-2)
+        cursor: pointer
+
+        &:hover, &.active
+            border-color: var(--vp-c-red-2)
+            color: var(--vp-c-red-1)
+
+        .badge_count
+            position: absolute
+            top: -7px
+            right: -7px
+            min-width: 16px
+            height: 16px
+            padding: 0 3px
+            border-radius: 8px
+            background: var(--vp-c-red-2)
+            color: white
+            font-size: 0.72em
+            font-weight: 700
+            line-height: 16px
+            text-align: center
+
+    @media (max-width: 640px)
+        .owner_row
+            grid-template-columns: 2em minmax(50px, 1fr) minmax(28px, 1fr) minmax(28px, 1fr) minmax(75px, auto)
+            grid-template-areas: "rank name tracked restricted semi" "rank name bar bar responses"
+            row-gap: 6px
+
+            &.header_row
+                display: none
+
+        .tracked, .restricted_num, .semi_num
+            white-space: normal
+            text-align: left
+
+        .cell_label
+            display: block
+            font-weight: 400
+            font-size: 0.72em
+            opacity: 0.6
+            white-space: normal
+
+        .bar, .responses
+            align-self: center
+
+    .responses_panel
         background: var(--vp-c-bg-alt)
         padding: 10px 14px
+        border-bottom: 1px solid var(--vp-c-divider)
 
     .response_entry
         padding: 8px 0
@@ -344,5 +412,25 @@ function toggle_responses(owner_id:string){
             margin: 0
             font-size: 0.8em
             color: var(--vp-c-text-2)
+
+    .meter
+        display: flex
+        width: 100%
+        height: 8px
+        border-radius: 4px
+        overflow: hidden
+        background: var(--vp-c-bg-alt)
+
+        .meter_segment
+            height: 100%
+
+            &.open
+                background: var(--vp-c-green-2)
+
+            &.semi_restricted
+                background: var(--vp-c-yellow-2)
+
+            &.restricted
+                background: var(--vp-c-red-2)
 
 </style>
