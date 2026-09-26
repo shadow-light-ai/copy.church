@@ -14,6 +14,7 @@ div.watch_dashboard_wrap
             div.stat_label Semi-restricted / Restricted
 
     div.controls
+        input.search(v-model='query' type='text' placeholder="Search by org name…")
         div.sort_toggle
             span.sort_label Sort by
             button(:class='{active: sort_mode === "total"}' @click='sort_mode = "total"')
@@ -229,7 +230,14 @@ const sorters = {
         (b.restricted_pct - a.restricted_pct) || (b.restricted - a.restricted),
 }
 
-const ranked = computed(() => [...display_rows].sort(sorters[sort_mode.value]))
+// Search box — filters by org name before sorting/ranking
+const query = ref('')
+
+const ranked = computed(() => {
+    const q = query.value.trim().toLowerCase()
+    const rows = q ? display_rows.filter(o => o.name.toLowerCase().includes(q)) : display_rows
+    return [...rows].sort(sorters[sort_mode.value])
+})
 
 // Which owners' response log is currently expanded in the table
 const expanded = ref(new Set<string>())
@@ -286,6 +294,17 @@ function handle_row_click(owner:typeof display_rows[0], event:MouseEvent){
         flex-wrap: wrap
         gap: 10px
         margin-bottom: 10px
+
+    .search
+        padding: 8px 10px
+        border: 1px solid var(--vp-c-divider)
+        border-radius: 6px
+        font-size: 0.9em
+        background: var(--vp-c-bg)
+        color: var(--vp-c-text-1)
+        flex: 1
+        min-width: 200px
+        max-width: 320px
 
     .sort_toggle
         display: flex
