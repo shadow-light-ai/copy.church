@@ -6,8 +6,14 @@
 // in order:
 //   1. find.bible — via the public digitalbiblesociety/data dataset (base translation list)
 //   2. fetch.bible — v1.fetch.bible/manifest.json (license/owner for translations it distributes)
-//   3. DBL (Digital Bible Library) — only for translations still missing a license after 1-2,
-//      only with --with-dbl, and only after an interactive confirmation (never run silently)
+//   3. dbl_cache.json — a static, checked-in owner/license cache for translations still missing
+//      one after 1-2, keyed by DBL uid, built once from a DBL "public entries" export plus a
+//      prior authenticated DBL pull — needs no network access or credentials to reuse
+//   4. major_translation_owners.ts — a small hand-curated owner list for well-known
+//      translations (NIV, ESV, etc.) that DBL doesn't publicly expose ownership for either
+//   5. DBL (Digital Bible Library) API — only for translations still missing an owner after 1-4,
+//      only with --with-dbl, and only after an interactive confirmation (never run silently) —
+//      a maintainer with API credentials can use this to refresh/extend dbl_cache.json by hand
 // Deliberately does NOT consult eBible or open.bible (open.bible was tried and dropped — see
 // git history if it needs revisiting; this sandbox's network can't reach it at all).
 //
@@ -22,6 +28,8 @@ import {createInterface} from 'node:readline/promises'
 import {createHmac} from 'node:crypto'
 
 import type {Translation, Owner, LicenseTerms} from '../src/_data/watch/types.ts'
+import dbl_cache from './dbl_cache.json' with {type: 'json'}
+import {major_translation_owners} from './major_translation_owners.ts'
 
 
 const DATA_DIR = new URL('../src/_data/watch/', import.meta.url)
@@ -53,9 +61,11 @@ const ORG_SUFFIX_RE =
 function slugify(name:string):string{
     // Turn an owner display name into a stable, url-safe id — also drops a leading "The" so
     // e.g. "Bible Society of Papua New Guinea" and "The Bible Society of Papua New Guinea"
-    // collapse to one owner
+    // collapse to one owner. Keeps any Unicode letter/number (not just a-z0-9) so a non-Latin-
+    // script name (e.g. Cyrillic) still gets a real, distinguishing id instead of every such name
+    // collapsing to the same empty string and silently merging into one fake shared owner.
     const stripped = name.replace(ORG_SUFFIX_RE, '').replace(/^the\s+/i, '').trim()
-    return stripped.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '')
+    return stripped.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '_').replace(/^_+|_+$/g, '')
 }
 
 async function fetch_json<T>(url:string, headers:Record<string, string> = {}):Promise<T>{
@@ -81,15 +91,27 @@ function strip_copyright_notice(text:string):string{
     name = name.replace(/^copyright\s*/i, '')
     name = name.replace(/^\(c\)\s*/i, '')
     name = name.replace(/^©\s*/, '')
-    name = name.replace(/^\d{4}(?:\s*[-–—,]\s*\d{4})*\s*/, '')
+    // Each date token is a bare year ("2019") or a full ISO date ("2019-07-01") — a full date's
+    // "-MM-DD" suffix isn't itself a year-range separator, so it must be consumed here too or it's
+    // left dangling in front of the org name (e.g. "-07-01 Wycliffe Bible Translators, Inc.")
+    const date_token = String.raw`\d{4}(?:-\d{2}-\d{2})?`
+    name = name.replace(
+        new RegExp(String.raw`^${date_token}(?:\s*[-–—,]\s*${date_token})*\s*`), '')
     return name.trim()
 }
 
+// Names that show up as an "attribution" or "rights holder" in source data but are really just a
+// hosting/aggregation platform for texts they don't themselves hold rights to (most often public
+// domain ones) — crediting them as the owner would be wrong, e.g. eBible.org mirrors plenty of
+// translations it didn't produce and has no rights over.
+const AGGREGATOR_NAMES = new Set(['ebible.org', 'dbl unit test organization'])
+
 function owner_id_for(owners:Owner[], attribution:string):string{
     // "public domain" (or a blank attribution) isn't a rights holder — don't invent a fake owner
-    // for it, just leave the license terms owner as 'unknown'
+    // for it, just leave the license terms owner as 'unknown'. Same for a bare hosting platform.
     const name = strip_copyright_notice(attribution)
-    if (!name || /^public domain$/i.test(name)) return 'unknown'
+    if (!name || /^public domain$/i.test(name) || AGGREGATOR_NAMES.has(name.toLowerCase()))
+        return 'unknown'
     return get_or_create_owner(owners, name)
 }
 
@@ -390,6 +412,65 @@ async function pull_dbl(
 }
 
 
+// ---- 3. dbl_cache.json (static, no network/credentials needed) ----
+
+interface DblCacheEntry {
+    owner:string
+    license?:string
+    url?:string
+}
+
+function apply_dbl_cache(
+        translations:Translation[], owners:Owner[], license_terms:LicenseTerms[]):void{
+    const cache = dbl_cache as Record<string, DblCacheEntry>
+    const candidates = translations.filter(t => t.external_ids.dbl
+        && !license_terms.some(lt => lt.translation_id === t.id && lt.type === 'text'))
+
+    let matched = 0
+    for (const translation of candidates){
+        const entry = cache[translation.external_ids.dbl!]
+        if (!entry) continue
+        license_terms.push({
+            translation_id: translation.id,
+            owner_id: owner_id_for(owners, entry.owner),
+            type: 'text',
+            license: entry.license ?? 'unknown',
+            url: entry.url || `https://app.library.bible/content/${translation.external_ids.dbl}`,
+            last_verified: today(),
+        })
+        matched += 1
+    }
+    console.info(`dbl_cache: matched ${matched} of ${candidates.length} still-unowned translations`)
+}
+
+
+// ---- 4. major_translation_owners.ts (hand-curated, for well-known translations DBL doesn't
+// publicly expose ownership for either — see that file for how each entry was sourced) ----
+
+function apply_major_translation_owners(
+        translations:Translation[], owners:Owner[], license_terms:LicenseTerms[]):void{
+    const overrides = major_translation_owners
+    const by_id = new Set(translations.map(t => t.id))
+
+    let matched = 0
+    for (const [translation_id, owner_name] of Object.entries(overrides)){
+        if (!by_id.has(translation_id)) continue
+        if (license_terms.some(lt => lt.translation_id === translation_id && lt.type === 'text'))
+            continue
+        license_terms.push({
+            translation_id,
+            owner_id: owner_id_for(owners, owner_name),
+            type: 'text',
+            license: 'unknown',
+            url: '',
+            last_verified: today(),
+        })
+        matched += 1
+    }
+    console.info(`major_translation_owners: matched ${matched} translations`)
+}
+
+
 // ---- main ----
 
 async function main():Promise<void>{
@@ -400,6 +481,8 @@ async function main():Promise<void>{
 
     await pull_find_bible(translations)
     await pull_fetch_bible(translations, owners, license_terms)
+    apply_dbl_cache(translations, owners, license_terms)
+    apply_major_translation_owners(translations, owners, license_terms)
     await pull_dbl(translations, owners, license_terms)
 
     // Drop translations too old to have a live rights holder (see PUBLIC_DOMAIN_AGE_YEARS above)
