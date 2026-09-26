@@ -4,14 +4,14 @@
 div.watch_dashboard_wrap
     div.stats
         div.stat
-            div.stat_value {{ stats.owners }}
-            div.stat_label Owners tracked
-        div.stat
-            div.stat_value {{ stats.translations }}
-            div.stat_label Translations tracked
-        div.stat
-            div.stat_value {{ stats.pct_restricted }}%
-            div.stat_label Restricted overall
+            div.stat_value {{ stats.known_translations }}
+            div.stat_label Known Bible translations
+        div.stat.restricted
+            div.stat_value {{ stats.restricted }}
+            div.stat_label Restricted
+        div.stat.semi_restricted
+            div.stat_value {{ stats.semi_restricted_or_worse }}
+            div.stat_label Semi-restricted / Restricted
 
     div.controls
         div.sort_toggle
@@ -87,6 +87,7 @@ import {ref, computed} from 'vue'
 
 // Static Bible Org Watch data — checked into the repo, no backend
 import owners from '@/_data/watch/owners.json'
+import translations from '@/_data/watch/translations.json'
 import license_terms from '@/_data/watch/license_terms.json'
 import response_log from '@/_data/watch/response_log.json'
 
@@ -102,7 +103,6 @@ function license_tier(license:string):'open' | 'semi_restricted' | 'restricted'{
     if (license.includes('nc') || license.includes('nd')) return 'semi_restricted'
     return 'open'
 }
-const is_restricted = (license:string) => license_tier(license) === 'restricted'
 
 // Tally each owner's tracked translations and how many carry a restricted license
 const owner_names:Record<string, string> = {}
@@ -140,15 +140,16 @@ const owner_rows = Object.entries(tallies)
         }
     })
 
-// Overall stats shown as headline tiles — based only on owners with tracked translations, not
-// the response-log-only rows added below
+// Overall stats shown as headline tiles. known_translations is every translation in the whole
+// dataset (most have no known license at all); restricted/semi_restricted_or_worse are counted
+// only across the subset with a known license (license_terms) — the rest are simply unknown.
 const stats = computed(() => {
-    const translations = license_terms.length
-    const restricted = license_terms.filter(t => is_restricted(t.license)).length
+    const restricted = license_terms.filter(t => license_tier(t.license) === 'restricted').length
+    const semi_restricted_or_worse = license_terms.filter(t => license_tier(t.license) !== 'open').length
     return {
-        owners: owner_rows.length,
-        translations,
-        pct_restricted: translations ? Math.round((restricted / translations) * 100) : 0,
+        known_translations: translations.length,
+        restricted,
+        semi_restricted_or_worse,
     }
 })
 
@@ -232,6 +233,12 @@ function toggle_responses(owner_id:string){
         .stat_label
             font-size: 0.8em
             opacity: 0.7
+
+        &.restricted .stat_value
+            color: var(--vp-c-red-1)
+
+        &.semi_restricted .stat_value
+            color: var(--vp-c-yellow-1)
 
     .controls
         display: flex
