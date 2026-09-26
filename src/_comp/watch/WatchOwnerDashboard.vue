@@ -92,13 +92,30 @@ import license_terms from '@/_data/watch/license_terms.json'
 import response_log from '@/_data/watch/response_log.json'
 
 
+// A handful of 'custom' licenses have been read manually (see each entry's `url` in
+// license_terms.json) and turn out to carry no cap on how much can be quoted, only a
+// noncommercial and/or no-modification clause (like cc-by-nc/-nd) — those are downgraded from the
+// 'custom' default of restricted to semi_restricted. nld_nbg uses the GNU FDL, which — unlike the
+// others — permits commercial use and modification, so it's upgraded all the way to open.
+const custom_tier_overrides:Record<string, 'open' | 'semi_restricted'> = {
+    amh_amh: 'semi_restricted',  // UBS Amharic — nc only, no quotation cap
+    cop_shc: 'semi_restricted',  // Sahidica Coptic NT — free for non-commercial electronic use only
+    eng_net: 'semi_restricted',  // NET Bible — free non-commercial quoting, no verse cap
+    spa_rvg: 'semi_restricted',  // RVG — nc + no wording changes, no quotation cap
+    ukr_bju: 'semi_restricted',  // BJU Ukrainian — nc + no modification, no quotation cap
+    nld_nbg: 'open',  // GNU FDL — permits commercial use and modification
+}
+
 // A license's tier: 'open' places no restriction on sharing ('public', 'cc-by', 'cc-by-sa');
 // 'semi_restricted' carries a noncommercial and/or no-derivatives clause (including 'cc-by-nc-nd');
 // 'restricted' is non-standard terms ('custom') or no license at all ('unknown') — not proven
-// open, so not assumed open. For ranking/filtering purposes, only 'restricted' counts against an
-// owner — 'semi_restricted' does not count as restricted, even though the bar still shows it
-// separately.
-function license_tier(license:string):'open' | 'semi_restricted' | 'restricted'{
+// open, so not assumed open, unless overridden above. For ranking/filtering purposes, only
+// 'restricted' counts against an owner — 'semi_restricted' does not count as restricted, even
+// though the bar still shows it separately.
+function license_tier(
+        license:string, translation_id?:string):'open' | 'semi_restricted' | 'restricted'{
+    if (license === 'custom' && translation_id && translation_id in custom_tier_overrides)
+        return custom_tier_overrides[translation_id]!
     if (license === 'custom' || license === 'unknown') return 'restricted'
     if (license.includes('nc') || license.includes('nd')) return 'semi_restricted'
     return 'open'
@@ -116,7 +133,7 @@ const tallies:Record<string, {tracked:number, semi_restricted:number, restricted
 for (const term of license_terms){
     const tally = tallies[term.owner_id] ??= {tracked: 0, semi_restricted: 0, restricted_only: 0}
     tally.tracked += 1
-    const tier = license_tier(term.license)
+    const tier = license_tier(term.license, term.translation_id)
     if (tier === 'semi_restricted') tally.semi_restricted += 1
     else if (tier === 'restricted') tally.restricted_only += 1
 }
@@ -156,7 +173,7 @@ const stats = computed(() => {
     let semi_restricted_or_worse = 0
     for (const translation of translations){
         const license = license_by_translation[translation.id]
-        const tier = license ? license_tier(license) : 'restricted'
+        const tier = license ? license_tier(license, translation.id) : 'restricted'
         if (tier === 'restricted') restricted += 1
         if (tier !== 'open') semi_restricted_or_worse += 1
     }

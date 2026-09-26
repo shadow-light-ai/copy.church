@@ -23,7 +23,7 @@ div.watch_translations_page
             td.condensed: a(:href='item.info_url' target='_blank' rel='noreferrer') {{ item.name }}
             td {{ item.abbrev }}
             td {{ item.language }}
-            td: span.license_pill(:class='license_tier(item.license)') {{ item.license }}
+            td: span.license_pill(:class='license_tier(item.license, item.id)') {{ item.license }}
             td {{ item.owner_name }}
     p.more(v-if='filtered.length > shown.length')
         | Showing first {{ shown.length }} — narrow your search or filters to see more specific results.
@@ -41,9 +41,24 @@ import owners from '@/_data/watch/owners.json'
 import license_terms from '@/_data/watch/license_terms.json'
 
 
+// Same manual overrides as the owner dashboard — a few 'custom' licenses read no worse than an
+// nc/nd clause once checked, and nld_nbg (GNU FDL) is actually open (permits commercial use and
+// modification). See WatchOwnerDashboard.vue for per-entry notes.
+const custom_tier_overrides:Record<string, 'open' | 'semi_restricted'> = {
+    amh_amh: 'semi_restricted',
+    cop_shc: 'semi_restricted',
+    eng_net: 'semi_restricted',
+    spa_rvg: 'semi_restricted',
+    ukr_bju: 'semi_restricted',
+    nld_nbg: 'open',
+}
+
 // Same tier scheme as the owner dashboard, used here to color-code each license pill.
 // An unknown license is treated as restricted — not proven open, so not assumed open.
-function license_tier(license:string):'open' | 'semi_restricted' | 'restricted'{
+function license_tier(
+        license:string, translation_id?:string):'open' | 'semi_restricted' | 'restricted'{
+    if (license === 'custom' && translation_id && translation_id in custom_tier_overrides)
+        return custom_tier_overrides[translation_id]!
     if (license === 'unknown' || license === 'custom') return 'restricted'
     if (license.includes('nc') || license.includes('nd')) return 'semi_restricted'
     return 'open'
