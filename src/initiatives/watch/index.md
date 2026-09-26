@@ -25,6 +25,8 @@ See also &nbsp; <VPButton text="Bible ratings" href='/initiatives/bibles/' theme
 
 <VPButton text="All Bibles" href='/watch/translations/' theme='alt' />
 
-_All figures above only cover modern translations — anything old enough to be in the public
-domain by age (more than 95 years old under US copyright law) is excluded, except the KJV, which
-remains under perpetual Crown copyright._
+_Figures above exclude translations over 95 years old (public domain by age), except the KJV
+(perpetual Crown copyright)._
+
+_We aim for accuracy based on available information, but mistakes are possible —
+[contact us](/about/#contact) if you spot one._
